@@ -27,7 +27,8 @@ PRES = {"oral": "Oral", "poster": "Poster", "virtual": "Virtual", "demo": "Demo"
 pres = d["pres_type"].str.lower().map(PRES).fillna("Not in the program")
 pres = np.where(d["mode"].eq("virtual") & pres.isin(["Oral", "Poster"]), "Virtual", pres)
 date = pd.to_datetime(d["date"], errors="coerce")
-day = np.where(date.notna(), date.dt.strftime("%a %d"), "no slot")  # "Sun 25": short, sorts by date
+# one word per label ("25-Sun"): the histogram shows only the first word and turned "Mon 26" into a date
+day = np.where(date.notna(), date.dt.strftime("%d-%a"), "no-slot")
 where = np.where(d["room"].ne(""), d["room"] + ", " + d["date"] + " " + d["start"], "")
 
 g = d["fine"].map(growth).clip(-1.5, 1.5).to_numpy()
@@ -127,8 +128,9 @@ function showLinks(page, pdf, arxiv, title, where) {
   box.querySelector('.t').textContent = title;
   box.querySelector('.n').textContent = where ? 'In Budapest: ' + where : '';
   box.querySelector('.l').innerHTML =
-    '<a class="main" href="' + page + '" target="_blank" rel="noopener">ACL Anthology</a>' +
-    '<a href="' + pdf + '" target="_blank" rel="noopener">PDF</a>' +
+    // PDF first: the Anthology serves the 2026 PDFs before its paper pages go live
+    '<a class="main" href="' + pdf + '" target="_blank" rel="noopener">PDF</a>' +
+    '<a href="' + page + '" target="_blank" rel="noopener">ACL Anthology</a>' +
     '<a href="' + arxiv + '" target="_blank" rel="noopener">Find on arXiv</a>';
   box.style.display = 'block';
 }

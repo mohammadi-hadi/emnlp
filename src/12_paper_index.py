@@ -63,8 +63,8 @@ function more() {
     const tag = r[5] === 'Oral' ? '<span class="tag o">Oral</span>' : '';
     const where = [r[5] !== 'Oral' ? r[5] : '', r[6], r[7]].filter(Boolean).join(' · ');
     const ax = 'https://arxiv.org/search/?query=' + encodeURIComponent(r[0].replace(/[^\\w\\s-]/g, ' ')).replace(/%20/g, '+') + '&searchtype=title';
-    const links = `<a href="https://aclanthology.org/${r[8]}/" target="_blank" rel="noopener">ACL Anthology</a>` +
-      `<a href="https://aclanthology.org/${r[8]}.pdf" target="_blank" rel="noopener">PDF</a>` +
+    const links = `<a href="https://aclanthology.org/${r[8]}.pdf" target="_blank" rel="noopener">PDF</a>` +
+      `<a href="https://aclanthology.org/${r[8]}/" target="_blank" rel="noopener">ACL Anthology</a>` +
       `<a href="${ax}" target="_blank" rel="noopener">Find on arXiv</a>`;
     return `<div class="p"><div class="t">${tag}${esc(r[0])}</div><div class="m">${esc(r[1])}</div>` +
       `<div class="a"><span class="tag">${esc(r[2])}</span><span class="tag">${esc(r[3])}</span>${esc(where)}</div><div class="a">${links}</div></div>`;
