@@ -23,11 +23,20 @@ python 00_fetch_data.py      # Anthology XML and the program sheet
 python 01_prepare.py         # one table for both editions
 python 02_embed.py           # Qwen3-Embedding-0.6B, cached per paper
 python 03_cluster.py         # 100 topics in 16 areas, fitted on the current year
-python 04_provisional_labels.py
+python 04_provisional_labels.py  # topic names (data/labels/labels_2026.json once named)
+python 05_stats.py           # the numbers behind the story
 python 06_map.py             # interactive map
+python 07_dashboard.py       # interactive charts
+python 08_appendix.py        # every area and topic with its numbers
+python 10_story_figures.py   # story figures
+python 11_robustness.py      # topic step refitted two other ways
 python 12_paper_index.py     # searchable list
 python 09_build_site.py      # story and landing pages (needs pandoc)
+python 13_check_links.py     # checks every link on the built site
 ```
+
+The 2026 papers were read from the Anthology's ingestion branch on 21 October 2026, before the
+official release, so a few details may still change.
 
 The years are a setting: `ATLAS_CUR=2025 ATLAS_PREV=2024 python 01_prepare.py` runs the same pipeline
 on earlier editions.
