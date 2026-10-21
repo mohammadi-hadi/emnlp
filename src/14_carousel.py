@@ -143,7 +143,7 @@ def draw_cover(fig, box):
     pal = plt.get_cmap("tab20")
     ax.scatter(dc.x, dc.y, s=2.6, c=[pal(int(b) % 20) for b in dc.broad], alpha=0.85, linewidths=0)
     label_areas(ax, COVER_NAMES, 13)
-    fig.text(0.07, 0.035, f"{AUTHOR} · {CITY} · {when}", fontsize=9.5, color=MUTED)
+    fig.text(0.07, 0.035, f"{AUTHOR} · {URL} · {CITY}, {when.replace('October ', 'Oct ')}", fontsize=9.5, color=MUTED)
 
 
 card("1_cover.png", "Paper atlas", f"EMNLP {CUR}\non one map",
@@ -293,7 +293,7 @@ def draw_explore(fig, box):
     ax.imshow(crop.astype(np.uint8), interpolation="lanczos"); ax.axis("off")
     fig.text(0.5, 0.135, URL, fontsize=21, fontweight="bold", color=ACC, ha="center")
     fig.text(0.5, 0.085, f"Code and data: {REPO}", fontsize=11, color=INK, ha="center")
-    fig.text(0.5, 0.05, f"Same method as the NeurIPS {CUR} map", fontsize=11, color=MUTED, ha="center")
+    fig.text(0.5, 0.05, f"{AUTHOR} · same method as the NeurIPS {CUR} map", fontsize=11, color=MUTED, ha="center")
 
 
 card("6_explore.png", "Explore it yourself", "Find any paper's\nroom and time",
