@@ -30,7 +30,8 @@ html,body{overflow-x:hidden}
 .post-body iframe.chart{width:min(1000px,calc(100vw - 32px))!important;margin-left:50%!important;transform:translateX(-50%)}
 .post-body figcaption{font-size:var(--step--1);color:var(--ink-3);margin-top:6px}
 .post-body iframe.chart{width:100%;border:1px solid var(--rule);border-radius:8px;background:#fff;margin:0 0 28px}
-.post-body table{width:100%;border-collapse:collapse;font-size:var(--step--1)}
+.post-body table{width:100%;border-collapse:collapse;font-size:var(--step--1);margin:0 0 24px}
+@media (max-width:560px){.post-wrap:not(.wide) table{table-layout:fixed;min-width:0}.post-wrap:not(.wide) th,.post-wrap:not(.wide) td{overflow-wrap:anywhere;padding:6px 4px}}
 .post-body th,.post-body td{border-bottom:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}
 .post-body .note{font-size:var(--step--1);color:var(--ink-3)}
 .wide{max-width:1080px}
@@ -47,10 +48,10 @@ html,body{overflow-x:hidden}
 <li><a href="/software/">Software</a></li><li><a href="/blog/">Blog</a></li>
 <li><a href="/neurips/">NeurIPS Atlas</a></li><li><a href="/assets/docs/HadiMohammadiCV.pdf">CV</a></li></ul></nav></details>
 </div></header>
-<nav class="atlas-nav" aria-label="NeurIPS Atlas"><div class="container"><a class="name" href="../">EMNLP Atlas</a><a class="map" href="atlas.html">Open the map</a><a href="index.html">2026 story</a><a href="papers.html">All papers</a><a href="charts/treemap.html">All topics</a><a href="appendix.html">Appendix</a><a href="https://github.com/mohammadi-hadi/emnlp">Code &amp; data</a><a href="/neurips/">NeurIPS Atlas</a></div></nav><main id="main"><article class="post">
+<nav class="atlas-nav" aria-label="EMNLP Atlas"><div class="container"><a class="name" href="../">EMNLP Atlas</a><a class="map" href="atlas.html">Open the map</a><a href="index.html">2026 story</a><a href="papers.html">All papers</a><a href="charts/treemap.html">All topics</a><a href="appendix.html">Appendix</a><a href="https://github.com/mohammadi-hadi/emnlp">Code &amp; data</a><a href="/neurips/2026/">NeurIPS 2026 map</a></div></nav><main id="main"><article class="post">
 <header class="post-head"><div class="post-wrap">
 <p class="post-crumbs"><a href="/blog/">Blog</a><span class="sep">/</span><a href="../">EMNLP Atlas</a></p><h1>What 5,534 EMNLP 2026 papers are about</h1><p class="post-dek">Every EMNLP 2026 paper on one map, and what changed since 2025.</p>
-<p class="post-byline"><span>6 min read · 22 October 2026</span></p></div></header>
+<p class="post-byline"><span>7 min read · 22 October 2026</span></p></div></header>
 <div class="post-body"><div class="post-wrap"><!-- dek: Every EMNLP 2026 paper on one map, and what changed since 2025. -->
 
 <!-- date: 22 October 2026 -->
@@ -114,6 +115,62 @@ html,body{overflow-x:hidden}
 <p>Alibaba is on the most papers (251), followed by Tsinghua University (227), the Chinese Academy of Sciences (215) and Zhejiang University (209). Amazon (172) is the top US organisation.</p>
 <p>Of the papers where I could match an affiliation, 45% have an author in China, up from 38%. The US went from 39% to 32%. South Korea grew from 7% to 9%.</p>
 <p>About a third of papers (34%) have an author from industry, the same as last year. Teams got a bit bigger: 13% of papers have ten or more authors, up from 9%.</p>
+<h2 id="emnlp-next-to-neurips">EMNLP next to NeurIPS</h2>
+<p>I made the <a href="https://mohammadi.cv/neurips/2026/">same map for NeurIPS 2026</a>, with the same embedding model, the same word counts and the same way of matching affiliations. Each conference has its own topics, so those don't line up, but the numbers below do.</p>
+<p>Each cell shows 2025 → 2026.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>NeurIPS</th>
+<th>EMNLP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Papers</td>
+<td>5,856 → 9,110</td>
+<td>3,484 → 5,534</td>
+</tr>
+<tr>
+<td>Mention agents</td>
+<td>9% → 14%</td>
+<td>12% → 25%</td>
+</tr>
+<tr>
+<td>Mention "benchmark"</td>
+<td>32% → 38%</td>
+<td>37% → 47%</td>
+</tr>
+<tr>
+<td>Mention GRPO or RLVR</td>
+<td>2.0% → 3.5%</td>
+<td>1.0% → 5.4%</td>
+</tr>
+<tr>
+<td>Say "efficient"</td>
+<td>29% → 21%</td>
+<td>20% → 15%</td>
+</tr>
+<tr>
+<td>Author in the US</td>
+<td>47% → 46%</td>
+<td>39% → 32%</td>
+</tr>
+<tr>
+<td>Author in China</td>
+<td>42% → 34%</td>
+<td>38% → 45%</td>
+</tr>
+<tr>
+<td>Author from industry</td>
+<td>29% → 26%</td>
+<td>34% → 34%</td>
+</tr>
+</tbody>
+</table>
+<p>Both conferences grew by more than half, and agents are the biggest change at both. The shift is stronger at EMNLP, where a quarter of the papers mention agents. At NeurIPS it is one in seven. Both lean more on benchmarks than last year and say "efficient" less often.</p>
+<p>They differ in who writes the papers. At NeurIPS the share of papers with an author in China fell from 42% to 34%, while at EMNLP it rose from 38% to 45%. Companies are also more present at EMNLP: a third of its papers have an author from industry, against a quarter at NeurIPS.</p>
 <h2 id="what-to-keep-in-mind">What to keep in mind</h2>
 <ul>
 <li>Topics are a lens. Many papers sit between two topics, and other settings would draw the lines a bit differently. I re-ran the topic step two other ways. The LLM agents area grew by 5 to 6 points every time, and 14 of the 16 areas either moved the same way in all three runs or barely moved.</li>
@@ -128,6 +185,7 @@ html,body{overflow-x:hidden}
 <li><a href="charts/treemap.html">All 100 topics</a> in one picture.</li>
 <li><a href="appendix.html">Appendix</a>: every topic with its numbers.</li>
 <li><a href="https://github.com/mohammadi-hadi/emnlp">Code and data</a>, so you can check my work.</li>
+<li><a href="https://mohammadi.cv/neurips/2026/">NeurIPS 2026 atlas</a>: the same map for all 9,110 NeurIPS papers.</li>
 </ul>
 <p>If you are going to Budapest, the atlas is a quick way to find the talks and posters close to your own work.</p>
 <p>Hadi Mohammadi · <a href="https://mohammadi.cv">mohammadi.cv</a></p>
