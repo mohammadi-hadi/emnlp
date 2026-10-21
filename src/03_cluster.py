@@ -47,7 +47,7 @@ clusters = []
 for c in range(N_FINE):
     g = dc[dc["fine"] == c].sort_values("sim_to_centroid", ascending=False)
     # official EMNLP area names, from the oral sessions in the program (2026 only)
-    official = g["subsession"].str.replace(r"\s+\d+$", "", regex=True)
+    official = g.loc[g["pres_type"].eq("oral"), "subsession"].str.replace(r"\s+\d+$", "", regex=True)
     official = official[official != ""].value_counts().head(3).to_dict()
     clusters.append({
         "fine_id": c, "broad_id": int(kb.labels_[c]), f"n_{CUR}": int(len(g)),
