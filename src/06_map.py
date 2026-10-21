@@ -32,7 +32,7 @@ pres = np.where(d["mode"].eq("virtual") & pres.isin(["Oral", "Poster"]), "Virtua
 date = pd.to_datetime(d["date"], errors="coerce")
 # one word per label ("25-Sun"): the histogram shows only the first word and turned "Mon 26" into a date
 day = np.where(date.notna(), date.dt.strftime("%d-%a"), "no-slot")
-where = np.where(d["room"].ne(""), d["room"] + ", " + d["date"] + " " + d["start"], "")
+where = np.where(d["room"].ne(""), d["room"] + ", " + date.dt.strftime("%a %-d %b").fillna("") + " " + d["start"], "")
 
 g = d["fine"].map(growth).clip(-1.5, 1.5).to_numpy()
 change_txt = [f"{fine_name[f]}: {100 * shp[f]:.2f}% → {100 * shc[f]:.2f}% of papers since {PREV}" for f in d["fine"]]
