@@ -17,7 +17,7 @@ Each dot is a paper. You can search, zoom in and click any paper to get its PDF 
 - RL with verifiable rewards went from 3 papers to 89.
 - "Benchmark" is in 47% of papers, up from 37%.
 - Linguistics, multilinguality and translation fell from 9.8% to 7.0% of papers.
-- More papers have an author in China (45%) than in the US (32%). Last year it was the other way round.
+- More papers have an author in China (45%) than in the US (32%). Last year the two were about level.
 
 ![The 2026 map coloured by how each topic's share changed since 2025](../outputs/figures/field_moved.png)
 

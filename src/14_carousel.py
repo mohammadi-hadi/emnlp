@@ -251,7 +251,7 @@ card("4_numbers.png", "What else changed", "Memory and RLVR\ntook off",
 
 # ================= 5. countries =================
 cc = {k_: x for k_, _, x in S[f"countries_{c}"]}; cp = {k_: x for k_, _, x in S[f"countries_{p}"]}
-assert cc["China"] > cc["USA"] and cp["USA"] > cp["China"], "the China / US order did not flip"
+assert cc["China"] > cc["USA"] and abs(cp["USA"] - cp["China"]) < 3, "China no longer leads, or last year was not level"
 cov = S["affiliation_coverage"][c]["papers_with_country_pct"]
 
 
@@ -272,9 +272,9 @@ def draw_countries(fig, box):
              linespacing=1.3)
 
 
-card("5_countries.png", "Who writes the papers", "China overtook\nthe US",
+card("5_countries.png", "Who writes the papers", "China pulled\nahead of the US",
      f"More papers have an author in China ({pct(cc['China'])})\nthan in the US ({pct(cc['USA'])}). "
-     "Last year it was\nthe other way round.", draw_countries, (0.07, 0.17, 0.86, 0.38))
+     "Last year the two\nwere about level.", draw_countries, (0.07, 0.17, 0.86, 0.38))
 
 # ================= 6. explore =================
 
