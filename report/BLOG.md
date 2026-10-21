@@ -25,6 +25,16 @@ Same map, new colours. Red parts grew their share since 2025 and blue parts shra
 
 ![Papers per agent topic, 2025 and 2026](../outputs/figures/agents_family.png)
 
+Most of these papers test agents or try to make them work on longer tasks. Benchmarks for agents went from 17 papers to 98, and agents that search the web and write reports went from 9 to 72.
+
+## Who wrote the papers
+
+![Share of papers with an author from each country, 2025 and 2026](../outputs/figures/countries.png)
+
+Of the papers where I could match an affiliation, 45% have an author in China, up from 38%. The US went from 39% to 32%. Alibaba is on the most papers (251), followed by Tsinghua University (227).
+
+If you are going to Budapest, plan for Monday 26 October. It is the busiest day, with 1,761 papers.
+
 ## How I made it
 
 All the data is public. Titles, abstracts and authors come from the ACL Anthology, and the rooms and times from the EMNLP program. An open model, Qwen3-Embedding-0.6B, turned each paper into numbers. Then I grouped similar papers into 100 topics. Each 2025 paper went into its closest 2026 topic, so both years are measured the same way. It is the same method as my [NeurIPS 2026 map](https://mohammadi.cv/neurips/2026/).
