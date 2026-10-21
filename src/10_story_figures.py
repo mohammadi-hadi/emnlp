@@ -176,11 +176,13 @@ save(fig, "field_moved.png")
 A = S["agents"]
 fam = A["family"]
 if fam:
-    names = [short(f["topic"], 40) for f in fam]
+    n_all = len(fam)
+    fam = sorted(fam, key=lambda f: -f[nc])[:12]  # the 12 largest keep the chart readable on a phone
+    names = [short(f["topic"], 52) for f in fam]
     a_p, a_c = np.array([f[np_] for f in fam]), np.array([f[nc] for f in fam])
     fg = A["family_n"][c] / max(A["family_n"][p], 1)
     fig, ax = plt.subplots(figsize=(11, 1.6 + 0.55 * len(fam)))
-    fig.subplots_adjust(top=1 - 1.15 / (1.6 + 0.55 * len(fam)), bottom=0.6 / (1.6 + 0.55 * len(fam)), left=0.36, right=0.93)
+    fig.subplots_adjust(top=1 - 1.15 / (1.6 + 0.55 * len(fam)), bottom=0.6 / (1.6 + 0.55 * len(fam)), left=0.42, right=0.93)
     yy = np.arange(len(fam))[::-1]
     ax.hlines(yy, a_p, a_c, color=ACC, lw=3, alpha=0.5)
     ax.scatter(a_p, yy, s=60, color=GREY, zorder=3, label=p)
@@ -193,8 +195,8 @@ if fam:
     grid_x(ax)
     ax.legend(frameon=False, loc="lower right")
     frame(fig, f"Papers that mention agents went from {A['keyword_share'][p]:.0f}% to {A['keyword_share'][c]:.0f}% of EMNLP",
-          f"Papers per agent topic: topics where at least {A['topic_min_pct']}% of the {CUR} papers mention agents. "
-          f"The conference grew {growth_conf:.1f}x, these topics {fg:.1f}x.", y=0.995)
+          f"The {len(fam)} largest of the {n_all} agent topics (at least {A['topic_min_pct']}% of their {CUR} papers mention agents). "
+          f"All {n_all} grew {fg:.1f}x, the conference {growth_conf:.1f}x.", y=0.995)
     save(fig, "agents_family.png")
 else:
     print("no agent topic family, skipped agents_family.png")
