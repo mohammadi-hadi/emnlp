@@ -182,3 +182,15 @@ def paper_countries(affiliations):
         cs = {o[1] for o in os_ if o[1] not in ("", "unknown")}
         out |= cs if cs else ({country_hint(raw)} - {""})
     return out
+
+
+def anthology_pages_live(year):
+    """True once the ACL Anthology has published the edition (its event page answers 200). Before that it
+    already serves the PDFs but every paper page is a 404, so the site links the PDF only."""
+    import requests
+    try:
+        r = requests.get(f"https://aclanthology.org/events/emnlp-{year}/", timeout=30,
+                         headers={"User-Agent": "Mozilla/5.0 (EMNLP paper overview)"})
+        return r.status_code == 200
+    except requests.RequestException:
+        return False

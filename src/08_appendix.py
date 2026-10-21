@@ -3,7 +3,9 @@ counts, shares, the Main / Findings split and, once the program is known, the or
 import json
 import pandas as pd
 from config import CUR, PREV, P, REPORT
-from common import load_papers
+from common import load_papers, anthology_pages_live
+
+ANTH_PAGES = anthology_pages_live(CUR)
 
 REPORT.mkdir(parents=True, exist_ok=True)
 df = load_papers()
@@ -52,7 +54,7 @@ for b in sorted(broad, key=lambda b: -bc.get(b, 0)):
     if len(orals):
         lines += ["", "**Orals**", ""]
         for o in orals.itertuples():
-            links = " · ".join(x for x in (f"[Anthology]({o.anthology})" if o.anthology else "",
+            links = " · ".join(x for x in (f"[Anthology]({o.anthology})" if o.anthology and ANTH_PAGES else "",
                                            f"[PDF]({o.pdf})" if o.pdf else "") if x)
             lines.append(f"- {cell(o.title_display)}" + (f": {links}" if links else ""))
     lines.append("")

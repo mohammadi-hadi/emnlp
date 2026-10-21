@@ -5,7 +5,10 @@ import numpy as np
 import pandas as pd
 import datamapplot
 from config import CUR, PREV, P, OUT, DOCS
-from common import load_papers
+from common import load_papers, anthology_pages_live
+
+ANTH_PAGES = anthology_pages_live(CUR)
+print('ACL Anthology paper pages live:', ANTH_PAGES)
 
 df = load_papers()
 labels = json.load(open(P / "labels.json"))
@@ -128,13 +131,13 @@ function showLinks(page, pdf, arxiv, title, where) {
   box.querySelector('.t').textContent = title;
   box.querySelector('.n').textContent = where ? 'In Budapest: ' + where : '';
   box.querySelector('.l').innerHTML =
-    // PDF first: the Anthology serves the 2026 PDFs before its paper pages go live
+    // PDF first: the Anthology serves the PDFs before its paper pages go live; the page link only once they are up
     '<a class="main" href="' + pdf + '" target="_blank" rel="noopener">PDF</a>' +
-    '<a href="' + page + '" target="_blank" rel="noopener">ACL Anthology</a>' +
+    (__ANTH_PAGES__ ? '<a href="' + page + '" target="_blank" rel="noopener">ACL Anthology</a>' : '') +
     '<a href="' + arxiv + '" target="_blank" rel="noopener">Find on arXiv</a>';
   box.style.display = 'block';
 }
-""",
+""".replace("__ANTH_PAGES__", "true" if ANTH_PAGES else "false"),
     darkmode=False,
     font_family="Inter",
     cluster_boundary_polygons=True,

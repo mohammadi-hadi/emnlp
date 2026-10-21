@@ -3,7 +3,7 @@ PDF, track, area, topic and, for 2026, room, day and time in Budapest. Also writ
 import json
 import pandas as pd
 from config import CUR, P, OUT, DOCS
-from common import load_papers
+from common import load_papers, anthology_pages_live
 from site_template import page as site_page, atlas_nav
 
 L = json.load(open(P / "labels.json"))
@@ -41,7 +41,7 @@ CSS = """<style>
 BODY = """__NAV__<main id="main"><article class="post"><header class="post-head"><div class="post-wrap wide">
 <p class="post-crumbs"><a href="../">EMNLP Atlas</a><span class="sep">/</span><a href="index.html">__Y__</a></p>
 <h1>All __N__ EMNLP __Y__ papers</h1>
-<p>Search by title or author, or filter by track, area and how the paper is presented. Each paper links to the ACL Anthology and its PDF. Times are Budapest time.</p>
+<p>Search by title or author, or filter by track, area and how the paper is presented. Each paper links to its PDF on the ACL Anthology. Times are Budapest time.</p>
 <div class="controls"><input id="q" type="search" placeholder="Search title or author…" aria-label="search">
 <select id="track" aria-label="track"><option value="">All tracks</option>__TRACKS__</select>
 <select id="area" aria-label="area"><option value="">All areas</option>__AREAS__</select>
@@ -64,7 +64,7 @@ function more() {
     const where = [r[5] !== 'Oral' ? r[5] : '', r[6], r[7]].filter(Boolean).join(' · ');
     const ax = 'https://arxiv.org/search/?query=' + encodeURIComponent(r[0].replace(/[^\\w\\s-]/g, ' ')).replace(/%20/g, '+') + '&searchtype=title';
     const links = `<a href="https://aclanthology.org/${r[8]}.pdf" target="_blank" rel="noopener">PDF</a>` +
-      `<a href="https://aclanthology.org/${r[8]}/" target="_blank" rel="noopener">ACL Anthology</a>` +
+      (__ANTH_PAGES__ ? `<a href="https://aclanthology.org/${r[8]}/" target="_blank" rel="noopener">ACL Anthology</a>` : '') +
       `<a href="${ax}" target="_blank" rel="noopener">Find on arXiv</a>`;
     return `<div class="p"><div class="t">${tag}${esc(r[0])}</div><div class="m">${esc(r[1])}</div>` +
       `<div class="a"><span class="tag">${esc(r[2])}</span><span class="tag">${esc(r[3])}</span>${esc(where)}</div><div class="a">${links}</div></div>`;
@@ -79,7 +79,7 @@ document.getElementById('more').addEventListener('click', more);
 const params = new URLSearchParams(location.search); if (params.get('q')) document.getElementById('q').value = params.get('q');
 filter();
 </script>"""
-body = (BODY.replace("__NAV__", atlas_nav()).replace("__N__", f"{len(rows):,}").replace("__Y__", str(CUR))
+body = (BODY.replace("__NAV__", atlas_nav()).replace("__ANTH_PAGES__", "true" if anthology_pages_live(CUR) else "false").replace("__N__", f"{len(rows):,}").replace("__Y__", str(CUR))
         .replace("__TRACKS__", opts("track")).replace("__AREAS__", opts("area")).replace("__PRES__", opts("pres"))
         .replace("__DATA__", json.dumps(rows, ensure_ascii=False, separators=(",", ":"))))
 (DOCS / "papers.html").write_text(site_page(
