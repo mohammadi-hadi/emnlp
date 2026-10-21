@@ -9,9 +9,23 @@ SITE = f"https://mohammadi.cv/emnlp/{CUR}/"
 for f in (OUT / "figures").glob("*.png"):
     shutil.copy(f, DOCS / "figures" / f.name)
 
+
+def trimmed_preview(src, dst, pad=30):
+    """The static map has a wide empty margin; cut it off so the preview shows the map large."""
+    from PIL import Image, ImageChops
+    im = Image.open(src).convert("RGB")
+    inner = im.crop((20, 20, im.width - 20, im.height - 20))  # skip the thin frame line
+    bg = Image.new("RGB", inner.size, inner.getpixel((5, 5)))
+    box = ImageChops.difference(inner, bg).convert("L").point(lambda v: 255 if v > 12 else 0).getbbox()
+    l, t, r, b = box
+    inner.crop((max(0, l - pad), max(0, t - pad), min(inner.width, r + pad), min(inner.height, b + pad))).save(dst)
+
+
+trimmed_preview(DOCS / "figures" / "atlas_clusters.png", DOCS / "figures" / "atlas_preview.png")
+
 HEIGHTS = {"treemap": 820, "vocabulary": 740}
 HERO = ('</div><section class="container atlas-hero" aria-label="map of all papers">'
-        '<div class="map-frame"><img class="map-preview" src="figures/atlas_clusters.png" '
+        '<div class="map-frame"><img class="map-preview" src="figures/atlas_preview.png" '
         f'alt="Map of all EMNLP {CUR} papers, coloured by research area">'
         '<button class="map-cover" type="button" onclick="openMap(this)"><span>Click to explore the map</span></button></div>'
         '<div class="actions"><a class="btn" href="atlas.html">Open the map full screen</a>'
@@ -72,7 +86,7 @@ LANDING = f"""{atlas_nav(f"{CUR}/")}<main id="main"><section class="hero"><div c
 <p class="section-lede">What EMNLP papers are about, and how that changes each year. Made from the ACL Anthology.</p>
 </div></section>
 <section class="section"><div class="container">
-<a href="{CUR}/atlas.html"><img src="{CUR}/figures/atlas_clusters.png" alt="Map of all EMNLP {CUR} papers"
+<a href="{CUR}/atlas.html"><img src="{CUR}/figures/atlas_preview.png" alt="Map of all EMNLP {CUR} papers"
  style="width:100%;border:1px solid var(--rule);border-radius:10px;background:#fff"></a>
 <p style="text-align:center;margin-top:16px"><a class="btn" href="{CUR}/atlas.html">Open the EMNLP {CUR} map</a>
 <a class="btn btn-ghost" href="{CUR}/papers.html">Search all papers</a></p>
