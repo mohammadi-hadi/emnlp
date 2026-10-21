@@ -3,8 +3,8 @@
 - relative links: the target file must exist
 - external links: fetched (polite, 2 workers) and must end in HTTP 200
 - paper links: all links written in the appendix, plus a random sample of 40 papers from the index
-- ACL Anthology pages of an edition that is not in the Anthology yet (its event page answers 404) are
-  reported as "not public yet": they are the official links and open on release
+- PDFs on the ACL Anthology are always fetched. Paper pages of an edition the Anthology has not published yet
+  (its event page answers 404) are 404s, so the site must not link them: any such link is reported as broken
 - the repository and the live site (mohammadi.cv/emnlp) are reported as "pending" while they are private
   or not launched; every other mohammadi.cv link is fetched like any other link
 Writes OUT/link_check.csv and prints a summary.
@@ -41,13 +41,16 @@ for f in pages:
 
 idx = pd.read_csv(OUT / "papers_index.csv").fillna("")
 sample = idx.sample(min(40, len(idx)), random_state=1)
+ANTH_LIVE = requests.get(f"{ANTH}events/emnlp-{CUR}/", headers=UA, timeout=40).status_code == 200
 for r in sample.itertuples():
-    for u in (r.anthology, r.pdf):
+    for u in ((r.anthology, r.pdf) if ANTH_LIVE else (r.pdf,)):
         if u:
             links.append((Path("papers_index.csv (sample)"), u))
 if (DOCS / "papers.html").exists() and len(idx):  # templates of the JS-built links on papers.html
     r = idx.iloc[0]
-    links += [(DOCS / "papers.html", r.anthology), (DOCS / "papers.html", arxiv_search(r.title))]
+    links += [(DOCS / "papers.html", r.pdf), (DOCS / "papers.html", arxiv_search(r.title))]
+    if ANTH_LIVE:
+        links.append((DOCS / "papers.html", r.anthology))
 
 
 def status(url):
@@ -57,7 +60,6 @@ def status(url):
         return None
 
 
-ANTH_LIVE = status(f"{ANTH}events/emnlp-{CUR}/") == 200
 rows, seen = [], {}
 
 
@@ -66,8 +68,8 @@ def check_external(url):
         return seen[url]
     if url.rstrip("/") == REPO or url.startswith(REPO + "/"):
         res = ("ok", "HTTP 200") if status(url) == 200 else ("pending", "repository is private; the link works once it is public")
-    elif url.startswith(ANTH) and f"/{CUR}." in url and not ANTH_LIVE:
-        res = ("not public yet", f"EMNLP {CUR} is not in the ACL Anthology yet (its event page answers 404)")
+    elif url.startswith(ANTH) and f"/{CUR}." in url and not ANTH_LIVE and not urldefrag(url)[0].endswith(".pdf"):
+        res = ("broken", f"paper page is a 404 until the Anthology publishes EMNLP {CUR}; link the PDF instead")
     else:
         slow = "arxiv.org" in url or url.startswith(ANTH)
         res = ("broken", "no response")
