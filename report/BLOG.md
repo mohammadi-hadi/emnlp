@@ -102,27 +102,6 @@ Of the papers where I could match an affiliation, 45% have an author in China, u
 
 About a third of papers (34%) have an author from industry, the same as last year. Teams got a bit bigger: 13% of papers have ten or more authors, up from 9%.
 
-## EMNLP next to NeurIPS
-
-I made the [same map for NeurIPS 2026](https://mohammadi.cv/neurips/2026/), with the same embedding model, the same word counts and the same way of matching affiliations. Each conference has its own topics, so those don't line up, but the numbers below do.
-
-Each cell shows 2025 → 2026.
-
-| | NeurIPS | EMNLP |
-|---|---|---|
-| Papers | 5,856 → 9,110 | 3,484 → 5,534 |
-| Mention agents | 9% → 14% | 12% → 25% |
-| Mention "benchmark" | 32% → 38% | 37% → 47% |
-| Mention GRPO or RLVR | 2.0% → 3.5% | 1.0% → 5.4% |
-| Say "efficient" | 29% → 21% | 20% → 15% |
-| Author in the US | 47% → 46% | 39% → 32% |
-| Author in China | 42% → 34% | 38% → 45% |
-| Author from industry | 29% → 26% | 34% → 34% |
-
-Both conferences grew by more than half, and agents are the biggest change at both. The shift is stronger at EMNLP, where a quarter of the papers mention agents. At NeurIPS it is one in seven. Both lean more on benchmarks than last year and say "efficient" less often.
-
-They differ in who writes the papers. At NeurIPS the share of papers with an author in China fell from 42% to 34%, while at EMNLP it rose from 38% to 45%. Companies are also more present at EMNLP: a third of its papers have an author from industry, against a quarter at NeurIPS.
-
 ## What to keep in mind
 
 - Topics are a lens. Many papers sit between two topics, and other settings would draw the lines a bit differently. I re-ran the topic step two other ways. The LLM agents area grew by 5 to 6 points every time, and 14 of the 16 areas either moved the same way in all three runs or barely moved.
