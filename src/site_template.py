@@ -37,7 +37,8 @@ html,body{overflow-x:hidden}
 .post-body iframe.chart{width:min(1000px,calc(100vw - 32px))!important;margin-left:50%!important;transform:translateX(-50%)}
 .post-body figcaption{font-size:var(--step--1);color:var(--ink-3);margin-top:6px}
 .post-body iframe.chart{width:100%;border:1px solid var(--rule);border-radius:8px;background:#fff;margin:0 0 28px}
-.post-body table{width:100%;border-collapse:collapse;font-size:var(--step--1)}
+.post-body table{width:100%;border-collapse:collapse;font-size:var(--step--1);margin:0 0 24px}
+@media (max-width:560px){.post-wrap:not(.wide) table{table-layout:fixed;min-width:0}.post-wrap:not(.wide) th,.post-wrap:not(.wide) td{overflow-wrap:anywhere;padding:6px 4px}}
 .post-body th,.post-body td{border-bottom:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}
 .post-body .note{font-size:var(--step--1);color:var(--ink-3)}
 .wide{max-width:1080px}
@@ -59,13 +60,13 @@ HEADER = """<a class="skip-link" href="#main">Skip to content</a>
 
 def atlas_nav(prefix=""):
     """Project menu shown under the site header. prefix='' inside /emnlp/2026/, '2026/' on the landing page."""
-    return (f'<nav class="atlas-nav" aria-label="NeurIPS Atlas"><div class="container">'
+    return (f'<nav class="atlas-nav" aria-label="EMNLP Atlas"><div class="container">'
             f'<a class="name" href="{"../" if not prefix else ""}">EMNLP Atlas</a>'
             f'<a class="map" href="{prefix}atlas.html">Open the map</a>'
             f'<a href="{prefix}index.html">2026 story</a><a href="{prefix}papers.html">All papers</a>'
             f'<a href="{prefix}charts/treemap.html">All topics</a><a href="{prefix}appendix.html">Appendix</a>'
             f'<a href="https://github.com/mohammadi-hadi/emnlp">Code &amp; data</a>'
-            f'<a href="/neurips/">NeurIPS Atlas</a></div></nav>')
+            f'<a href="/neurips/2026/">NeurIPS 2026 map</a></div></nav>')
 
 
 FOOTER = """<footer class="site-footer"><div class="container">
