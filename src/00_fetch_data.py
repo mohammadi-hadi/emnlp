@@ -7,11 +7,13 @@ from config import ANTHOLOGY_RAW, REFS, RAW, YEARS, PROGRAM_SHEET
 UA = {"User-Agent": "EMNLP atlas (https://mohammadi.cv); a handful of requests"}
 
 
-def fetch(name):
-    """Try master first, then the ingestion branch. Returns the ref it came from, or None."""
+def fetch(name, volume):
+    """Try master first, then the ingestion branch, and keep the first copy that has the EMNLP volume
+    (2026.findings.xml is on master early, with ACL and NAACL Findings but not yet EMNLP's).
+    Returns the ref it came from, or None."""
     for ref in REFS:
         r = requests.get(ANTHOLOGY_RAW.format(ref=ref, name=name), headers=UA, timeout=60)
-        if r.status_code == 200:
+        if r.status_code == 200 and f'<volume id="{volume}"'.encode() in r.content:
             (RAW / name).write_bytes(r.content)
             return ref
         time.sleep(1)
@@ -19,8 +21,8 @@ def fetch(name):
 
 
 for year in YEARS:
-    for name in (f"{year}.emnlp.xml", f"{year}.findings.xml"):
-        ref = fetch(name)
+    for name, volume in ((f"{year}.emnlp.xml", "main"), (f"{year}.findings.xml", "emnlp")):
+        ref = fetch(name, volume)
         print(f"{name}: {'from ' + ref if ref else 'NOT FOUND'}")
 
 r = requests.get(PROGRAM_SHEET, headers=UA, timeout=60)
