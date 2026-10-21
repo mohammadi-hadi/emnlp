@@ -14,6 +14,7 @@ TAG = "" if (CUR, PREV) == (2026, 2025) else f"_{CUR}v{PREV}"
 P = ROOT / f"data/processed{TAG}"
 OUT = ROOT / f"outputs{TAG}"
 DOCS = ROOT / "docs" / str(CUR) if not TAG else ROOT / f"docs_dryrun/{CUR}"
+REPORT = ROOT / "report" if not TAG else OUT  # BLOG.md and APPENDIX.md; a dry run keeps report/ clean
 for d in (RAW, P, OUT / "figures", DOCS):
     d.mkdir(parents=True, exist_ok=True)
 

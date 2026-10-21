@@ -1,7 +1,7 @@
 """Build the GitHub Pages site in the style of mohammadi.cv: docs/index.html (landing page),
 docs/<year>/index.html (story, from report/BLOG.md) and docs/<year>/appendix.html. Needs pandoc on PATH."""
 import html, re, shutil, subprocess
-from config import CUR, OUT, DOCS, ROOT
+from config import CUR, OUT, DOCS, REPORT
 from site_template import page, atlas_nav
 
 SITE = f"https://mohammadi.cv/emnlp/{CUR}/"
@@ -48,7 +48,7 @@ def article(md_path, crumbs, dek, byline):
 
 
 CRUMBS = '<a href="/blog/">Blog</a><span class="sep">/</span><a href="../">EMNLP Atlas</a>'
-blog = ROOT / "report/BLOG.md"
+blog = REPORT / "BLOG.md"
 if blog.exists():
     meta = dict(re.findall(r"<!--\s*(dek|date):\s*(.*?)\s*-->", blog.read_text()))
     words = len(re.sub(r"[#*\[\]()!<>-]", " ", blog.read_text()).split())
@@ -56,7 +56,7 @@ if blog.exists():
     (DOCS / "index.html").write_text(page(title, meta.get("dek", ""), SITE, body,
                                           image=f"{SITE}figures/atlas_static.png"))
     print("wrote", DOCS / "index.html")
-appx = ROOT / "report/APPENDIX.md"
+appx = REPORT / "APPENDIX.md"
 if appx.exists():
     title, body = article(appx, CRUMBS + f'<span class="sep">/</span><a href="index.html">{CUR}</a>',
                           f"Every EMNLP {CUR} area and topic with its numbers.", "Reference")
