@@ -146,8 +146,8 @@ def draw_cover(fig, box):
     fig.text(0.07, 0.035, f"{AUTHOR} · {URL} · {CITY}, {when.replace('October ', 'Oct ')}", fontsize=9.5, color=MUTED)
 
 
-card("1_cover.png", "Paper atlas", f"EMNLP {CUR}\non one map",
-     f"All {n_cur:,} papers, and what changed since {PREV}", draw_cover, (0.0, 0.065, 1.0, 0.65), footer=False)
+card("1_cover.png", f"EMNLP {CUR} · paper atlas", f"{n_cur:,} papers,\none map",
+     f"Every paper at EMNLP {CUR}, placed by what\nits abstract says. What changed since {PREV}?", draw_cover, (0.0, 0.065, 1.0, 0.6), footer=False)
 
 # ================= 2. agents =================
 A = S["agents"]
@@ -170,7 +170,7 @@ def draw_agents(fig, box):
                  fontweight="bold", va="top")
     fig.canvas.draw()
     y0 = t.get_window_extent().transformed(fig.transFigure.inverted()).y0
-    fig.text(0.07, y0 - 0.012, f"of all papers mention agents ({PREV} → {CUR})", fontsize=12, color=MUTED, va="top")
+    fig.text(0.07, y0 - 0.012, f"share of all papers, {PREV} → {CUR}", fontsize=12, color=MUTED, va="top")
     ax = fig.add_axes([box[0] + 0.33, box[1], box[2] - 0.5, box[3]])
     a_p = np.array([f[f"n_{p}"] for f in fam]); a_c = np.array([f[f"n_{c}"] for f in fam])
     yy = np.arange(len(fam))[::-1]
@@ -181,7 +181,7 @@ def draw_agents(fig, box):
         ax.annotate(f"{a_} → {b_}", (b_, y_), xytext=(7, 0), textcoords="offset points", va="center",
                     fontsize=11.5, color=INK, annotation_clip=False)
     ax.set_yticks(yy, [AGENT_SHORT.get(f["topic"], f["topic"]) for f in fam], fontsize=12.5)
-    ax.set_xlim(0, a_c.max() * 1.05)
+    ax.set_xlim(-3, a_c.max() * 1.05)  # room for dots at 0
     ax.tick_params(axis="x", labelsize=10.5)
     ax.set_xlabel(f"papers per agent topic (grey {PREV}, orange {CUR})", fontsize=10.5, x=0.4)
     ax.grid(axis="x", color="#e6e8ee", lw=0.8); ax.set_axisbelow(True)
@@ -237,7 +237,7 @@ def draw_numbers(fig, box):
         (f"{n_prev:,} → {n_cur:,}", f"papers in total\n({S['growth_pct']:+.0f}% on {PREV})", ACC),
         (f"{mem[f'n_{p}']} → {mem[f'n_{c}']}", "papers on memory\nfor agents", ACC),
         (f"{rlvr[f'n_{p}']} → {rlvr[f'n_{c}']}", "papers on RL with\nverifiable rewards (RLVR)", INK),
-        (pct(bench[f"pct_{c}"]), f"of papers say 'benchmark'\n(was {pct(bench[f'pct_{p}'])} in {PREV})", INK),
+        (pct(bench[f"pct_{c}"]), f"of papers mention a benchmark\n(was {pct(bench[f'pct_{p}'])} in {PREV})", INK),
     ]
     for i, (big, small, col) in enumerate(cells):
         x = 0.07 + (i % 2) * 0.46
@@ -280,17 +280,11 @@ card("5_countries.png", "Who writes the papers", "China overtook\nthe US",
 
 
 def draw_explore(fig, box):
-    img = np.asarray(Image.open(OUT / "figures" / "atlas_clusters.png").convert("RGB")).astype(int)
-    inner = img[30:-30, 30:-30]  # skip the thin frame drawn around the figure
-    bg = inner[5, 5]
-    ys, xs = np.where(np.abs(inner - bg).sum(axis=2) > 24)
-    m = 20
-    crop = inner[max(ys.min() - m, 0):ys.max() + m, max(xs.min() - m, 0):xs.max() + m]
-    bw, bh = box[2] * W, box[3] * H
-    asp = crop.shape[0] / crop.shape[1]
-    w, h = (bw, bw * asp) if bw * asp <= bh else (bh / asp, bh)
-    ax = fig.add_axes([box[0] + (box[2] - w / W) / 2, box[1] + (box[3] - h / H) / 2, w / W, h / H])
-    ax.imshow(crop.astype(np.uint8), interpolation="lanczos"); ax.axis("off")
+    # the same map as the cover, with labels large enough to read on a phone
+    ax = map_axes(fig, box)
+    pal = plt.get_cmap("tab20")
+    ax.scatter(dc.x, dc.y, s=2.2, c=[pal(int(b) % 20) for b in dc.broad], alpha=0.85, linewidths=0)
+    label_areas(ax, COVER_NAMES, 12)
     fig.text(0.5, 0.135, URL, fontsize=21, fontweight="bold", color=ACC, ha="center")
     fig.text(0.5, 0.085, f"Code and data: {REPO}", fontsize=11, color=INK, ha="center")
     fig.text(0.5, 0.05, f"{AUTHOR} · same method as the NeurIPS {CUR} map", fontsize=11, color=MUTED, ha="center")
