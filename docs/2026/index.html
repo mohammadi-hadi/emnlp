@@ -72,6 +72,11 @@ html,body{overflow-x:hidden}
 <figure><img src="figures/field_moved.png" alt="The 2026 map coloured by how each topic&#39;s share changed since 2025" loading="lazy"><figcaption>The 2026 map coloured by how each topic&#39;s share changed since 2025</figcaption></figure>
 <p>Same map, new colours. Red parts grew their share since 2025 and blue parts shrank, and the agent corner at the bottom is the clearest red block.</p>
 <figure><img src="figures/agents_family.png" alt="Papers per agent topic, 2025 and 2026" loading="lazy"><figcaption>Papers per agent topic, 2025 and 2026</figcaption></figure>
+<p>Most of these papers test agents or try to make them work on longer tasks. Benchmarks for agents went from 17 papers to 98, and agents that search the web and write reports went from 9 to 72.</p>
+<h2 id="who-wrote-the-papers">Who wrote the papers</h2>
+<figure><img src="figures/countries.png" alt="Share of papers with an author from each country, 2025 and 2026" loading="lazy"><figcaption>Share of papers with an author from each country, 2025 and 2026</figcaption></figure>
+<p>Of the papers where I could match an affiliation, 45% have an author in China, up from 38%. The US went from 39% to 32%. Alibaba is on the most papers (251), followed by Tsinghua University (227).</p>
+<p>If you are going to Budapest, plan for Monday 26 October. It is the busiest day, with 1,761 papers.</p>
 <h2 id="how-i-made-it">How I made it</h2>
 <p>All the data is public. Titles, abstracts and authors come from the ACL Anthology, and the rooms and times from the EMNLP program. An open model, Qwen3-Embedding-0.6B, turned each paper into numbers. Then I grouped similar papers into 100 topics. Each 2025 paper went into its closest 2026 topic, so both years are measured the same way. It is the same method as my <a href="https://mohammadi.cv/neurips/2026/">NeurIPS 2026 map</a>.</p>
 <p>Topics are a rough lens. I re-ran the grouping two other ways and the rise of agents showed up every time. The 2026 papers come from the Anthology before its official release, so a few titles, authors or affiliations may still change, and until the paper pages go live each paper links to its PDF.</p>
