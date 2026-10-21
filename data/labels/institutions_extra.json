@@ -1,0 +1,1238 @@
+[
+ {
+  "raw": "Hong Kong University of Science and Technology (Guangzhou)",
+  "canonical": "HKUST (Guangzhou)",
+  "country": "China",
+  "sector": "academia"
+ },
+ {
+  "raw": "The Hong Kong University of Science and Technology (Guangzhou)",
+  "canonical": "HKUST (Guangzhou)",
+  "country": "China",
+  "sector": "academia"
+ },
+ {
+  "raw": "HKUST(GZ)",
+  "canonical": "HKUST (Guangzhou)",
+  "country": "China",
+  "sector": "academia"
+ },
+ {
+  "raw": "HKUST (GZ)",
+  "canonical": "HKUST (Guangzhou)",
+  "country": "China",
+  "sector": "academia"
+ },
+ {
+  "raw": "Hong Kong University of Science and Technology",
+  "canonical": "HKUST",
+  "country": "Hong Kong",
+  "sector": "academia"
+ },
+ {
+  "raw": "The Hong Kong University of Science and Technology",
+  "canonical": "HKUST",
+  "country": "Hong Kong",
+  "sector": "academia"
+ },
+ {
+  "raw": "Institute of Computing Technology, Chinese Academy",
+  "canonical": "Chinese Academy of Sciences",
+  "country": "China",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "Institute of Computing Technology",
+  "canonical": "Chinese Academy of Sciences",
+  "country": "China",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "Institute of Information Engineering",
+  "canonical": "Chinese Academy of Sciences",
+  "country": "China",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "Institute of Information Engeering",
+  "canonical": "Chinese Academy of Sciences",
+  "country": "China",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "Chinese Academy",
+  "canonical": "Chinese Academy of Sciences",
+  "country": "China",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "Nara Institute of Science and Technology",
+  "canonical": "NAIST",
+  "country": "Japan",
+  "sector": "academia"
+ },
+ {
+  "raw": "NAIST",
+  "canonical": "NAIST",
+  "country": "Japan",
+  "sector": "academia"
+ },
+ {
+  "raw": "Nara Institute of Science and Technology, Japan",
+  "canonical": "NAIST",
+  "country": "Japan",
+  "sector": "academia"
+ },
+ {
+  "raw": "Indian Institute of Technology Kharagpur",
+  "canonical": "IIT Kharagpur",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "IIT Kharagpur",
+  "canonical": "IIT Kharagpur",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "Indian Institute of Technology, Kharagpur",
+  "canonical": "IIT Kharagpur",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "Indian Institute of Technology, Bombay",
+  "canonical": "IIT Bombay",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "Indian Institute of Technology Bombay",
+  "canonical": "IIT Bombay",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "Indian Institute of Technology, Jodhpur",
+  "canonical": "IIT Jodhpur",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "Indian Institute of Technology Jodhpur",
+  "canonical": "IIT Jodhpur",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "Indian Institute of Technology, Patna",
+  "canonical": "IIT Patna",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "Indian Institute of Technology Patna",
+  "canonical": "IIT Patna",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "Indian Institute of Technology, Kanpur",
+  "canonical": "IIT Kanpur",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "Indian Institute of Technology Kanpur",
+  "canonical": "IIT Kanpur",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "IIT Kanpur",
+  "canonical": "IIT Kanpur",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "Indian Institute of Technology, Madras",
+  "canonical": "IIT Madras",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "Indian Institute of Technology Madras",
+  "canonical": "IIT Madras",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "Indian Institute of Technology Gandhinagar",
+  "canonical": "IIT Gandhinagar",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "IIT Bhubaneswar",
+  "canonical": "IIT Bhubaneswar",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "Indian Institute of Technology, Delhi",
+  "canonical": "IIT Delhi",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "International Institute of Information Technology Hyderabad",
+  "canonical": "IIIT Hyderabad",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "Dhirubhai Ambani Institute Of Information and Communication Technology",
+  "canonical": "DA-IICT",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "BITS Pilani",
+  "canonical": "BITS Pilani",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "Birla Institute of Technology and Science",
+  "canonical": "BITS Pilani",
+  "country": "India",
+  "sector": "academia"
+ },
+ {
+  "raw": "Tata Consultancy Services Limited",
+  "canonical": "TCS",
+  "country": "India",
+  "sector": "industry"
+ },
+ {
+  "raw": "Tata Consultancy Services",
+  "canonical": "TCS",
+  "country": "India",
+  "sector": "industry"
+ },
+ {
+  "raw": "Soongsil University",
+  "canonical": "Soongsil University",
+  "country": "South Korea",
+  "sector": "academia"
+ },
+ {
+  "raw": "Dongguk University",
+  "canonical": "Dongguk University",
+  "country": "South Korea",
+  "sector": "academia"
+ },
+ {
+  "raw": "Hankuk University of Foreign Studies",
+  "canonical": "Hankuk University of Foreign Studies",
+  "country": "South Korea",
+  "sector": "academia"
+ },
+ {
+  "raw": "Chungnam National University",
+  "canonical": "Chungnam National University",
+  "country": "South Korea",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of Seoul",
+  "canonical": "University of Seoul",
+  "country": "South Korea",
+  "sector": "academia"
+ },
+ {
+  "raw": "The Catholic University of Korea",
+  "canonical": "Catholic University of Korea",
+  "country": "South Korea",
+  "sector": "academia"
+ },
+ {
+  "raw": "Korea Telecom Research",
+  "canonical": "KT",
+  "country": "South Korea",
+  "sector": "industry"
+ },
+ {
+  "raw": "KT",
+  "canonical": "KT",
+  "country": "South Korea",
+  "sector": "industry"
+ },
+ {
+  "raw": "SK Telecom",
+  "canonical": "SK Telecom",
+  "country": "South Korea",
+  "sector": "industry"
+ },
+ {
+  "raw": "NAVER Cloud",
+  "canonical": "NAVER",
+  "country": "South Korea",
+  "sector": "industry"
+ },
+ {
+  "raw": "Naver Labs Europe",
+  "canonical": "NAVER",
+  "country": "South Korea",
+  "sector": "industry"
+ },
+ {
+  "raw": "AITRICS",
+  "canonical": "AITRICS",
+  "country": "South Korea",
+  "sector": "industry"
+ },
+ {
+  "raw": "Upstage",
+  "canonical": "Upstage",
+  "country": "South Korea",
+  "sector": "industry"
+ },
+ {
+  "raw": "LG Electronics",
+  "canonical": "LG",
+  "country": "South Korea",
+  "sector": "industry"
+ },
+ {
+  "raw": "Twelve Labs",
+  "canonical": "Twelve Labs",
+  "country": "South Korea",
+  "sector": "industry"
+ },
+ {
+  "raw": "Korea Electronics Technology Institute",
+  "canonical": "KETI",
+  "country": "South Korea",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "Universität Innsbruck",
+  "canonical": "University of Innsbruck",
+  "country": "Austria",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of Innsbruck",
+  "canonical": "University of Innsbruck",
+  "country": "Austria",
+  "sector": "academia"
+ },
+ {
+  "raw": "Universität Hamburg",
+  "canonical": "University of Hamburg",
+  "country": "Germany",
+  "sector": "academia"
+ },
+ {
+  "raw": "U Hamburg",
+  "canonical": "University of Hamburg",
+  "country": "Germany",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of Hamburg",
+  "canonical": "University of Hamburg",
+  "country": "Germany",
+  "sector": "academia"
+ },
+ {
+  "raw": "Universität Bielefeld",
+  "canonical": "Bielefeld University",
+  "country": "Germany",
+  "sector": "academia"
+ },
+ {
+  "raw": "Bielefeld University",
+  "canonical": "Bielefeld University",
+  "country": "Germany",
+  "sector": "academia"
+ },
+ {
+  "raw": "Universität Mannheim",
+  "canonical": "University of Mannheim",
+  "country": "Germany",
+  "sector": "academia"
+ },
+ {
+  "raw": "Julius-Maximilians-Universität Würzburg",
+  "canonical": "University of Würzburg",
+  "country": "Germany",
+  "sector": "academia"
+ },
+ {
+  "raw": "Bayerische Julius-Maximilians-Universität Würzburg",
+  "canonical": "University of Würzburg",
+  "country": "Germany",
+  "sector": "academia"
+ },
+ {
+  "raw": "Johannes-Gutenberg Universität Mainz",
+  "canonical": "University of Mainz",
+  "country": "Germany",
+  "sector": "academia"
+ },
+ {
+  "raw": "Universität Hannover",
+  "canonical": "Leibniz University Hannover",
+  "country": "Germany",
+  "sector": "academia"
+ },
+ {
+  "raw": "Leibniz Universität Hannover",
+  "canonical": "Leibniz University Hannover",
+  "country": "Germany",
+  "sector": "academia"
+ },
+ {
+  "raw": "Universität Potsdam",
+  "canonical": "University of Potsdam",
+  "country": "Germany",
+  "sector": "academia"
+ },
+ {
+  "raw": "Technische Universität Dortmund",
+  "canonical": "TU Dortmund",
+  "country": "Germany",
+  "sector": "academia"
+ },
+ {
+  "raw": "Heinrich-Heine University Düsseldorf",
+  "canonical": "Heinrich Heine University Düsseldorf",
+  "country": "Germany",
+  "sector": "academia"
+ },
+ {
+  "raw": "GESIS – Leibniz Institute for the Social Sciences",
+  "canonical": "GESIS",
+  "country": "Germany",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "Siemens Corporate Research",
+  "canonical": "Siemens",
+  "country": "Germany",
+  "sector": "industry"
+ },
+ {
+  "raw": "Ludwig Maximilian University of Munich",
+  "canonical": "LMU Munich",
+  "country": "Germany",
+  "sector": "academia"
+ },
+ {
+  "raw": "Kempelen Institute of Intelligent Technologies",
+  "canonical": "KInIT",
+  "country": "Slovakia",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "Alibaba Group US",
+  "canonical": "Alibaba",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "Alibaba International Digital Commerce Group",
+  "canonical": "Alibaba",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "Tongyi Lab",
+  "canonical": "Alibaba",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "Tencent Search",
+  "canonical": "Tencent",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "Tencent Youtu",
+  "canonical": "Tencent",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "Tencent PCG",
+  "canonical": "Tencent",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "Tencent Technology (Beijing) Company Limited",
+  "canonical": "Tencent",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "ServiceNow",
+  "canonical": "ServiceNow",
+  "country": "USA",
+  "sector": "industry"
+ },
+ {
+  "raw": "ServiceNow Inc",
+  "canonical": "ServiceNow",
+  "country": "USA",
+  "sector": "industry"
+ },
+ {
+  "raw": "ServiceNow Research",
+  "canonical": "ServiceNow",
+  "country": "USA",
+  "sector": "industry"
+ },
+ {
+  "raw": "Salesforce AI",
+  "canonical": "Salesforce",
+  "country": "USA",
+  "sector": "industry"
+ },
+ {
+  "raw": "Salesforce.com",
+  "canonical": "Salesforce",
+  "country": "USA",
+  "sector": "industry"
+ },
+ {
+  "raw": "Intuit",
+  "canonical": "Intuit",
+  "country": "USA",
+  "sector": "industry"
+ },
+ {
+  "raw": "Intuit AI Research",
+  "canonical": "Intuit",
+  "country": "USA",
+  "sector": "industry"
+ },
+ {
+  "raw": "Bloomberg",
+  "canonical": "Bloomberg",
+  "country": "USA",
+  "sector": "industry"
+ },
+ {
+  "raw": "Thomson Reuters",
+  "canonical": "Thomson Reuters",
+  "country": "USA",
+  "sector": "industry"
+ },
+ {
+  "raw": "Zoom",
+  "canonical": "Zoom",
+  "country": "USA",
+  "sector": "industry"
+ },
+ {
+  "raw": "Megagon Labs",
+  "canonical": "Megagon Labs",
+  "country": "USA",
+  "sector": "industry"
+ },
+ {
+  "raw": "Observe.AI",
+  "canonical": "Observe.AI",
+  "country": "USA",
+  "sector": "industry"
+ },
+ {
+  "raw": "JP Morgan AI Research",
+  "canonical": "JPMorgan Chase",
+  "country": "USA",
+  "sector": "industry"
+ },
+ {
+  "raw": "GE HealthCare",
+  "canonical": "GE HealthCare",
+  "country": "USA",
+  "sector": "industry"
+ },
+ {
+  "raw": "Thoughtworks",
+  "canonical": "Thoughtworks",
+  "country": "USA",
+  "sector": "industry"
+ },
+ {
+  "raw": "Cohere For AI",
+  "canonical": "Cohere",
+  "country": "Canada",
+  "sector": "industry"
+ },
+ {
+  "raw": "Cohere AI",
+  "canonical": "Cohere",
+  "country": "Canada",
+  "sector": "industry"
+ },
+ {
+  "raw": "Royal Bank of Canada",
+  "canonical": "RBC",
+  "country": "Canada",
+  "sector": "industry"
+ },
+ {
+  "raw": "National Research Council Canada",
+  "canonical": "National Research Council Canada",
+  "country": "Canada",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "Polytechnique Montreal",
+  "canonical": "Polytechnique Montréal",
+  "country": "Canada",
+  "sector": "academia"
+ },
+ {
+  "raw": "Georgetown University",
+  "canonical": "Georgetown University",
+  "country": "USA",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of Oregon",
+  "canonical": "University of Oregon",
+  "country": "USA",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of Massachusetts at Lowell",
+  "canonical": "UMass Lowell",
+  "country": "USA",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of Texas at San Antonio",
+  "canonical": "UT San Antonio",
+  "country": "USA",
+  "sector": "academia"
+ },
+ {
+  "raw": "Oakland University",
+  "canonical": "Oakland University",
+  "country": "USA",
+  "sector": "academia"
+ },
+ {
+  "raw": "Santa Clara University",
+  "canonical": "Santa Clara University",
+  "country": "USA",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of Alabama at Birmingham",
+  "canonical": "University of Alabama at Birmingham",
+  "country": "USA",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of Cincinnati",
+  "canonical": "University of Cincinnati",
+  "country": "USA",
+  "sector": "academia"
+ },
+ {
+  "raw": "State University of New York at Albany",
+  "canonical": "University at Albany",
+  "country": "USA",
+  "sector": "academia"
+ },
+ {
+  "raw": "Brandeis University",
+  "canonical": "Brandeis University",
+  "country": "USA",
+  "sector": "academia"
+ },
+ {
+  "raw": "Fordham University",
+  "canonical": "Fordham University",
+  "country": "USA",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of Colorado Anschutz Medical Campus",
+  "canonical": "University of Colorado",
+  "country": "USA",
+  "sector": "academia"
+ },
+ {
+  "raw": "NYU Shanghai",
+  "canonical": "NYU Shanghai",
+  "country": "China",
+  "sector": "academia"
+ },
+ {
+  "raw": "New York University Shanghai",
+  "canonical": "NYU Shanghai",
+  "country": "China",
+  "sector": "academia"
+ },
+ {
+  "raw": "New York University Abu Dhabi",
+  "canonical": "NYU Abu Dhabi",
+  "country": "UAE",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of California, San Diego",
+  "canonical": "UC San Diego",
+  "country": "USA",
+  "sector": "academia"
+ },
+ {
+  "raw": "Qatar Computing Research Institute",
+  "canonical": "QCRI",
+  "country": "Qatar",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "Hamad Bin Khalifa University",
+  "canonical": "Hamad Bin Khalifa University",
+  "country": "Qatar",
+  "sector": "academia"
+ },
+ {
+  "raw": "King Fahad University of Petroleum and Minerals",
+  "canonical": "KFUPM",
+  "country": "Saudi Arabia",
+  "sector": "academia"
+ },
+ {
+  "raw": "CyberAgent, Inc.",
+  "canonical": "CyberAgent",
+  "country": "Japan",
+  "sector": "industry"
+ },
+ {
+  "raw": "CyberAgent",
+  "canonical": "CyberAgent",
+  "country": "Japan",
+  "sector": "industry"
+ },
+ {
+  "raw": "Fujitsu Research and Development Center Co. Ltm.",
+  "canonical": "Fujitsu",
+  "country": "Japan",
+  "sector": "industry"
+ },
+ {
+  "raw": "Fujitsu",
+  "canonical": "Fujitsu",
+  "country": "Japan",
+  "sector": "industry"
+ },
+ {
+  "raw": "NTT, Inc.",
+  "canonical": "NTT",
+  "country": "Japan",
+  "sector": "industry"
+ },
+ {
+  "raw": "NTT",
+  "canonical": "NTT",
+  "country": "Japan",
+  "sector": "industry"
+ },
+ {
+  "raw": "SB Intuitions",
+  "canonical": "SB Intuitions",
+  "country": "Japan",
+  "sector": "industry"
+ },
+ {
+  "raw": "Woven by Toyota",
+  "canonical": "Toyota",
+  "country": "Japan",
+  "sector": "industry"
+ },
+ {
+  "raw": "NEC-Labs",
+  "canonical": "NEC",
+  "country": "Japan",
+  "sector": "industry"
+ },
+ {
+  "raw": "National Institute of Information and Communications Technology (NICT)",
+  "canonical": "NICT",
+  "country": "Japan",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "National Institute of Advanced Industrial Science and Technology",
+  "canonical": "AIST",
+  "country": "Japan",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "RIKEN Center for Advanced Intelligence Project",
+  "canonical": "RIKEN",
+  "country": "Japan",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "Beijing Language and Culture University",
+  "canonical": "Beijing Language and Culture University",
+  "country": "China",
+  "sector": "academia"
+ },
+ {
+  "raw": "Kunming University of Science and Technology",
+  "canonical": "Kunming University of Science and Technology",
+  "country": "China",
+  "sector": "academia"
+ },
+ {
+  "raw": "Kunmimg University of Science and Technology",
+  "canonical": "Kunming University of Science and Technology",
+  "country": "China",
+  "sector": "academia"
+ },
+ {
+  "raw": "Minzu University of China",
+  "canonical": "Minzu University of China",
+  "country": "China",
+  "sector": "academia"
+ },
+ {
+  "raw": "Guangxi University",
+  "canonical": "Guangxi University",
+  "country": "China",
+  "sector": "academia"
+ },
+ {
+  "raw": "Shanghai Innovation Institute",
+  "canonical": "Shanghai Innovation Institute",
+  "country": "China",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "Zhongguancun Institute of Artificial Intelligence",
+  "canonical": "Zhongguancun Institute of AI",
+  "country": "China",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "Beijing Institute of Mathematical Sciences and Applications",
+  "canonical": "BIMSA",
+  "country": "China",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "China Mobile Communications Company Limited Research Institute",
+  "canonical": "China Mobile",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "China Mobile Research Institute",
+  "canonical": "China Mobile",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "JIUTIAN Research",
+  "canonical": "China Mobile",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "China Unicom",
+  "canonical": "China Unicom",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "Squirrel Ai Learning",
+  "canonical": "Squirrel Ai Learning",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "Pingan Technology",
+  "canonical": "Ping An",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "Qihoo 360",
+  "canonical": "Qihoo 360",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "ModelBest",
+  "canonical": "ModelBest",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "Hithink RoyalFlush Information Network Co.,Ltd.",
+  "canonical": "Hithink RoyalFlush",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "DeepSeek",
+  "canonical": "DeepSeek",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "JD",
+  "canonical": "JD.com",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "NetEase, Inc.",
+  "canonical": "NetEase",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "NetEase",
+  "canonical": "NetEase",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "Du Xiaoman Financial",
+  "canonical": "Du Xiaoman Financial",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "Hikvision Research Institute",
+  "canonical": "Hikvision",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "Geely",
+  "canonical": "Geely",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "vivo AI Lab",
+  "canonical": "vivo",
+  "country": "China",
+  "sector": "industry"
+ },
+ {
+  "raw": "University of Science and Technology of China",
+  "canonical": "USTC",
+  "country": "China",
+  "sector": "academia"
+ },
+ {
+  "raw": "Harbin Institute of Technolgy, Shenzhen",
+  "canonical": "Harbin Institute of Technology",
+  "country": "China",
+  "sector": "academia"
+ },
+ {
+  "raw": "Binjiang Institute of Zhejiang University",
+  "canonical": "Zhejiang University",
+  "country": "China",
+  "sector": "academia"
+ },
+ {
+  "raw": "Instituto Superior Técnico",
+  "canonical": "Instituto Superior Técnico",
+  "country": "Portugal",
+  "sector": "academia"
+ },
+ {
+  "raw": "Unbabel",
+  "canonical": "Unbabel",
+  "country": "Portugal",
+  "sector": "industry"
+ },
+ {
+  "raw": "Instituto de Telecomunicações",
+  "canonical": "Instituto de Telecomunicações",
+  "country": "Portugal",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "Universidade Nova de Lisboa",
+  "canonical": "NOVA University Lisbon",
+  "country": "Portugal",
+  "sector": "academia"
+ },
+ {
+  "raw": "Athens University of Economics and Business",
+  "canonical": "Athens University of Economics and Business",
+  "country": "Greece",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of Turin",
+  "canonical": "University of Turin",
+  "country": "Italy",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of Roma \"Tor Vergata\"",
+  "canonical": "University of Rome Tor Vergata",
+  "country": "Italy",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of Roma \"La Sapienza\"",
+  "canonical": "Sapienza University of Rome",
+  "country": "Italy",
+  "sector": "academia"
+ },
+ {
+  "raw": "DISI - University of Bologna",
+  "canonical": "University of Bologna",
+  "country": "Italy",
+  "sector": "academia"
+ },
+ {
+  "raw": "Universiteit Gent",
+  "canonical": "Ghent University",
+  "country": "Belgium",
+  "sector": "academia"
+ },
+ {
+  "raw": "Universiteit Leiden",
+  "canonical": "Leiden University",
+  "country": "Netherlands",
+  "sector": "academia"
+ },
+ {
+  "raw": "Göteborg University",
+  "canonical": "University of Gothenburg",
+  "country": "Sweden",
+  "sector": "academia"
+ },
+ {
+  "raw": "IT University of Copenhagen",
+  "canonical": "IT University of Copenhagen",
+  "country": "Denmark",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of Aberdeen",
+  "canonical": "University of Aberdeen",
+  "country": "UK",
+  "sector": "academia"
+ },
+ {
+  "raw": "Durham University",
+  "canonical": "Durham University",
+  "country": "UK",
+  "sector": "academia"
+ },
+ {
+  "raw": "Queen Mary University London",
+  "canonical": "Queen Mary University of London",
+  "country": "UK",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of Leeds",
+  "canonical": "University of Leeds",
+  "country": "UK",
+  "sector": "academia"
+ },
+ {
+  "raw": "King's College London",
+  "canonical": "King's College London",
+  "country": "UK",
+  "sector": "academia"
+ },
+ {
+  "raw": "King's College London, University of London",
+  "canonical": "King's College London",
+  "country": "UK",
+  "sector": "academia"
+ },
+ {
+  "raw": "Charles University, Prague",
+  "canonical": "Charles University",
+  "country": "Czechia",
+  "sector": "academia"
+ },
+ {
+  "raw": "Charles University",
+  "canonical": "Charles University",
+  "country": "Czechia",
+  "sector": "academia"
+ },
+ {
+  "raw": "Brno University of Technology",
+  "canonical": "Brno University of Technology",
+  "country": "Czechia",
+  "sector": "academia"
+ },
+ {
+  "raw": "Wroclaw University of Science and Technology",
+  "canonical": "Wroclaw University of Science and Technology",
+  "country": "Poland",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of Bucharest",
+  "canonical": "University of Bucharest",
+  "country": "Romania",
+  "sector": "academia"
+ },
+ {
+  "raw": "ITMO University",
+  "canonical": "ITMO University",
+  "country": "Russia",
+  "sector": "academia"
+ },
+ {
+  "raw": "T-Tech",
+  "canonical": "T-Bank",
+  "country": "Russia",
+  "sector": "industry"
+ },
+ {
+  "raw": "Universidad de Chile",
+  "canonical": "University of Chile",
+  "country": "Chile",
+  "sector": "academia"
+ },
+ {
+  "raw": "Universidade Federal de Goiás",
+  "canonical": "Federal University of Goiás",
+  "country": "Brazil",
+  "sector": "academia"
+ },
+ {
+  "raw": "Universidade da Coruña",
+  "canonical": "University of A Coruña",
+  "country": "Spain",
+  "sector": "academia"
+ },
+ {
+  "raw": "University of the Basque Country",
+  "canonical": "University of the Basque Country",
+  "country": "Spain",
+  "sector": "academia"
+ },
+ {
+  "raw": "Universidad Politécnica de Cataluna",
+  "canonical": "UPC Barcelona",
+  "country": "Spain",
+  "sector": "academia"
+ },
+ {
+  "raw": "Eurecom",
+  "canonical": "EURECOM",
+  "country": "France",
+  "sector": "academia"
+ },
+ {
+  "raw": "EHESS",
+  "canonical": "EHESS",
+  "country": "France",
+  "sector": "academia"
+ },
+ {
+  "raw": "Reichman University",
+  "canonical": "Reichman University",
+  "country": "Israel",
+  "sector": "academia"
+ },
+ {
+  "raw": "Open University of Israel",
+  "canonical": "Open University of Israel",
+  "country": "Israel",
+  "sector": "academia"
+ },
+ {
+  "raw": "Birzeit University",
+  "canonical": "Birzeit University",
+  "country": "Palestine",
+  "sector": "academia"
+ },
+ {
+  "raw": "Chulalongkorn University",
+  "canonical": "Chulalongkorn University",
+  "country": "Thailand",
+  "sector": "academia"
+ },
+ {
+  "raw": "Vidyasirimedhi Institute of Science and Technology (VISTEC)",
+  "canonical": "VISTEC",
+  "country": "Thailand",
+  "sector": "academia"
+ },
+ {
+  "raw": "SCB 10X",
+  "canonical": "SCB 10X",
+  "country": "Thailand",
+  "sector": "industry"
+ },
+ {
+  "raw": "Ho Chi Minh City University of Technology",
+  "canonical": "Ho Chi Minh City University of Technology",
+  "country": "Vietnam",
+  "sector": "academia"
+ },
+ {
+  "raw": "BRAC University",
+  "canonical": "BRAC University",
+  "country": "Bangladesh",
+  "sector": "academia"
+ },
+ {
+  "raw": "The University of Auckland",
+  "canonical": "University of Auckland",
+  "country": "New Zealand",
+  "sector": "academia"
+ },
+ {
+  "raw": "AI Singapore",
+  "canonical": "AI Singapore",
+  "country": "Singapore",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "Singapore Institute of Technology",
+  "canonical": "Singapore Institute of Technology",
+  "country": "Singapore",
+  "sector": "academia"
+ },
+ {
+  "raw": "I2R",
+  "canonical": "A*STAR",
+  "country": "Singapore",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "A*STAR Centre for Frontier AI Research",
+  "canonical": "A*STAR",
+  "country": "Singapore",
+  "sector": "government/nonprofit"
+ },
+ {
+  "raw": "IBM Research - New Delhi",
+  "canonical": "IBM",
+  "country": "USA",
+  "sector": "industry"
+ }
+]
