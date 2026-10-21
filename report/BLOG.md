@@ -13,7 +13,7 @@ The big story is agents. One in four papers now mentions them, twice as many as 
 ## Seven things that stood out
 
 1. Papers that mention agents went from 12% to 25% of EMNLP. The LLM agents area alone went from 165 papers to 594.
-2. Memory for agents is the fastest riser. It had 6 papers in 2025 and has 96 now.
+2. Memory for agents gained the most ground. It had 6 papers in 2025 and has 96 now.
 3. Reinforcement learning with verifiable rewards (RLVR) arrived. That topic went from 3 papers to 89, and "GRPO" or "RLVR" now shows up in 5% of abstracts.
 4. "Benchmark" is in 47% of titles and abstracts, up from 37%.
 5. Some classic NLP areas shrank in share. Linguistics, multilinguality and translation fell from 9.8% to 7.0% of papers, and retrieval from 11.2% to 8.7%.
@@ -78,7 +78,7 @@ I also counted words in titles and abstracts. "Reinforcement learning" or "RL" d
 
 ![Findings share of each area, 2025 and 2026](../outputs/figures/findings_share_by_area.png)
 
-Findings grew by 76% and the main track by 49%, so Findings is now 48% of the two together, up from 44%. Reasoning and RL moved the most: 53% of its papers are in Findings this year, against 40% last year.
+Findings grew by 76% and the main track by 49%, so Findings is now 48% of the two together, up from 44%. Among the bigger areas, reasoning and RL moved the most: 53% of its papers are in Findings this year, against 40% last year.
 
 ## Talks, posters and days
 
@@ -104,7 +104,7 @@ About a third of papers (34%) have an author from industry, the same as last yea
 
 ## What to keep in mind
 
-- Topics are a lens. Many papers sit between two topics, and other settings would draw the lines a bit differently. I re-ran the topic step two other ways. The LLM agents area grew by 5 to 6 points every time, and 14 of the 16 areas moved the same way in all three runs.
+- Topics are a lens. Many papers sit between two topics, and other settings would draw the lines a bit differently. I re-ran the topic step two other ways. The LLM agents area grew by 5 to 6 points every time, and 14 of the 16 areas either moved the same way in all three runs or barely moved.
 - The 2026 papers come from the Anthology's ingestion branch, before the official release. A few details may still change.
 - Affiliations are messy, and only about two thirds of authors have one in the Anthology. An organisation matched for 94% of the 2026 papers. Country and organisation shares are among those papers.
 - "Mentions agents" is a word count, so it also catches papers that use agents as a small part.
