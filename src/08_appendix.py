@@ -27,12 +27,12 @@ intro = (f"All {dc.broad.nunique()} areas and {dc.fine.nunique()} topics of EMNL
          f"Findings, Industry and Demo tracks). For each topic you see "
          + ("what the papers do, " if about else "")
          + f"how many papers it has, its share of all papers in {PREV} and {CUR}, and how many of its papers are in Main and "
-           f"in Findings." + (" ★ is the number of in-person orals." if sched else ""))
+           f"in Findings." + (" Orals is the number of in-person orals." if sched else ""))
 lines = ["# All areas and topics", "", intro, ""]
 if L.get("provisional"):
     lines += ["Topic names here are provisional: each is the topic's three most typical terms, not a written name.", ""]
 head = ["Topic"] + (["What the papers do"] if about else []) + [str(CUR), f"share {PREV} → {CUR}", "Main / Findings"] + \
-       (["★"] if sched else [])
+       (["Orals"] if sched else [])
 for b in sorted(broad, key=lambda b: -bc.get(b, 0)):
     if not bc.get(b, 0):
         continue

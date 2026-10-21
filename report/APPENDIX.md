@@ -1,12 +1,12 @@
 # All areas and topics
 
-All 16 areas and 100 topics of EMNLP 2026 (5,534 papers in the Main, Findings, Industry and Demo tracks). For each topic you see what the papers do, how many papers it has, its share of all papers in 2025 and 2026, and how many of its papers are in Main and in Findings. ★ is the number of in-person orals.
+All 16 areas and 100 topics of EMNLP 2026 (5,534 papers in the Main, Findings, Industry and Demo tracks). For each topic you see what the papers do, how many papers it has, its share of all papers in 2025 and 2026, and how many of its papers are in Main and in Findings. Orals is the number of in-person orals.
 
 ## Factuality, Evaluation & Expert Domains: 602 papers (10.9% of all, 2025: 12.5%)
 
 These papers study calibration, fact-checking, knowledge editing, benchmarks and annotation, and apply language models to legal, financial, scientific and enterprise documents.
 
-| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | ★ |
+| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | Orals |
 |---|---|---|---|---|---|
 | Confidence Calibration and Knowledge Boundaries | These papers study whether models know what they know, covering verbal confidence calibration, belief stability, honesty, overconfidence and hallucination mechanisms. | 103 | 2.32% → 1.86% | 57 / 46 | 13 |
 | Scientific Discovery, Writing and Citations | These papers use language models for research ideation, scientific discovery, paper writing and verification, and study how AI changes citation behavior and scientific prose. | 63 | 0.98% → 1.14% | 27 / 29 | 10 |
@@ -93,7 +93,7 @@ These papers study calibration, fact-checking, knowledge editing, benchmarks and
 
 These papers train and benchmark language agents for tool use, web search, GUI control, long-horizon tasks and multi-agent collaboration, along with skill libraries and agentic reinforcement learning.
 
-| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | ★ |
+| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | Orals |
 |---|---|---|---|---|---|
 | Agent Benchmarks and Failure Diagnosis | These papers benchmark and debug LLM agents on real-world planning, enterprise workflows and MCP tool use, and diagnose failures from agent execution trajectories. | 98 | 0.49% → 1.77% | 26 / 39 | 4 |
 | Long-Horizon Agents and World Models | These papers train language agents for long-horizon interactive tasks using learned world models, experience reuse, context management and self-evolving policies in environments like ALFWorld and WebShop. | 72 | 0.75% → 1.30% | 32 / 40 | 3 |
@@ -156,7 +156,7 @@ These papers train and benchmark language agents for tool use, web search, GUI c
 
 These papers build, benchmark and diagnose vision-language models for images, charts, documents, video, spatial reasoning and embodied action, with work on hallucination and efficient visual tokens.
 
-| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | ★ |
+| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | Orals |
 |---|---|---|---|---|---|
 | Vision-Language Model Failures and Robustness | These papers diagnose where vision-language models fail, including language priors overriding perception, framing effects, false premises, miscalibrated confidence and unfaithful visual grounding. | 89 | 1.78% → 1.61% | 51 / 38 | 6 |
 | Visually Grounded Multimodal Reasoning with RL | These papers train vision-language models to reason while keeping attention on visual evidence, using reinforcement learning with verifiable rewards, latent visual thinking and visual self-correction. | 64 | 0.60% → 1.16% | 35 / 28 | 5 |
@@ -225,7 +225,7 @@ These papers build, benchmark and diagnose vision-language models for images, ch
 
 These papers probe the social, cultural and psychological behavior of language models, covering bias, sycophancy, theory of mind, role-play, personalization, user simulation and LLM judges.
 
-| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | ★ |
+| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | Orals |
 |---|---|---|---|---|---|
 | Cognitive Bias, Sycophancy and Moral Judgment | These papers probe language models with methods from psychology and social science, measuring sycophancy, cognitive and social biases, persuasion, moral reasoning and human-model behavioral gaps. | 100 | 2.10% → 1.81% | 53 / 46 | 16 |
 | LLM-as-a-Judge Bias and Reliability | These papers test how reliable LLM judges are, exposing position, self-preference and rubric biases and proposing debiasing, calibration and measurement-theory fixes, alongside a few fairness auditing studies. | 78 | 1.03% → 1.41% | 39 / 33 | 8 |
@@ -300,7 +300,7 @@ These papers probe the social, cultural and psychological behavior of language m
 
 These papers improve retrieval and retrieval-augmented generation and reason over knowledge graphs, tables, databases, entities and events, including recommendation systems.
 
-| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | ★ |
+| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | Orals |
 |---|---|---|---|---|---|
 | Retrieval-Augmented Generation and Evidence Grounding | These papers improve how RAG systems select, trust and cite retrieved evidence, covering knowledge conflicts, poisoning robustness, attribution and RAG evaluation. | 102 | 2.41% → 1.84% | 44 / 45 | 3 |
 | Dense Retrieval and LLM Reranking | These papers train dense and generative retrievers and LLM rerankers, with a focus on reasoning-intensive and efficient text retrieval. | 77 | 1.41% → 1.39% | 36 / 27 | 6 |
@@ -345,7 +345,7 @@ These papers improve retrieval and retrieval-augmented generation and reason ove
 
 These papers improve and analyze model reasoning through reinforcement learning with verifiable rewards, efficient chain-of-thought, mathematical problem solving and faithfulness diagnostics.
 
-| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | ★ |
+| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | Orals |
 |---|---|---|---|---|---|
 | Efficient and Latent Chain-of-Thought Reasoning | These papers cut overthinking in reasoning models through chain-of-thought compression, adaptive token budgets, early stopping, parallel thinking and latent or implicit reasoning. | 139 | 2.47% → 2.51% | 62 / 75 | 9 |
 | Chain-of-Thought Faithfulness and Reasoning Diagnostics | These papers analyze why chain-of-thought reasoning fails, whether reasoning traces are faithful, and how to benchmark logical and causal reasoning, alongside work on overthinking and test-time compute. | 103 | 1.06% → 1.86% | 48 / 52 | 9 |
@@ -397,7 +397,7 @@ These papers improve and analyze model reasoning through reinforcement learning 
 
 These papers make language models faster and smaller through pruning, quantization, KV cache compression, mixture-of-experts, speculative decoding and diffusion language models, along with work on unlearning.
 
-| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | ★ |
+| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | Orals |
 |---|---|---|---|---|---|
 | Model Pruning and Sparsity | These papers compress language models through structured pruning, quantization and distillation and measure real inference speedups, while the cluster also mixes in assorted training, data selection and representation studies. | 127 | 3.47% → 2.29% | 66 / 48 | 11 |
 | Diffusion Language Models and Parallel Decoding | These papers build, scale and speed up masked and continuous diffusion language models, with new remasking, parallel decoding, length control and distillation strategies. | 72 | 0.34% → 1.30% | 38 / 33 | 6 |
@@ -449,7 +449,7 @@ These papers make language models faster and smaller through pruning, quantizati
 
 These papers compare models with human language processing, study cross-lingual transfer, dialects and tokenization, and improve and evaluate machine translation.
 
-| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | ★ |
+| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | Orals |
 |---|---|---|---|---|---|
 | Psycholinguistics and Linguistic Knowledge Probing | These papers compare language models with human sentence processing and test their syntactic, lexical and typological knowledge, with a mix of morphology, parsing and corpus work. | 120 | 2.24% → 2.17% | 70 / 48 | 25 |
 | Cross-Lingual Transfer and Multilingual Representations | These papers measure and close the gap between English and other languages through cross-lingual alignment, representation analysis, multilingual judges and multilingual training data. | 101 | 2.99% → 1.83% | 54 / 45 | 12 |
@@ -528,7 +528,7 @@ These papers compare models with human language processing, study cross-lingual 
 
 These papers attack and defend language models and agents through jailbreaks, prompt injection, backdoors, watermarking, privacy protection and safety alignment.
 
-| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | ★ |
+| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | Orals |
 |---|---|---|---|---|---|
 | Safety Alignment and Over-Refusal | These papers study how safety alignment and refusal work inside models, defend against jailbreaks and over-refusal, preserve safety during fine-tuning and benchmark content moderation. | 93 | 1.15% → 1.68% | 57 / 32 | 12 |
 | Jailbreak and Backdoor Attacks | These papers design jailbreak and backdoor attacks on language and vision-language models and defend against them with detection probes, guardrails and alignment interventions. | 77 | 1.58% → 1.39% | 35 / 42 | 4 |
@@ -574,7 +574,7 @@ These papers attack and defend language models and agents through jailbreaks, pr
 
 These papers use language models and agents to write, test and repair code, solve software engineering tasks, discover algorithms through evolutionary search and design molecules and drugs.
 
-| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | ★ |
+| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | Orals |
 |---|---|---|---|---|---|
 | Code Generation, Testing and Repair | These papers train and evaluate code models with unit-test generation, execution feedback, reward models and debugging to make generated code functionally correct. | 76 | 1.26% → 1.37% | 29 / 44 | 5 |
 | Coding Agents for Software Engineering | These papers benchmark and train coding agents on repository-level tasks such as issue localization, program repair, code retrieval and refactoring. | 48 | 0.26% → 0.87% | 24 / 20 | 7 |
@@ -605,7 +605,7 @@ These papers use language models and agents to write, test and repair code, solv
 
 These papers analyze writing style and creativity, detect machine-generated text, generate synthetic training data and produce visual artifacts such as webpages and SVG graphics.
 
-| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | ★ |
+| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | Orals |
 |---|---|---|---|---|---|
 | Webpage, SVG and Text-to-Image Generation | These papers generate and evaluate visual artifacts such as webpages, SVG graphics, diagrams, slides and charts from code, and benchmark text-to-image generation and editing. | 53 | 0.98% → 0.96% | 35 / 16 | 2 |
 | Authorship Style and Creative Writing | These papers analyze and transfer writing style for authorship attribution and personalized generation, and measure diversity and creativity in machine-written stories and poetry. | 52 | 1.38% → 0.94% | 30 / 20 | 7 |
@@ -633,7 +633,7 @@ These papers analyze writing style and creativity, detect machine-generated text
 
 These papers build and evaluate models for medical question answering, clinical reasoning over health records and radiology report generation.
 
-| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | ★ |
+| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | Orals |
 |---|---|---|---|---|---|
 | Clinical Reasoning and EHR Benchmarks | These papers evaluate and train models for clinical decision making over electronic health records, multi-turn medical consultations and diagnosis, with a focus on evidence use and rubric-based assessment. | 116 | 1.44% → 2.10% | 48 / 57 | 6 |
 | Medical Question Answering and Medical VQA | These papers build and evaluate medical reasoning models for question answering and medical visual question answering, using reinforcement learning, multilingual medical data and evidence-grounded training. | 42 | 0.60% → 0.76% | 21 / 21 | 3 |
@@ -656,7 +656,7 @@ These papers build and evaluate models for medical question answering, clinical 
 
 These papers build and evaluate speech and audio-language models for recognition, synthesis, translation, spoken dialogue and audio reasoning.
 
-| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | ★ |
+| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | Orals |
 |---|---|---|---|---|---|
 | Speech Language Models and Voice Agents | These papers evaluate and build speech language models, spoken dialogue systems and voice agents, covering speech recognition, speech translation, TTS evaluation and multilingual speech benchmarks. | 73 | 1.26% → 1.32% | 38 / 24 | 4 |
 | Speech Synthesis, Recognition and Audio Tokenizers | These papers build and adapt speech and audio models for text-to-speech, speech recognition, streaming speech translation and audio tokenization. | 68 | 1.09% → 1.23% | 35 / 31 | 8 |
@@ -683,7 +683,7 @@ These papers build and evaluate speech and audio-language models for recognition
 
 These papers adapt pretrained models through preference optimization, domain fine-tuning and low-rank adapters while limiting catastrophic forgetting.
 
-| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | ★ |
+| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | Orals |
 |---|---|---|---|---|---|
 | Domain Adaptation and Continual Pre-Training | These papers adapt pretrained models to new domains through supervised fine-tuning, continual pre-training and parameter-efficient methods while limiting catastrophic forgetting of general skills. | 68 | 2.32% → 1.23% | 35 / 31 | 5 |
 | LoRA and Parameter-Efficient Fine-Tuning | These papers improve low-rank adaptation through rank allocation, initialization and multi-task packing, and use adapters to limit forgetting in continual and federated fine-tuning. | 44 | 1.15% → 0.80% | 22 / 19 | 2 |
@@ -707,7 +707,7 @@ These papers adapt pretrained models through preference optimization, domain fin
 
 These papers design and benchmark long-term memory systems that let conversational and personalized agents extract, organize and retrieve past information.
 
-| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | ★ |
+| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | Orals |
 |---|---|---|---|---|---|
 | Long-Term Memory for Agents | These papers design and benchmark long-term memory systems for conversational and personalized agents, covering memory extraction, consolidation, hierarchical organization and retrieval. | 96 | 0.17% → 1.73% | 49 / 42 | 6 |
 
@@ -724,7 +724,7 @@ These papers design and benchmark long-term memory systems that let conversation
 
 These papers analyze and redesign Transformers, linear attention, state-space models and hybrid architectures, covering positional encoding and attention sinks.
 
-| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | ★ |
+| Topic | What the papers do | 2026 | share 2025 → 2026 | Main / Findings | Orals |
 |---|---|---|---|---|---|
 | Attention, State-Space and Hybrid Architectures | These papers analyze and redesign sequence model architectures such as Transformers, linear attention, Mamba-style state-space models and hybrids, covering positional encoding, attention sinks and layer representations. | 80 | 1.29% → 1.45% | 48 / 32 | 5 |
 
