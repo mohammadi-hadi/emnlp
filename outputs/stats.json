@@ -1,0 +1,2694 @@
+{
+ "years": {
+  "cur": 2026,
+  "prev": 2025
+ },
+ "provisional_labels": false,
+ "n_2026": 5534,
+ "n_2025": 3484,
+ "growth_pct": 58.8,
+ "tracks": [
+  {
+   "track": "Main",
+   "n_2026": 2704,
+   "n_2025": 1809,
+   "share_2026": 48.86,
+   "share_2025": 51.92,
+   "growth_pct": 49.47
+  },
+  {
+   "track": "Findings",
+   "n_2026": 2478,
+   "n_2025": 1405,
+   "share_2026": 44.78,
+   "share_2025": 40.33,
+   "growth_pct": 76.37
+  },
+  {
+   "track": "Industry",
+   "n_2026": 266,
+   "n_2025": 193,
+   "share_2026": 4.81,
+   "share_2025": 5.54,
+   "growth_pct": 37.82
+  },
+  {
+   "track": "Demo",
+   "n_2026": 86,
+   "n_2025": 77,
+   "share_2026": 1.55,
+   "share_2025": 2.21,
+   "growth_pct": 11.69
+  }
+ ],
+ "main_findings_growth_pct": 61.2,
+ "broad": [
+  {
+   "id": 3,
+   "topic": "Factuality, Evaluation & Expert Domains",
+   "n_2026": 602,
+   "n_2025": 436,
+   "share_2026": 10.88,
+   "share_2025": 12.51,
+   "delta_pp": -1.64,
+   "ratio": 0.87
+  },
+  {
+   "id": 5,
+   "topic": "LLM Agents",
+   "n_2026": 594,
+   "n_2025": 165,
+   "share_2026": 10.73,
+   "share_2025": 4.74,
+   "delta_pp": 6.0,
+   "ratio": 2.27
+  },
+  {
+   "id": 1,
+   "topic": "Vision-Language Models",
+   "n_2026": 592,
+   "n_2025": 377,
+   "share_2026": 10.7,
+   "share_2025": 10.82,
+   "delta_pp": -0.12,
+   "ratio": 0.99
+  },
+  {
+   "id": 7,
+   "topic": "Social Behavior, Bias & Culture",
+   "n_2026": 550,
+   "n_2025": 394,
+   "share_2026": 9.94,
+   "share_2025": 11.31,
+   "delta_pp": -1.37,
+   "ratio": 0.88
+  },
+  {
+   "id": 9,
+   "topic": "Retrieval & Structured Knowledge",
+   "n_2026": 483,
+   "n_2025": 391,
+   "share_2026": 8.73,
+   "share_2025": 11.22,
+   "delta_pp": -2.49,
+   "ratio": 0.78
+  },
+  {
+   "id": 11,
+   "topic": "Reasoning & Reinforcement Learning",
+   "n_2026": 452,
+   "n_2025": 279,
+   "share_2026": 8.17,
+   "share_2025": 8.01,
+   "delta_pp": 0.16,
+   "ratio": 1.02
+  },
+  {
+   "id": 15,
+   "topic": "Efficient LLMs & Decoding",
+   "n_2026": 422,
+   "n_2025": 238,
+   "share_2026": 7.63,
+   "share_2025": 6.83,
+   "delta_pp": 0.79,
+   "ratio": 1.12
+  },
+  {
+   "id": 6,
+   "topic": "Linguistics, Multilinguality & Translation",
+   "n_2026": 390,
+   "n_2025": 342,
+   "share_2026": 7.05,
+   "share_2025": 9.82,
+   "delta_pp": -2.77,
+   "ratio": 0.72
+  },
+  {
+   "id": 8,
+   "topic": "LLM Safety & Security",
+   "n_2026": 386,
+   "n_2025": 249,
+   "share_2026": 6.98,
+   "share_2025": 7.15,
+   "delta_pp": -0.17,
+   "ratio": 0.98
+  },
+  {
+   "id": 0,
+   "topic": "Code, Optimization & Chemistry",
+   "n_2026": 199,
+   "n_2025": 87,
+   "share_2026": 3.6,
+   "share_2025": 2.5,
+   "delta_pp": 1.1,
+   "ratio": 1.44
+  },
+  {
+   "id": 12,
+   "topic": "Text Generation, Style & Detection",
+   "n_2026": 180,
+   "n_2025": 142,
+   "share_2026": 3.25,
+   "share_2025": 4.08,
+   "delta_pp": -0.82,
+   "ratio": 0.8
+  },
+  {
+   "id": 14,
+   "topic": "Medical & Clinical NLP",
+   "n_2026": 180,
+   "n_2025": 83,
+   "share_2026": 3.25,
+   "share_2025": 2.38,
+   "delta_pp": 0.87,
+   "ratio": 1.37
+  },
+  {
+   "id": 4,
+   "topic": "Speech & Audio Models",
+   "n_2026": 176,
+   "n_2025": 94,
+   "share_2026": 3.18,
+   "share_2025": 2.7,
+   "delta_pp": 0.48,
+   "ratio": 1.18
+  },
+  {
+   "id": 2,
+   "topic": "Fine-Tuning & Preference Alignment",
+   "n_2026": 152,
+   "n_2025": 156,
+   "share_2026": 2.75,
+   "share_2025": 4.48,
+   "delta_pp": -1.73,
+   "ratio": 0.61
+  },
+  {
+   "id": 10,
+   "topic": "Long-Term Agent Memory",
+   "n_2026": 96,
+   "n_2025": 6,
+   "share_2026": 1.73,
+   "share_2025": 0.17,
+   "delta_pp": 1.56,
+   "ratio": 10.07
+  },
+  {
+   "id": 13,
+   "topic": "Sequence Model Architectures",
+   "n_2026": 80,
+   "n_2025": 45,
+   "share_2026": 1.45,
+   "share_2025": 1.29,
+   "delta_pp": 0.15,
+   "ratio": 1.12
+  }
+ ],
+ "fine_largest": [
+  {
+   "id": 53,
+   "topic": "Efficient and Latent Chain-of-Thought Reasoning",
+   "broad": 11,
+   "area": "Reasoning & Reinforcement Learning",
+   "n_2026": 139,
+   "n_2025": 86,
+   "share_2026": 2.51,
+   "share_2025": 2.47,
+   "delta_pp": 0.04,
+   "ratio": 1.02
+  },
+  {
+   "id": 33,
+   "topic": "Model Pruning and Sparsity",
+   "broad": 15,
+   "area": "Efficient LLMs & Decoding",
+   "n_2026": 127,
+   "n_2025": 121,
+   "share_2026": 2.29,
+   "share_2025": 3.47,
+   "delta_pp": -1.18,
+   "ratio": 0.66
+  },
+  {
+   "id": 3,
+   "topic": "Psycholinguistics and Linguistic Knowledge Probing",
+   "broad": 6,
+   "area": "Linguistics, Multilinguality & Translation",
+   "n_2026": 120,
+   "n_2025": 78,
+   "share_2026": 2.17,
+   "share_2025": 2.24,
+   "delta_pp": -0.07,
+   "ratio": 0.97
+  },
+  {
+   "id": 37,
+   "topic": "Clinical Reasoning and EHR Benchmarks",
+   "broad": 14,
+   "area": "Medical & Clinical NLP",
+   "n_2026": 116,
+   "n_2025": 50,
+   "share_2026": 2.1,
+   "share_2025": 1.44,
+   "delta_pp": 0.66,
+   "ratio": 1.46
+  },
+  {
+   "id": 61,
+   "topic": "Chain-of-Thought Faithfulness and Reasoning Diagnostics",
+   "broad": 11,
+   "area": "Reasoning & Reinforcement Learning",
+   "n_2026": 103,
+   "n_2025": 37,
+   "share_2026": 1.86,
+   "share_2025": 1.06,
+   "delta_pp": 0.8,
+   "ratio": 1.75
+  },
+  {
+   "id": 12,
+   "topic": "Confidence Calibration and Knowledge Boundaries",
+   "broad": 3,
+   "area": "Factuality, Evaluation & Expert Domains",
+   "n_2026": 103,
+   "n_2025": 81,
+   "share_2026": 1.86,
+   "share_2025": 2.32,
+   "delta_pp": -0.46,
+   "ratio": 0.8
+  },
+  {
+   "id": 42,
+   "topic": "Retrieval-Augmented Generation and Evidence Grounding",
+   "broad": 9,
+   "area": "Retrieval & Structured Knowledge",
+   "n_2026": 102,
+   "n_2025": 84,
+   "share_2026": 1.84,
+   "share_2025": 2.41,
+   "delta_pp": -0.57,
+   "ratio": 0.76
+  },
+  {
+   "id": 14,
+   "topic": "Cross-Lingual Transfer and Multilingual Representations",
+   "broad": 6,
+   "area": "Linguistics, Multilinguality & Translation",
+   "n_2026": 101,
+   "n_2025": 104,
+   "share_2026": 1.83,
+   "share_2025": 2.99,
+   "delta_pp": -1.16,
+   "ratio": 0.61
+  },
+  {
+   "id": 50,
+   "topic": "Cognitive Bias, Sycophancy and Moral Judgment",
+   "broad": 7,
+   "area": "Social Behavior, Bias & Culture",
+   "n_2026": 100,
+   "n_2025": 73,
+   "share_2026": 1.81,
+   "share_2025": 2.1,
+   "delta_pp": -0.29,
+   "ratio": 0.86
+  },
+  {
+   "id": 73,
+   "topic": "Agent Benchmarks and Failure Diagnosis",
+   "broad": 5,
+   "area": "LLM Agents",
+   "n_2026": 98,
+   "n_2025": 17,
+   "share_2026": 1.77,
+   "share_2025": 0.49,
+   "delta_pp": 1.28,
+   "ratio": 3.63
+  },
+  {
+   "id": 35,
+   "topic": "Long-Term Memory for Agents",
+   "broad": 10,
+   "area": "Long-Term Agent Memory",
+   "n_2026": 96,
+   "n_2025": 6,
+   "share_2026": 1.73,
+   "share_2025": 0.17,
+   "delta_pp": 1.56,
+   "ratio": 10.07
+  },
+  {
+   "id": 74,
+   "topic": "Safety Alignment and Over-Refusal",
+   "broad": 8,
+   "area": "LLM Safety & Security",
+   "n_2026": 93,
+   "n_2025": 40,
+   "share_2026": 1.68,
+   "share_2025": 1.15,
+   "delta_pp": 0.53,
+   "ratio": 1.46
+  },
+  {
+   "id": 25,
+   "topic": "Vision-Language Model Failures and Robustness",
+   "broad": 1,
+   "area": "Vision-Language Models",
+   "n_2026": 89,
+   "n_2025": 62,
+   "share_2026": 1.61,
+   "share_2025": 1.78,
+   "delta_pp": -0.17,
+   "ratio": 0.9
+  },
+  {
+   "id": 56,
+   "topic": "RLVR and On-Policy Distillation",
+   "broad": 11,
+   "area": "Reasoning & Reinforcement Learning",
+   "n_2026": 89,
+   "n_2025": 3,
+   "share_2026": 1.61,
+   "share_2025": 0.09,
+   "delta_pp": 1.52,
+   "ratio": 18.68
+  },
+  {
+   "id": 22,
+   "topic": "Attention, State-Space and Hybrid Architectures",
+   "broad": 13,
+   "area": "Sequence Model Architectures",
+   "n_2026": 80,
+   "n_2025": 45,
+   "share_2026": 1.45,
+   "share_2025": 1.29,
+   "delta_pp": 0.15,
+   "ratio": 1.12
+  }
+ ],
+ "fine_growers": [
+  {
+   "id": 35,
+   "topic": "Long-Term Memory for Agents",
+   "broad": 10,
+   "area": "Long-Term Agent Memory",
+   "n_2026": 96,
+   "n_2025": 6,
+   "share_2026": 1.73,
+   "share_2025": 0.17,
+   "delta_pp": 1.56,
+   "ratio": 10.07
+  },
+  {
+   "id": 56,
+   "topic": "RLVR and On-Policy Distillation",
+   "broad": 11,
+   "area": "Reasoning & Reinforcement Learning",
+   "n_2026": 89,
+   "n_2025": 3,
+   "share_2026": 1.61,
+   "share_2025": 0.09,
+   "delta_pp": 1.52,
+   "ratio": 18.68
+  },
+  {
+   "id": 73,
+   "topic": "Agent Benchmarks and Failure Diagnosis",
+   "broad": 5,
+   "area": "LLM Agents",
+   "n_2026": 98,
+   "n_2025": 17,
+   "share_2026": 1.77,
+   "share_2025": 0.49,
+   "delta_pp": 1.28,
+   "ratio": 3.63
+  },
+  {
+   "id": 54,
+   "topic": "Deep Research and Search Agents",
+   "broad": 5,
+   "area": "LLM Agents",
+   "n_2026": 72,
+   "n_2025": 9,
+   "share_2026": 1.3,
+   "share_2025": 0.26,
+   "delta_pp": 1.04,
+   "ratio": 5.04
+  },
+  {
+   "id": 5,
+   "topic": "Agent Skill Libraries and Skill Evolution",
+   "broad": 5,
+   "area": "LLM Agents",
+   "n_2026": 53,
+   "n_2025": 0,
+   "share_2026": 0.96,
+   "share_2025": 0.0,
+   "delta_pp": 0.96,
+   "ratio": NaN
+  },
+  {
+   "id": 21,
+   "topic": "Diffusion Language Models and Parallel Decoding",
+   "broad": 15,
+   "area": "Efficient LLMs & Decoding",
+   "n_2026": 72,
+   "n_2025": 12,
+   "share_2026": 1.3,
+   "share_2025": 0.34,
+   "delta_pp": 0.96,
+   "ratio": 3.78
+  },
+  {
+   "id": 61,
+   "topic": "Chain-of-Thought Faithfulness and Reasoning Diagnostics",
+   "broad": 11,
+   "area": "Reasoning & Reinforcement Learning",
+   "n_2026": 103,
+   "n_2025": 37,
+   "share_2026": 1.86,
+   "share_2025": 1.06,
+   "delta_pp": 0.8,
+   "ratio": 1.75
+  },
+  {
+   "id": 83,
+   "topic": "Agentic RL and Reward Design",
+   "broad": 5,
+   "area": "LLM Agents",
+   "n_2026": 71,
+   "n_2025": 19,
+   "share_2026": 1.28,
+   "share_2025": 0.55,
+   "delta_pp": 0.74,
+   "ratio": 2.35
+  },
+  {
+   "id": 37,
+   "topic": "Clinical Reasoning and EHR Benchmarks",
+   "broad": 14,
+   "area": "Medical & Clinical NLP",
+   "n_2026": 116,
+   "n_2025": 50,
+   "share_2026": 2.1,
+   "share_2025": 1.44,
+   "delta_pp": 0.66,
+   "ratio": 1.46
+  },
+  {
+   "id": 58,
+   "topic": "Coding Agents for Software Engineering",
+   "broad": 0,
+   "area": "Code, Optimization & Chemistry",
+   "n_2026": 48,
+   "n_2025": 9,
+   "share_2026": 0.87,
+   "share_2025": 0.26,
+   "delta_pp": 0.61,
+   "ratio": 3.36
+  },
+  {
+   "id": 24,
+   "topic": "Long-Horizon Agents and World Models",
+   "broad": 5,
+   "area": "LLM Agents",
+   "n_2026": 72,
+   "n_2025": 26,
+   "share_2026": 1.3,
+   "share_2025": 0.75,
+   "delta_pp": 0.55,
+   "ratio": 1.74
+  },
+  {
+   "id": 62,
+   "topic": "Visually Grounded Multimodal Reasoning with RL",
+   "broad": 1,
+   "area": "Vision-Language Models",
+   "n_2026": 64,
+   "n_2025": 21,
+   "share_2026": 1.16,
+   "share_2025": 0.6,
+   "delta_pp": 0.55,
+   "ratio": 1.92
+  }
+ ],
+ "fine_shrinkers": [
+  {
+   "id": 1,
+   "topic": "Self-Improving Reasoning and Self-Correction",
+   "broad": 11,
+   "area": "Reasoning & Reinforcement Learning",
+   "n_2026": 53,
+   "n_2025": 88,
+   "share_2026": 0.96,
+   "share_2025": 2.53,
+   "delta_pp": -1.57,
+   "ratio": 0.38
+  },
+  {
+   "id": 33,
+   "topic": "Model Pruning and Sparsity",
+   "broad": 15,
+   "area": "Efficient LLMs & Decoding",
+   "n_2026": 127,
+   "n_2025": 121,
+   "share_2026": 2.29,
+   "share_2025": 3.47,
+   "delta_pp": -1.18,
+   "ratio": 0.66
+  },
+  {
+   "id": 14,
+   "topic": "Cross-Lingual Transfer and Multilingual Representations",
+   "broad": 6,
+   "area": "Linguistics, Multilinguality & Translation",
+   "n_2026": 101,
+   "n_2025": 104,
+   "share_2026": 1.83,
+   "share_2025": 2.99,
+   "delta_pp": -1.16,
+   "ratio": 0.61
+  },
+  {
+   "id": 44,
+   "topic": "Domain Adaptation and Continual Pre-Training",
+   "broad": 2,
+   "area": "Fine-Tuning & Preference Alignment",
+   "n_2026": 68,
+   "n_2025": 81,
+   "share_2026": 1.23,
+   "share_2025": 2.32,
+   "delta_pp": -1.1,
+   "ratio": 0.53
+  },
+  {
+   "id": 94,
+   "topic": "Detoxification and Moderation Evasion",
+   "broad": 8,
+   "area": "LLM Safety & Security",
+   "n_2026": 35,
+   "n_2025": 58,
+   "share_2026": 0.63,
+   "share_2025": 1.66,
+   "delta_pp": -1.03,
+   "ratio": 0.38
+  },
+  {
+   "id": 51,
+   "topic": "Omni-Modal Models and Modality Robustness",
+   "broad": 1,
+   "area": "Vision-Language Models",
+   "n_2026": 57,
+   "n_2025": 70,
+   "share_2026": 1.03,
+   "share_2025": 2.01,
+   "delta_pp": -0.98,
+   "ratio": 0.51
+  },
+  {
+   "id": 68,
+   "topic": "Social Bias, Stereotypes and Debiasing",
+   "broad": 7,
+   "area": "Social Behavior, Bias & Culture",
+   "n_2026": 58,
+   "n_2025": 70,
+   "share_2026": 1.05,
+   "share_2025": 2.01,
+   "delta_pp": -0.96,
+   "ratio": 0.52
+  },
+  {
+   "id": 13,
+   "topic": "Benchmark Construction and Evaluation Reliability",
+   "broad": 3,
+   "area": "Factuality, Evaluation & Expert Domains",
+   "n_2026": 58,
+   "n_2025": 67,
+   "share_2026": 1.05,
+   "share_2025": 1.92,
+   "delta_pp": -0.88,
+   "ratio": 0.54
+  },
+  {
+   "id": 72,
+   "topic": "Entity Linking, Relation Extraction and Taxonomies",
+   "broad": 9,
+   "area": "Retrieval & Structured Knowledge",
+   "n_2026": 48,
+   "n_2025": 60,
+   "share_2026": 0.87,
+   "share_2025": 1.72,
+   "delta_pp": -0.85,
+   "ratio": 0.5
+  },
+  {
+   "id": 19,
+   "topic": "Role-Playing Agents and Emotional Support Dialogue",
+   "broad": 7,
+   "area": "Social Behavior, Bias & Culture",
+   "n_2026": 64,
+   "n_2025": 68,
+   "share_2026": 1.16,
+   "share_2025": 1.95,
+   "delta_pp": -0.8,
+   "ratio": 0.59
+  },
+  {
+   "id": 43,
+   "topic": "Dialects, Scripts and Underrepresented Languages",
+   "broad": 6,
+   "area": "Linguistics, Multilinguality & Translation",
+   "n_2026": 64,
+   "n_2025": 67,
+   "share_2026": 1.16,
+   "share_2025": 1.92,
+   "delta_pp": -0.77,
+   "ratio": 0.6
+  },
+  {
+   "id": 27,
+   "topic": "Mathematical Reasoning and Formal Theorem Proving",
+   "broad": 11,
+   "area": "Reasoning & Reinforcement Learning",
+   "n_2026": 68,
+   "n_2025": 65,
+   "share_2026": 1.23,
+   "share_2025": 1.87,
+   "delta_pp": -0.64,
+   "ratio": 0.66
+  }
+ ],
+ "fine_fastest_ratio": [
+  {
+   "id": 21,
+   "topic": "Diffusion Language Models and Parallel Decoding",
+   "broad": 15,
+   "area": "Efficient LLMs & Decoding",
+   "n_2026": 72,
+   "n_2025": 12,
+   "share_2026": 1.3,
+   "share_2025": 0.34,
+   "delta_pp": 0.96,
+   "ratio": 3.78
+  },
+  {
+   "id": 73,
+   "topic": "Agent Benchmarks and Failure Diagnosis",
+   "broad": 5,
+   "area": "LLM Agents",
+   "n_2026": 98,
+   "n_2025": 17,
+   "share_2026": 1.77,
+   "share_2025": 0.49,
+   "delta_pp": 1.28,
+   "ratio": 3.63
+  },
+  {
+   "id": 88,
+   "topic": "Agent Safety and Tool-Use Risks",
+   "broad": 8,
+   "area": "LLM Safety & Security",
+   "n_2026": 50,
+   "n_2025": 13,
+   "share_2026": 0.9,
+   "share_2025": 0.37,
+   "delta_pp": 0.53,
+   "ratio": 2.42
+  },
+  {
+   "id": 83,
+   "topic": "Agentic RL and Reward Design",
+   "broad": 5,
+   "area": "LLM Agents",
+   "n_2026": 71,
+   "n_2025": 19,
+   "share_2026": 1.28,
+   "share_2025": 0.55,
+   "delta_pp": 0.74,
+   "ratio": 2.35
+  },
+  {
+   "id": 16,
+   "topic": "KV Cache Compression and Eviction",
+   "broad": 15,
+   "area": "Efficient LLMs & Decoding",
+   "n_2026": 57,
+   "n_2025": 18,
+   "share_2026": 1.03,
+   "share_2025": 0.52,
+   "delta_pp": 0.51,
+   "ratio": 1.99
+  },
+  {
+   "id": 62,
+   "topic": "Visually Grounded Multimodal Reasoning with RL",
+   "broad": 1,
+   "area": "Vision-Language Models",
+   "n_2026": 64,
+   "n_2025": 21,
+   "share_2026": 1.16,
+   "share_2025": 0.6,
+   "delta_pp": 0.55,
+   "ratio": 1.92
+  },
+  {
+   "id": 10,
+   "topic": "Long and Streaming Video QA",
+   "broad": 1,
+   "area": "Vision-Language Models",
+   "n_2026": 45,
+   "n_2025": 15,
+   "share_2026": 0.81,
+   "share_2025": 0.43,
+   "delta_pp": 0.38,
+   "ratio": 1.89
+  },
+  {
+   "id": 91,
+   "topic": "Audio-Language Model Understanding and Reasoning",
+   "broad": 4,
+   "area": "Speech & Audio Models",
+   "n_2026": 35,
+   "n_2025": 12,
+   "share_2026": 0.63,
+   "share_2025": 0.34,
+   "delta_pp": 0.29,
+   "ratio": 1.84
+  },
+  {
+   "id": 65,
+   "topic": "Multi-Agent Debate and Argumentation",
+   "broad": 7,
+   "area": "Social Behavior, Bias & Culture",
+   "n_2026": 37,
+   "n_2025": 13,
+   "share_2026": 0.67,
+   "share_2025": 0.37,
+   "delta_pp": 0.3,
+   "ratio": 1.79
+  },
+  {
+   "id": 61,
+   "topic": "Chain-of-Thought Faithfulness and Reasoning Diagnostics",
+   "broad": 11,
+   "area": "Reasoning & Reinforcement Learning",
+   "n_2026": 103,
+   "n_2025": 37,
+   "share_2026": 1.86,
+   "share_2025": 1.06,
+   "delta_pp": 0.8,
+   "ratio": 1.75
+  },
+  {
+   "id": 24,
+   "topic": "Long-Horizon Agents and World Models",
+   "broad": 5,
+   "area": "LLM Agents",
+   "n_2026": 72,
+   "n_2025": 26,
+   "share_2026": 1.3,
+   "share_2025": 0.75,
+   "delta_pp": 0.55,
+   "ratio": 1.74
+  },
+  {
+   "id": 47,
+   "topic": "Tool Use and Function Calling Agents",
+   "broad": 5,
+   "area": "LLM Agents",
+   "n_2026": 55,
+   "n_2025": 20,
+   "share_2026": 0.99,
+   "share_2025": 0.57,
+   "delta_pp": 0.42,
+   "ratio": 1.73
+  }
+ ],
+ "mover_guard": {
+  "min_papers_cur": 20,
+  "min_papers_prev": 15
+ },
+ "agents": {
+  "method": "Keyword: title or abstract matches \\bagent(?:s|ic)?\\b (case-insensitive). Topic family: topics where at least 40% of the 2026 papers match the keyword, plus topics whose name mentions agents.",
+  "topic_min_pct": 40,
+  "keyword_share": {
+   "2026": 24.52,
+   "2025": 12.11
+  },
+  "keyword_n": {
+   "2026": 1357,
+   "2025": 422
+  },
+  "title_share": {
+   "2026": 16.32,
+   "2025": 7.38
+  },
+  "family": [
+   {
+    "id": 73,
+    "topic": "Agent Benchmarks and Failure Diagnosis",
+    "n_2026": 98,
+    "n_2025": 17,
+    "keyword_share_cur": 96.94
+   },
+   {
+    "id": 35,
+    "topic": "Long-Term Memory for Agents",
+    "n_2026": 96,
+    "n_2025": 6,
+    "keyword_share_cur": 79.17
+   },
+   {
+    "id": 31,
+    "topic": "Speech Language Models and Voice Agents",
+    "n_2026": 73,
+    "n_2025": 44,
+    "keyword_share_cur": 21.92
+   },
+   {
+    "id": 24,
+    "topic": "Long-Horizon Agents and World Models",
+    "n_2026": 72,
+    "n_2025": 26,
+    "keyword_share_cur": 98.61
+   },
+   {
+    "id": 54,
+    "topic": "Deep Research and Search Agents",
+    "n_2026": 72,
+    "n_2025": 9,
+    "keyword_share_cur": 95.83
+   },
+   {
+    "id": 83,
+    "topic": "Agentic RL and Reward Design",
+    "n_2026": 71,
+    "n_2025": 19,
+    "keyword_share_cur": 49.3
+   },
+   {
+    "id": 19,
+    "topic": "Role-Playing Agents and Emotional Support Dialogue",
+    "n_2026": 64,
+    "n_2025": 68,
+    "keyword_share_cur": 48.44
+   },
+   {
+    "id": 86,
+    "topic": "Multi-Agent Collaboration and Communication",
+    "n_2026": 58,
+    "n_2025": 27,
+    "keyword_share_cur": 100.0
+   },
+   {
+    "id": 47,
+    "topic": "Tool Use and Function Calling Agents",
+    "n_2026": 55,
+    "n_2025": 20,
+    "keyword_share_cur": 76.36
+   },
+   {
+    "id": 5,
+    "topic": "Agent Skill Libraries and Skill Evolution",
+    "n_2026": 53,
+    "n_2025": 0,
+    "keyword_share_cur": 98.11
+   },
+   {
+    "id": 76,
+    "topic": "Webpage, SVG and Text-to-Image Generation",
+    "n_2026": 53,
+    "n_2025": 34,
+    "keyword_share_cur": 47.17
+   },
+   {
+    "id": 88,
+    "topic": "Agent Safety and Tool-Use Risks",
+    "n_2026": 50,
+    "n_2025": 13,
+    "keyword_share_cur": 98.0
+   },
+   {
+    "id": 58,
+    "topic": "Coding Agents for Software Engineering",
+    "n_2026": 48,
+    "n_2025": 9,
+    "keyword_share_cur": 85.42
+   },
+   {
+    "id": 59,
+    "topic": "User Simulators and Human Behavior Simulation",
+    "n_2026": 47,
+    "n_2025": 21,
+    "keyword_share_cur": 65.96
+   },
+   {
+    "id": 95,
+    "topic": "Vision-Language-Action and Embodied Agents",
+    "n_2026": 43,
+    "n_2025": 21,
+    "keyword_share_cur": 44.19
+   },
+   {
+    "id": 97,
+    "topic": "Financial NLP Benchmarks and Agents",
+    "n_2026": 40,
+    "n_2025": 26,
+    "keyword_share_cur": 37.5
+   },
+   {
+    "id": 4,
+    "topic": "Indirect Prompt Injection Attacks",
+    "n_2026": 39,
+    "n_2025": 25,
+    "keyword_share_cur": 58.97
+   },
+   {
+    "id": 65,
+    "topic": "Multi-Agent Debate and Argumentation",
+    "n_2026": 37,
+    "n_2025": 13,
+    "keyword_share_cur": 78.38
+   },
+   {
+    "id": 29,
+    "topic": "Optimization Modeling and Evolutionary Algorithm Discovery",
+    "n_2026": 35,
+    "n_2025": 6,
+    "keyword_share_cur": 48.57
+   },
+   {
+    "id": 79,
+    "topic": "GUI Agent Benchmarks and Simulators",
+    "n_2026": 35,
+    "n_2025": 6,
+    "keyword_share_cur": 97.14
+   },
+   {
+    "id": 49,
+    "topic": "Proactive Agents and Implicit User Intent",
+    "n_2026": 30,
+    "n_2025": 13,
+    "keyword_share_cur": 83.33
+   },
+   {
+    "id": 52,
+    "topic": "GUI Agent Grounding and RL Training",
+    "n_2026": 23,
+    "n_2025": 9,
+    "keyword_share_cur": 86.96
+   },
+   {
+    "id": 45,
+    "topic": "Compliance Checking and Auditing Agents",
+    "n_2026": 21,
+    "n_2025": 2,
+    "keyword_share_cur": 66.67
+   }
+  ],
+  "family_n": {
+   "2026": 1213,
+   "2025": 434
+  },
+  "family_share": {
+   "2026": 21.92,
+   "2025": 12.46
+  },
+  "keyword_share_by_area": {
+   "Factuality, Evaluation & Expert Domains": {
+    "2026": 16.78,
+    "2025": 9.63
+   },
+   "LLM Agents": {
+    "2026": 85.86,
+    "2025": 69.7
+   },
+   "Vision-Language Models": {
+    "2026": 16.55,
+    "2025": 7.69
+   },
+   "Social Behavior, Bias & Culture": {
+    "2026": 26.36,
+    "2025": 18.78
+   },
+   "Retrieval & Structured Knowledge": {
+    "2026": 13.46,
+    "2025": 9.72
+   },
+   "Reasoning & Reinforcement Learning": {
+    "2026": 7.3,
+    "2025": 7.17
+   },
+   "Efficient LLMs & Decoding": {
+    "2026": 4.27,
+    "2025": 2.52
+   },
+   "Linguistics, Multilinguality & Translation": {
+    "2026": 3.85,
+    "2025": 3.51
+   },
+   "LLM Safety & Security": {
+    "2026": 27.2,
+    "2025": 12.45
+   },
+   "Code, Optimization & Chemistry": {
+    "2026": 39.7,
+    "2025": 16.09
+   },
+   "Text Generation, Style & Detection": {
+    "2026": 22.22,
+    "2025": 9.86
+   },
+   "Medical & Clinical NLP": {
+    "2026": 26.67,
+    "2025": 24.1
+   },
+   "Speech & Audio Models": {
+    "2026": 10.8,
+    "2025": 1.06
+   },
+   "Fine-Tuning & Preference Alignment": {
+    "2026": 3.29,
+    "2025": 1.92
+   },
+   "Long-Term Agent Memory": {
+    "2026": 79.17,
+    "2025": 50.0
+   },
+   "Sequence Model Architectures": {
+    "2026": 0.0,
+    "2025": 0.0
+   }
+  }
+ },
+ "benchmark_or_dataset": {
+  "method": "Mention: title or abstract matches \\bbenchmark|\\bdatasets?\\b|\\bcorp(?:us|ora)\\b. New resource: the abstract says the paper introduces, presents, releases or builds a benchmark, dataset or corpus (a rough pattern, a lower bound).",
+  "mention_share": {
+   "2026": 62.11,
+   "2025": 63.89
+  },
+  "new_resource_share": {
+   "2026": 18.4,
+   "2025": 19.55
+  },
+  "benchmark_word_share": {
+   "2026": 47.36,
+   "2025": 36.62
+  }
+ },
+ "vocabulary": [
+  {
+   "term": "agent / agentic",
+   "pct_2026": 24.5,
+   "pct_2025": 12.1,
+   "delta_pp": 12.4
+  },
+  {
+   "term": "benchmark",
+   "pct_2026": 47.4,
+   "pct_2025": 36.6,
+   "delta_pp": 10.7
+  },
+  {
+   "term": "reinforcement learning / RL",
+   "pct_2026": 11.1,
+   "pct_2025": 5.2,
+   "delta_pp": 5.9
+  },
+  {
+   "term": "code",
+   "pct_2026": 25.4,
+   "pct_2025": 19.9,
+   "delta_pp": 5.5
+  },
+  {
+   "term": "reasoning",
+   "pct_2026": 32.3,
+   "pct_2025": 28.0,
+   "delta_pp": 4.3
+  },
+  {
+   "term": "GRPO / RLVR",
+   "pct_2026": 5.4,
+   "pct_2025": 1.0,
+   "delta_pp": 4.3
+  },
+  {
+   "term": "multimodal / vision-language",
+   "pct_2026": 16.2,
+   "pct_2025": 14.1,
+   "delta_pp": 2.1
+  },
+  {
+   "term": "LLM-as-a-judge",
+   "pct_2026": 3.1,
+   "pct_2025": 1.5,
+   "delta_pp": 1.6
+  },
+  {
+   "term": "safety / jailbreak",
+   "pct_2026": 7.2,
+   "pct_2025": 5.7,
+   "delta_pp": 1.5
+  },
+  {
+   "term": "interpretability",
+   "pct_2026": 9.7,
+   "pct_2025": 8.9,
+   "delta_pp": 0.8
+  },
+  {
+   "term": "long context",
+   "pct_2026": 2.9,
+   "pct_2025": 2.3,
+   "delta_pp": 0.6
+  },
+  {
+   "term": "LoRA / parameter-efficient",
+   "pct_2026": 3.1,
+   "pct_2025": 2.6,
+   "delta_pp": 0.5
+  },
+  {
+   "term": "speech / audio",
+   "pct_2026": 5.3,
+   "pct_2025": 5.3,
+   "delta_pp": 0.0
+  },
+  {
+   "term": "BERT",
+   "pct_2026": 0.7,
+   "pct_2025": 1.3,
+   "delta_pp": -0.6
+  },
+  {
+   "term": "hallucination",
+   "pct_2026": 4.9,
+   "pct_2025": 5.5,
+   "delta_pp": -0.6
+  },
+  {
+   "term": "dialogue",
+   "pct_2026": 7.1,
+   "pct_2025": 7.9,
+   "delta_pp": -0.8
+  },
+  {
+   "term": "bias / fairness",
+   "pct_2026": 8.0,
+   "pct_2025": 9.0,
+   "delta_pp": -1.0
+  },
+  {
+   "term": "preference / DPO / RLHF",
+   "pct_2026": 2.4,
+   "pct_2025": 3.4,
+   "delta_pp": -1.0
+  },
+  {
+   "term": "translation",
+   "pct_2026": 5.5,
+   "pct_2025": 6.6,
+   "delta_pp": -1.1
+  },
+  {
+   "term": "retrieval-augmented / RAG",
+   "pct_2026": 5.9,
+   "pct_2025": 7.3,
+   "delta_pp": -1.3
+  },
+  {
+   "term": "summarisation",
+   "pct_2026": 2.5,
+   "pct_2025": 3.8,
+   "delta_pp": -1.3
+  },
+  {
+   "term": "chain-of-thought",
+   "pct_2026": 4.8,
+   "pct_2025": 6.2,
+   "delta_pp": -1.4
+  },
+  {
+   "term": "synthetic data",
+   "pct_2026": 1.7,
+   "pct_2025": 3.3,
+   "delta_pp": -1.6
+  },
+  {
+   "term": "multilingual / low-resource",
+   "pct_2026": 7.0,
+   "pct_2025": 9.2,
+   "delta_pp": -2.3
+  },
+  {
+   "term": "in-context learning",
+   "pct_2026": 2.4,
+   "pct_2025": 5.3,
+   "delta_pp": -2.8
+  },
+  {
+   "term": "efficient / efficiency",
+   "pct_2026": 15.4,
+   "pct_2025": 19.7,
+   "delta_pp": -4.2
+  },
+  {
+   "term": "LLM / large language model",
+   "pct_2026": 64.0,
+   "pct_2025": 70.7,
+   "delta_pp": -6.7
+  }
+ ],
+ "authors_median": {
+  "2026": 5.0,
+  "2025": 5.0
+ },
+ "authors_mean": {
+  "2026": 5.99,
+  "2025": 5.7
+ },
+ "single_author_n": {
+  "2026": 33,
+  "2025": 27
+ },
+ "single_author_pct": {
+  "2026": 0.6,
+  "2025": 0.77
+ },
+ "10plus_author_pct": {
+  "2026": 12.59,
+  "2025": 9.47
+ },
+ "institutions_2026": [
+  [
+   "Alibaba",
+   251,
+   4.82,
+   "industry",
+   "China"
+  ],
+  [
+   "Tsinghua University",
+   227,
+   4.36,
+   "academia",
+   "China"
+  ],
+  [
+   "Chinese Academy of Sciences",
+   215,
+   4.13,
+   "government/nonprofit",
+   "China"
+  ],
+  [
+   "Zhejiang University",
+   209,
+   4.02,
+   "academia",
+   "China"
+  ],
+  [
+   "Amazon",
+   172,
+   3.31,
+   "industry",
+   "USA"
+  ],
+  [
+   "Microsoft",
+   167,
+   3.21,
+   "industry",
+   "USA"
+  ],
+  [
+   "HKUST",
+   165,
+   3.17,
+   "academia",
+   "Hong Kong"
+  ],
+  [
+   "Tencent",
+   164,
+   3.15,
+   "industry",
+   "China"
+  ],
+  [
+   "Shanghai Jiao Tong University",
+   161,
+   3.09,
+   "academia",
+   "China"
+  ],
+  [
+   "Peking University",
+   157,
+   3.02,
+   "academia",
+   "China"
+  ],
+  [
+   "NTU Singapore",
+   148,
+   2.84,
+   "academia",
+   "Singapore"
+  ],
+  [
+   "Google",
+   135,
+   2.59,
+   "industry",
+   "USA"
+  ],
+  [
+   "USTC",
+   134,
+   2.58,
+   "academia",
+   "China"
+  ],
+  [
+   "NUS",
+   133,
+   2.56,
+   "academia",
+   "Singapore"
+  ],
+  [
+   "Fudan University",
+   129,
+   2.48,
+   "academia",
+   "China"
+  ],
+  [
+   "Shanghai AI Laboratory",
+   113,
+   2.17,
+   "government/nonprofit",
+   "China"
+  ],
+  [
+   "MBZUAI",
+   112,
+   2.15,
+   "academia",
+   "UAE"
+  ],
+  [
+   "KAIST",
+   111,
+   2.13,
+   "academia",
+   "South Korea"
+  ],
+  [
+   "ByteDance",
+   109,
+   2.09,
+   "industry",
+   "China"
+  ],
+  [
+   "Huawei",
+   99,
+   1.9,
+   "industry",
+   "China"
+  ],
+  [
+   "Harbin Institute of Technology",
+   99,
+   1.9,
+   "academia",
+   "China"
+  ],
+  [
+   "Carnegie Mellon University",
+   92,
+   1.77,
+   "academia",
+   "USA"
+  ],
+  [
+   "UIUC",
+   91,
+   1.75,
+   "academia",
+   "USA"
+  ],
+  [
+   "Independent",
+   91,
+   1.75,
+   "unknown",
+   "unknown"
+  ],
+  [
+   "HKUST (Guangzhou)",
+   90,
+   1.73,
+   "academia",
+   "China"
+  ],
+  [
+   "Renmin University of China",
+   88,
+   1.69,
+   "academia",
+   "China"
+  ],
+  [
+   "CUHK",
+   87,
+   1.67,
+   "academia",
+   "Hong Kong"
+  ],
+  [
+   "Hong Kong Polytechnic University",
+   86,
+   1.65,
+   "academia",
+   "Hong Kong"
+  ],
+  [
+   "Beihang University",
+   81,
+   1.56,
+   "academia",
+   "China"
+  ],
+  [
+   "Meta",
+   80,
+   1.54,
+   "industry",
+   "USA"
+  ],
+  [
+   "University of Chinese Academy of Sciences",
+   80,
+   1.54,
+   "academia",
+   "China"
+  ],
+  [
+   "Nanjing University",
+   80,
+   1.54,
+   "academia",
+   "China"
+  ],
+  [
+   "Seoul National University",
+   79,
+   1.52,
+   "academia",
+   "South Korea"
+  ],
+  [
+   "East China Normal University",
+   74,
+   1.42,
+   "academia",
+   "China"
+  ],
+  [
+   "Ant Group",
+   74,
+   1.42,
+   "industry",
+   "China"
+  ],
+  [
+   "Northeastern University",
+   69,
+   1.33,
+   "academia",
+   "USA"
+  ],
+  [
+   "Stanford University",
+   68,
+   1.31,
+   "academia",
+   "USA"
+  ],
+  [
+   "Beijing University of Posts and Telecommunications",
+   65,
+   1.25,
+   "academia",
+   "China"
+  ],
+  [
+   "City University of Hong Kong",
+   61,
+   1.17,
+   "academia",
+   "Hong Kong"
+  ],
+  [
+   "Meituan",
+   58,
+   1.11,
+   "industry",
+   "China"
+  ]
+ ],
+ "countries_2026": [
+  [
+   "China",
+   2392,
+   45.31
+  ],
+  [
+   "USA",
+   1687,
+   31.96
+  ],
+  [
+   "South Korea",
+   459,
+   8.69
+  ],
+  [
+   "Hong Kong",
+   426,
+   8.07
+  ],
+  [
+   "Singapore",
+   321,
+   6.08
+  ],
+  [
+   "UK",
+   310,
+   5.87
+  ],
+  [
+   "Germany",
+   277,
+   5.25
+  ],
+  [
+   "Australia",
+   200,
+   3.79
+  ],
+  [
+   "Canada",
+   184,
+   3.49
+  ],
+  [
+   "Japan",
+   172,
+   3.26
+  ],
+  [
+   "UAE",
+   117,
+   2.22
+  ],
+  [
+   "India",
+   98,
+   1.86
+  ],
+  [
+   "France",
+   78,
+   1.48
+  ],
+  [
+   "Switzerland",
+   75,
+   1.42
+  ],
+  [
+   "Italy",
+   69,
+   1.31
+  ],
+  [
+   "Netherlands",
+   63,
+   1.19
+  ],
+  [
+   "Israel",
+   53,
+   1.0
+  ],
+  [
+   "Denmark",
+   43,
+   0.81
+  ],
+  [
+   "Taiwan",
+   41,
+   0.78
+  ],
+  [
+   "Russia",
+   38,
+   0.72
+  ],
+  [
+   "Macau",
+   37,
+   0.7
+  ],
+  [
+   "Vietnam",
+   36,
+   0.68
+  ],
+  [
+   "Austria",
+   27,
+   0.51
+  ],
+  [
+   "Spain",
+   24,
+   0.45
+  ],
+  [
+   "Saudi Arabia",
+   21,
+   0.4
+  ]
+ ],
+ "industry_share_2026": 34.4,
+ "industry_only_share_2026": 6.6,
+ "institutions_2025": [
+  [
+   "Amazon",
+   149,
+   4.61,
+   "industry",
+   "USA"
+  ],
+  [
+   "Tsinghua University",
+   117,
+   3.62,
+   "academia",
+   "China"
+  ],
+  [
+   "Chinese Academy of Sciences",
+   111,
+   3.43,
+   "government/nonprofit",
+   "China"
+  ],
+  [
+   "Microsoft",
+   101,
+   3.12,
+   "industry",
+   "USA"
+  ],
+  [
+   "Zhejiang University",
+   90,
+   2.78,
+   "academia",
+   "China"
+  ],
+  [
+   "Google",
+   87,
+   2.69,
+   "industry",
+   "USA"
+  ],
+  [
+   "HKUST",
+   83,
+   2.57,
+   "academia",
+   "Hong Kong"
+  ],
+  [
+   "Alibaba",
+   82,
+   2.54,
+   "industry",
+   "China"
+  ],
+  [
+   "Meta",
+   78,
+   2.41,
+   "industry",
+   "USA"
+  ],
+  [
+   "Huawei",
+   75,
+   2.32,
+   "industry",
+   "China"
+  ],
+  [
+   "Shanghai Jiao Tong University",
+   73,
+   2.26,
+   "academia",
+   "China"
+  ],
+  [
+   "MBZUAI",
+   73,
+   2.26,
+   "academia",
+   "UAE"
+  ],
+  [
+   "NTU Singapore",
+   70,
+   2.17,
+   "academia",
+   "Singapore"
+  ],
+  [
+   "Peking University",
+   70,
+   2.17,
+   "academia",
+   "China"
+  ],
+  [
+   "Harbin Institute of Technology",
+   64,
+   1.98,
+   "academia",
+   "China"
+  ],
+  [
+   "NUS",
+   62,
+   1.92,
+   "academia",
+   "Singapore"
+  ],
+  [
+   "Tencent",
+   61,
+   1.89,
+   "industry",
+   "China"
+  ],
+  [
+   "Fudan University",
+   60,
+   1.86,
+   "academia",
+   "China"
+  ],
+  [
+   "Carnegie Mellon University",
+   59,
+   1.83,
+   "academia",
+   "USA"
+  ],
+  [
+   "UIUC",
+   55,
+   1.7,
+   "academia",
+   "USA"
+  ],
+  [
+   "ByteDance",
+   54,
+   1.67,
+   "industry",
+   "China"
+  ],
+  [
+   "Stanford University",
+   52,
+   1.61,
+   "academia",
+   "USA"
+  ],
+  [
+   "CUHK",
+   51,
+   1.58,
+   "academia",
+   "Hong Kong"
+  ],
+  [
+   "USTC",
+   51,
+   1.58,
+   "academia",
+   "China"
+  ],
+  [
+   "University of Southern California",
+   49,
+   1.52,
+   "academia",
+   "USA"
+  ],
+  [
+   "NYU",
+   49,
+   1.52,
+   "academia",
+   "USA"
+  ],
+  [
+   "Renmin University of China",
+   49,
+   1.52,
+   "academia",
+   "China"
+  ],
+  [
+   "KAIST",
+   48,
+   1.49,
+   "academia",
+   "South Korea"
+  ],
+  [
+   "Northeastern University",
+   44,
+   1.36,
+   "academia",
+   "USA"
+  ],
+  [
+   "Hong Kong Polytechnic University",
+   39,
+   1.21,
+   "academia",
+   "Hong Kong"
+  ],
+  [
+   "HKUST (Guangzhou)",
+   37,
+   1.14,
+   "academia",
+   "China"
+  ],
+  [
+   "University of Maryland",
+   37,
+   1.14,
+   "academia",
+   "USA"
+  ],
+  [
+   "Johns Hopkins University",
+   37,
+   1.14,
+   "academia",
+   "USA"
+  ],
+  [
+   "University of Chinese Academy of Sciences",
+   35,
+   1.08,
+   "academia",
+   "China"
+  ],
+  [
+   "University of Cambridge",
+   35,
+   1.08,
+   "academia",
+   "UK"
+  ],
+  [
+   "University of Edinburgh",
+   35,
+   1.08,
+   "academia",
+   "UK"
+  ],
+  [
+   "University of Washington",
+   34,
+   1.05,
+   "academia",
+   "USA"
+  ],
+  [
+   "Shanghai AI Laboratory",
+   33,
+   1.02,
+   "government/nonprofit",
+   "China"
+  ],
+  [
+   "Sun Yat-sen University",
+   33,
+   1.02,
+   "academia",
+   "China"
+  ],
+  [
+   "UC San Diego",
+   32,
+   0.99,
+   "academia",
+   "USA"
+  ]
+ ],
+ "countries_2025": [
+  [
+   "USA",
+   1303,
+   39.48
+  ],
+  [
+   "China",
+   1239,
+   37.55
+  ],
+  [
+   "UK",
+   244,
+   7.39
+  ],
+  [
+   "South Korea",
+   223,
+   6.76
+  ],
+  [
+   "Hong Kong",
+   210,
+   6.36
+  ],
+  [
+   "Germany",
+   191,
+   5.79
+  ],
+  [
+   "Singapore",
+   151,
+   4.58
+  ],
+  [
+   "Australia",
+   117,
+   3.55
+  ],
+  [
+   "Canada",
+   113,
+   3.42
+  ],
+  [
+   "Japan",
+   88,
+   2.67
+  ],
+  [
+   "India",
+   82,
+   2.48
+  ],
+  [
+   "UAE",
+   79,
+   2.39
+  ],
+  [
+   "Switzerland",
+   75,
+   2.27
+  ],
+  [
+   "Netherlands",
+   49,
+   1.48
+  ],
+  [
+   "Italy",
+   47,
+   1.42
+  ],
+  [
+   "France",
+   45,
+   1.36
+  ],
+  [
+   "Israel",
+   40,
+   1.21
+  ],
+  [
+   "Denmark",
+   36,
+   1.09
+  ],
+  [
+   "Taiwan",
+   20,
+   0.61
+  ],
+  [
+   "Spain",
+   20,
+   0.61
+  ],
+  [
+   "Sweden",
+   18,
+   0.55
+  ],
+  [
+   "Macau",
+   14,
+   0.42
+  ],
+  [
+   "Russia",
+   14,
+   0.42
+  ],
+  [
+   "Vietnam",
+   13,
+   0.39
+  ],
+  [
+   "Saudi Arabia",
+   13,
+   0.39
+  ]
+ ],
+ "industry_share_2025": 33.7,
+ "industry_only_share_2025": 7.7,
+ "affiliation_coverage": {
+  "2026": {
+   "papers_with_affiliation_pct": 98.64,
+   "authors_with_affiliation_pct": 66.17,
+   "affiliation_strings_matched_pct": 85.0,
+   "papers_with_mapped_org_pct": 94.02,
+   "papers_with_country_pct": 95.39
+  },
+  "2025": {
+   "papers_with_affiliation_pct": 97.7,
+   "authors_with_affiliation_pct": 63.62,
+   "affiliation_strings_matched_pct": 86.26,
+   "papers_with_mapped_org_pct": 92.77,
+   "papers_with_country_pct": 94.72
+  }
+ },
+ "affiliation_method": "Each affiliation string is looked up in institutions_map.json (from the NeurIPS atlas) plus institutions_extra.json (EMNLP spellings), whole and in parts. Countries also use a place-name hint for strings that match no organisation. Shares are among papers with a match.",
+ "findings_share_by_area": [
+  {
+   "id": 0,
+   "topic": "Code, Optimization & Chemistry",
+   "main_2026": 83,
+   "findings_2026": 107,
+   "main_2025": 37,
+   "findings_2025": 47,
+   "findings_share_2026": 56.32,
+   "findings_share_2025": 55.95,
+   "delta_pp": 0.36
+  },
+  {
+   "id": 14,
+   "topic": "Medical & Clinical NLP",
+   "main_2026": 78,
+   "findings_2026": 91,
+   "main_2025": 33,
+   "findings_2025": 31,
+   "findings_share_2026": 53.85,
+   "findings_share_2025": 48.44,
+   "delta_pp": 5.41
+  },
+  {
+   "id": 11,
+   "topic": "Reasoning & Reinforcement Learning",
+   "main_2026": 209,
+   "findings_2026": 237,
+   "main_2025": 164,
+   "findings_2025": 108,
+   "findings_share_2026": 53.14,
+   "findings_share_2025": 39.71,
+   "delta_pp": 13.43
+  },
+  {
+   "id": 5,
+   "topic": "LLM Agents",
+   "main_2026": 264,
+   "findings_2026": 259,
+   "main_2025": 74,
+   "findings_2025": 57,
+   "findings_share_2026": 49.52,
+   "findings_share_2025": 43.51,
+   "delta_pp": 6.01
+  },
+  {
+   "id": 3,
+   "topic": "Factuality, Evaluation & Expert Domains",
+   "main_2026": 265,
+   "findings_2026": 258,
+   "main_2025": 218,
+   "findings_2025": 162,
+   "findings_share_2026": 49.33,
+   "findings_share_2025": 42.63,
+   "delta_pp": 6.7
+  },
+  {
+   "id": 7,
+   "topic": "Social Behavior, Bias & Culture",
+   "main_2026": 274,
+   "findings_2026": 250,
+   "main_2025": 211,
+   "findings_2025": 167,
+   "findings_share_2026": 47.71,
+   "findings_share_2025": 44.18,
+   "delta_pp": 3.53
+  },
+  {
+   "id": 9,
+   "topic": "Retrieval & Structured Knowledge",
+   "main_2026": 224,
+   "findings_2026": 204,
+   "main_2025": 183,
+   "findings_2025": 171,
+   "findings_share_2026": 47.66,
+   "findings_share_2025": 48.31,
+   "delta_pp": -0.64
+  },
+  {
+   "id": 8,
+   "topic": "LLM Safety & Security",
+   "main_2026": 193,
+   "findings_2026": 172,
+   "main_2025": 127,
+   "findings_2025": 109,
+   "findings_share_2026": 47.12,
+   "findings_share_2025": 46.19,
+   "delta_pp": 0.94
+  },
+  {
+   "id": 1,
+   "topic": "Vision-Language Models",
+   "main_2026": 309,
+   "findings_2026": 271,
+   "main_2025": 195,
+   "findings_2025": 164,
+   "findings_share_2026": 46.72,
+   "findings_share_2025": 45.68,
+   "delta_pp": 1.04
+  },
+  {
+   "id": 10,
+   "topic": "Long-Term Agent Memory",
+   "main_2026": 49,
+   "findings_2026": 42,
+   "main_2025": 4,
+   "findings_2025": 1,
+   "findings_share_2026": 46.15,
+   "findings_share_2025": 20.0,
+   "delta_pp": 26.15
+  },
+  {
+   "id": 6,
+   "topic": "Linguistics, Multilinguality & Translation",
+   "main_2026": 207,
+   "findings_2026": 174,
+   "main_2025": 200,
+   "findings_2025": 119,
+   "findings_share_2026": 45.67,
+   "findings_share_2025": 37.3,
+   "delta_pp": 8.37
+  },
+  {
+   "id": 2,
+   "topic": "Fine-Tuning & Preference Alignment",
+   "main_2026": 80,
+   "findings_2026": 67,
+   "main_2025": 77,
+   "findings_2025": 72,
+   "findings_share_2026": 45.58,
+   "findings_share_2025": 48.32,
+   "delta_pp": -2.74
+  },
+  {
+   "id": 4,
+   "topic": "Speech & Audio Models",
+   "main_2026": 91,
+   "findings_2026": 72,
+   "main_2025": 57,
+   "findings_2025": 30,
+   "findings_share_2026": 44.17,
+   "findings_share_2025": 34.48,
+   "delta_pp": 9.69
+  },
+  {
+   "id": 12,
+   "topic": "Text Generation, Style & Detection",
+   "main_2026": 96,
+   "findings_2026": 75,
+   "main_2025": 73,
+   "findings_2025": 57,
+   "findings_share_2026": 43.86,
+   "findings_share_2025": 43.85,
+   "delta_pp": 0.01
+  },
+  {
+   "id": 15,
+   "topic": "Efficient LLMs & Decoding",
+   "main_2026": 234,
+   "findings_2026": 167,
+   "main_2025": 127,
+   "findings_2025": 95,
+   "findings_share_2026": 41.65,
+   "findings_share_2025": 42.79,
+   "delta_pp": -1.15
+  },
+  {
+   "id": 13,
+   "topic": "Sequence Model Architectures",
+   "main_2026": 48,
+   "findings_2026": 32,
+   "main_2025": 29,
+   "findings_2025": 15,
+   "findings_share_2026": 40.0,
+   "findings_share_2025": 34.09,
+   "delta_pp": 5.91
+  }
+ ],
+ "findings_share_overall": {
+  "2026": 47.82,
+  "2025": 43.71
+ },
+ "schedule": {
+  "schedule_available": true,
+  "papers_in_program": 5522,
+  "papers_without_slot": 12,
+  "pres_counts": {
+   "oral": 474,
+   "poster": 2807,
+   "virtual": 954,
+   "demo": 69,
+   "not presenting": 1218
+  },
+  "pres_by_track": {
+   "Demo": {
+    "demo": 69,
+    "not presenting": 0,
+    "oral": 0,
+    "poster": 1,
+    "virtual": 14
+   },
+   "Findings": {
+    "demo": 0,
+    "not presenting": 1218,
+    "oral": 0,
+    "poster": 1095,
+    "virtual": 162
+   },
+   "Industry": {
+    "demo": 0,
+    "not presenting": 0,
+    "oral": 19,
+    "poster": 155,
+    "virtual": 90
+   },
+   "Main": {
+    "demo": 0,
+    "not presenting": 0,
+    "oral": 455,
+    "poster": 1556,
+    "virtual": 688
+   }
+  },
+  "pres_mix_by_area": [
+   {
+    "id": 6,
+    "topic": "Linguistics, Multilinguality & Translation",
+    "papers": 389,
+    "oral": 16.2,
+    "poster": 63.5,
+    "virtual": 8.23,
+    "demo": 1.03,
+    "not presenting": 11.05
+   },
+   {
+    "id": 3,
+    "topic": "Factuality, Evaluation & Expert Domains",
+    "papers": 602,
+    "oral": 10.8,
+    "poster": 54.15,
+    "virtual": 12.96,
+    "demo": 2.82,
+    "not presenting": 19.27
+   },
+   {
+    "id": 7,
+    "topic": "Social Behavior, Bias & Culture",
+    "papers": 549,
+    "oral": 10.02,
+    "poster": 54.28,
+    "virtual": 13.3,
+    "demo": 1.28,
+    "not presenting": 21.13
+   },
+   {
+    "id": 0,
+    "topic": "Code, Optimization & Chemistry",
+    "papers": 199,
+    "oral": 8.54,
+    "poster": 40.7,
+    "virtual": 17.59,
+    "demo": 0.5,
+    "not presenting": 32.66
+   },
+   {
+    "id": 11,
+    "topic": "Reasoning & Reinforcement Learning",
+    "papers": 451,
+    "oral": 8.2,
+    "poster": 42.57,
+    "virtual": 16.63,
+    "demo": 0.22,
+    "not presenting": 32.37
+   },
+   {
+    "id": 15,
+    "topic": "Efficient LLMs & Decoding",
+    "papers": 422,
+    "oral": 8.06,
+    "poster": 44.79,
+    "virtual": 23.7,
+    "demo": 1.18,
+    "not presenting": 22.27
+   },
+   {
+    "id": 4,
+    "topic": "Speech & Audio Models",
+    "papers": 175,
+    "oral": 8.0,
+    "poster": 62.29,
+    "virtual": 13.71,
+    "demo": 1.71,
+    "not presenting": 14.29
+   },
+   {
+    "id": 1,
+    "topic": "Vision-Language Models",
+    "papers": 591,
+    "oral": 7.95,
+    "poster": 48.39,
+    "virtual": 18.95,
+    "demo": 0.17,
+    "not presenting": 24.53
+   },
+   {
+    "id": 12,
+    "topic": "Text Generation, Style & Detection",
+    "papers": 179,
+    "oral": 7.82,
+    "poster": 54.75,
+    "virtual": 12.85,
+    "demo": 1.68,
+    "not presenting": 22.91
+   },
+   {
+    "id": 2,
+    "topic": "Fine-Tuning & Preference Alignment",
+    "papers": 151,
+    "oral": 7.28,
+    "poster": 48.34,
+    "virtual": 20.53,
+    "demo": 0.0,
+    "not presenting": 23.84
+   },
+   {
+    "id": 8,
+    "topic": "LLM Safety & Security",
+    "papers": 386,
+    "oral": 7.25,
+    "poster": 53.11,
+    "virtual": 19.43,
+    "demo": 1.04,
+    "not presenting": 19.17
+   },
+   {
+    "id": 5,
+    "topic": "LLM Agents",
+    "papers": 591,
+    "oral": 7.11,
+    "poster": 46.19,
+    "virtual": 21.32,
+    "demo": 2.54,
+    "not presenting": 22.84
+   },
+   {
+    "id": 10,
+    "topic": "Long-Term Agent Memory",
+    "papers": 95,
+    "oral": 6.32,
+    "poster": 44.21,
+    "virtual": 23.16,
+    "demo": 1.05,
+    "not presenting": 25.26
+   },
+   {
+    "id": 13,
+    "topic": "Sequence Model Architectures",
+    "papers": 80,
+    "oral": 6.25,
+    "poster": 61.25,
+    "virtual": 18.75,
+    "demo": 0.0,
+    "not presenting": 13.75
+   },
+   {
+    "id": 14,
+    "topic": "Medical & Clinical NLP",
+    "papers": 179,
+    "oral": 5.59,
+    "poster": 54.75,
+    "virtual": 13.97,
+    "demo": 1.68,
+    "not presenting": 24.02
+   },
+   {
+    "id": 9,
+    "topic": "Retrieval & Structured Knowledge",
+    "papers": 483,
+    "oral": 5.38,
+    "poster": 49.9,
+    "virtual": 22.36,
+    "demo": 0.83,
+    "not presenting": 21.53
+   }
+  ],
+  "pres_overall_pct": {
+   "oral": 8.58,
+   "poster": 50.83,
+   "virtual": 17.28,
+   "demo": 1.25,
+   "not presenting": 22.06
+  },
+  "oral_rate_overall_pct": 16.0,
+  "oral_rate_by_area": [
+   {
+    "id": 6,
+    "topic": "Linguistics, Multilinguality & Translation",
+    "papers": 211,
+    "orals": 63,
+    "rate_pct": 29.86
+   },
+   {
+    "id": 3,
+    "topic": "Factuality, Evaluation & Expert Domains",
+    "papers": 324,
+    "orals": 65,
+    "rate_pct": 20.06
+   },
+   {
+    "id": 7,
+    "topic": "Social Behavior, Bias & Culture",
+    "papers": 291,
+    "orals": 55,
+    "rate_pct": 18.9
+   },
+   {
+    "id": 0,
+    "topic": "Code, Optimization & Chemistry",
+    "papers": 91,
+    "orals": 17,
+    "rate_pct": 18.68
+   },
+   {
+    "id": 11,
+    "topic": "Reasoning & Reinforcement Learning",
+    "papers": 213,
+    "orals": 37,
+    "rate_pct": 17.37
+   },
+   {
+    "id": 1,
+    "topic": "Vision-Language Models",
+    "papers": 320,
+    "orals": 47,
+    "rate_pct": 14.69
+   },
+   {
+    "id": 4,
+    "topic": "Speech & Audio Models",
+    "papers": 99,
+    "orals": 14,
+    "rate_pct": 14.14
+   },
+   {
+    "id": 12,
+    "topic": "Text Generation, Style & Detection",
+    "papers": 101,
+    "orals": 14,
+    "rate_pct": 13.86
+   },
+   {
+    "id": 15,
+    "topic": "Efficient LLMs & Decoding",
+    "papers": 248,
+    "orals": 34,
+    "rate_pct": 13.71
+   },
+   {
+    "id": 8,
+    "topic": "LLM Safety & Security",
+    "papers": 208,
+    "orals": 28,
+    "rate_pct": 13.46
+   },
+   {
+    "id": 5,
+    "topic": "LLM Agents",
+    "papers": 314,
+    "orals": 42,
+    "rate_pct": 13.38
+   },
+   {
+    "id": 2,
+    "topic": "Fine-Tuning & Preference Alignment",
+    "papers": 85,
+    "orals": 11,
+    "rate_pct": 12.94
+   },
+   {
+    "id": 10,
+    "topic": "Long-Term Agent Memory",
+    "papers": 51,
+    "orals": 6,
+    "rate_pct": 11.76
+   },
+   {
+    "id": 14,
+    "topic": "Medical & Clinical NLP",
+    "papers": 85,
+    "orals": 10,
+    "rate_pct": 11.76
+   },
+   {
+    "id": 13,
+    "topic": "Sequence Model Architectures",
+    "papers": 48,
+    "orals": 5,
+    "rate_pct": 10.42
+   },
+   {
+    "id": 9,
+    "topic": "Retrieval & Structured Knowledge",
+    "papers": 274,
+    "orals": 26,
+    "rate_pct": 9.49
+   }
+  ],
+  "oral_sessions_by_official_area": {
+   "Resources and Evaluation": 53,
+   "LLM Agents": 41,
+   "Multiple Tracks": 40,
+   "Interpretability and Analysis of Models for NLP": 29,
+   "Multimodality and Language Grounding to Vision, Robotics and Beyond": 27,
+   "Language Modeling": 21,
+   "Efficient Methods for NLP": 20,
+   "Machine Learning for NLP": 18,
+   "Computational Social Science and Cultural Analytics": 18,
+   "Ethics, Bias, and Fairness": 14,
+   "Information Retrieval and Text Mining": 14,
+   "Human-Centered NLP and Human-AI Interaction": 13,
+   "Generation": 12,
+   "Linguistic Theories, Cognitive Modeling, and Psycholinguistics": 11,
+   "Speech and Dialogue": 7,
+   "Phonology, Morphology, and Word Segmentation": 7,
+   "Speech Recognition, Text-to-Speech and Spoken Language Understanding": 7,
+   "Multilingualism and Linguistic Theories": 7,
+   "Machine Translation and Semantics": 7,
+   "NLP Applications": 7,
+   "Lexical and Sentence-Level": 7,
+   "Information Extraction": 7,
+   "NLP and Code Models": 7,
+   "Discourse and Pragmatics": 7,
+   "Dialogue and Interactive Systems": 7,
+   "Question Answering": 7,
+   "Clinical and Biomedical Applications": 6,
+   "Multilingualism and Cross-Lingual NLP": 6,
+   "Syntax: Tagging, Chunking and Parsing": 6,
+   "NLP and Symbolic Reasoning": 6
+  },
+  "papers_per_day": [
+   {
+    "iso": "2026-10-25",
+    "day": "Sun 25 Oct",
+    "oral": 140,
+    "poster": 808,
+    "virtual": 456,
+    "demo": 19,
+    "not presenting": 1,
+    "papers": 1424
+   },
+   {
+    "iso": "2026-10-26",
+    "day": "Mon 26 Oct",
+    "oral": 197,
+    "poster": 1189,
+    "virtual": 345,
+    "demo": 30,
+    "not presenting": 0,
+    "papers": 1761
+   },
+   {
+    "iso": "2026-10-27",
+    "day": "Tue 27 Oct",
+    "oral": 137,
+    "poster": 810,
+    "virtual": 89,
+    "demo": 19,
+    "not presenting": 0,
+    "papers": 1055
+   }
+  ]
+ }
+}

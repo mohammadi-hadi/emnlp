@@ -1,0 +1,17 @@
+id,topic,main_2026,findings_2026,main_2025,findings_2025,findings_share_2026,findings_share_2025,delta_pp
+0,"Code, Optimization & Chemistry",83,107,37,47,56.32,55.95,0.36
+14,Medical & Clinical NLP,78,91,33,31,53.85,48.44,5.41
+11,Reasoning & Reinforcement Learning,209,237,164,108,53.14,39.71,13.43
+5,LLM Agents,264,259,74,57,49.52,43.51,6.01
+3,"Factuality, Evaluation & Expert Domains",265,258,218,162,49.33,42.63,6.7
+7,"Social Behavior, Bias & Culture",274,250,211,167,47.71,44.18,3.53
+9,Retrieval & Structured Knowledge,224,204,183,171,47.66,48.31,-0.64
+8,LLM Safety & Security,193,172,127,109,47.12,46.19,0.94
+1,Vision-Language Models,309,271,195,164,46.72,45.68,1.04
+10,Long-Term Agent Memory,49,42,4,1,46.15,20.0,26.15
+6,"Linguistics, Multilinguality & Translation",207,174,200,119,45.67,37.3,8.37
+2,Fine-Tuning & Preference Alignment,80,67,77,72,45.58,48.32,-2.74
+4,Speech & Audio Models,91,72,57,30,44.17,34.48,9.69
+12,"Text Generation, Style & Detection",96,75,73,57,43.86,43.85,0.01
+15,Efficient LLMs & Decoding,234,167,127,95,41.65,42.79,-1.15
+13,Sequence Model Architectures,48,32,29,15,40.0,34.09,5.91

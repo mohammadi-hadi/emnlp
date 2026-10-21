@@ -1,0 +1,17 @@
+id,topic,papers,orals,rate_pct
+6,"Linguistics, Multilinguality & Translation",211,63,29.86
+3,"Factuality, Evaluation & Expert Domains",324,65,20.06
+7,"Social Behavior, Bias & Culture",291,55,18.9
+0,"Code, Optimization & Chemistry",91,17,18.68
+11,Reasoning & Reinforcement Learning,213,37,17.37
+1,Vision-Language Models,320,47,14.69
+4,Speech & Audio Models,99,14,14.14
+12,"Text Generation, Style & Detection",101,14,13.86
+15,Efficient LLMs & Decoding,248,34,13.71
+8,LLM Safety & Security,208,28,13.46
+5,LLM Agents,314,42,13.38
+2,Fine-Tuning & Preference Alignment,85,11,12.94
+10,Long-Term Agent Memory,51,6,11.76
+14,Medical & Clinical NLP,85,10,11.76
+13,Sequence Model Architectures,48,5,10.42
+9,Retrieval & Structured Knowledge,274,26,9.49

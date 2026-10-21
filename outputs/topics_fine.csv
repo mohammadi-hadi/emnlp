@@ -1,0 +1,101 @@
+id,topic,broad,area,n_2026,n_2025,share_2026,share_2025,delta_pp,ratio,agent_keyword_share
+53,Efficient and Latent Chain-of-Thought Reasoning,11,Reasoning & Reinforcement Learning,139,86,2.512,2.468,0.043,1.018,7.2
+33,Model Pruning and Sparsity,15,Efficient LLMs & Decoding,127,121,2.295,3.473,-1.178,0.661,4.7
+3,Psycholinguistics and Linguistic Knowledge Probing,6,"Linguistics, Multilinguality & Translation",120,78,2.168,2.239,-0.07,0.969,2.5
+37,Clinical Reasoning and EHR Benchmarks,14,Medical & Clinical NLP,116,50,2.096,1.435,0.661,1.461,35.3
+61,Chain-of-Thought Faithfulness and Reasoning Diagnostics,11,Reasoning & Reinforcement Learning,103,37,1.861,1.062,0.799,1.753,6.8
+12,Confidence Calibration and Knowledge Boundaries,3,"Factuality, Evaluation & Expert Domains",103,81,1.861,2.325,-0.464,0.801,3.9
+42,Retrieval-Augmented Generation and Evidence Grounding,9,Retrieval & Structured Knowledge,102,84,1.843,2.411,-0.568,0.764,16.7
+14,Cross-Lingual Transfer and Multilingual Representations,6,"Linguistics, Multilinguality & Translation",101,104,1.825,2.985,-1.16,0.611,3.0
+50,"Cognitive Bias, Sycophancy and Moral Judgment",7,"Social Behavior, Bias & Culture",100,73,1.807,2.095,-0.288,0.862,14.0
+73,Agent Benchmarks and Failure Diagnosis,5,LLM Agents,98,17,1.771,0.488,1.283,3.629,96.9
+35,Long-Term Memory for Agents,10,Long-Term Agent Memory,96,6,1.735,0.172,1.563,10.073,79.2
+74,Safety Alignment and Over-Refusal,8,LLM Safety & Security,93,40,1.681,1.148,0.532,1.464,8.6
+25,Vision-Language Model Failures and Robustness,1,Vision-Language Models,89,62,1.608,1.78,-0.171,0.904,6.7
+56,RLVR and On-Policy Distillation,11,Reasoning & Reinforcement Learning,89,3,1.608,0.086,1.522,18.677,3.4
+22,"Attention, State-Space and Hybrid Architectures",13,Sequence Model Architectures,80,45,1.446,1.292,0.154,1.119,0.0
+23,LLM-as-a-Judge Bias and Reliability,7,"Social Behavior, Bias & Culture",78,36,1.409,1.033,0.376,1.364,19.2
+8,Dense Retrieval and LLM Reranking,9,Retrieval & Structured Knowledge,77,49,1.391,1.406,-0.015,0.989,3.9
+98,Jailbreak and Backdoor Attacks,8,LLM Safety & Security,77,55,1.391,1.579,-0.187,0.881,7.8
+80,"Code Generation, Testing and Repair",0,"Code, Optimization & Chemistry",76,44,1.373,1.263,0.11,1.087,11.8
+31,Speech Language Models and Voice Agents,4,Speech & Audio Models,73,44,1.319,1.263,0.056,1.045,21.9
+21,Diffusion Language Models and Parallel Decoding,15,Efficient LLMs & Decoding,72,12,1.301,0.344,0.957,3.777,1.4
+54,Deep Research and Search Agents,5,LLM Agents,72,9,1.301,0.258,1.043,5.037,95.8
+24,Long-Horizon Agents and World Models,5,LLM Agents,72,26,1.301,0.746,0.555,1.743,98.6
+83,Agentic RL and Reward Design,5,LLM Agents,71,19,1.283,0.545,0.738,2.353,49.3
+44,Domain Adaptation and Continual Pre-Training,2,Fine-Tuning & Preference Alignment,68,81,1.229,2.325,-1.096,0.529,2.9
+41,"Speech Synthesis, Recognition and Audio Tokenizers",4,Speech & Audio Models,68,38,1.229,1.091,0.138,1.127,2.9
+27,Mathematical Reasoning and Formal Theorem Proving,11,Reasoning & Reinforcement Learning,68,65,1.229,1.866,-0.637,0.659,16.2
+43,"Dialects, Scripts and Underrepresented Languages",6,"Linguistics, Multilinguality & Translation",64,67,1.156,1.923,-0.767,0.601,0.0
+62,Visually Grounded Multimodal Reasoning with RL,1,Vision-Language Models,64,21,1.156,0.603,0.554,1.919,12.5
+19,Role-Playing Agents and Emotional Support Dialogue,7,"Social Behavior, Bias & Culture",64,68,1.156,1.952,-0.795,0.593,48.4
+71,"Scientific Discovery, Writing and Citations",3,"Factuality, Evaluation & Expert Domains",63,34,1.138,0.976,0.163,1.167,31.7
+64,Document-Level and Low-Resource Translation,6,"Linguistics, Multilinguality & Translation",61,43,1.102,1.234,-0.132,0.893,8.2
+90,Knowledge Graph Reasoning and Link Prediction,9,Retrieval & Structured Knowledge,60,56,1.084,1.607,-0.523,0.675,15.0
+26,Cultural Knowledge and Cultural Alignment,7,"Social Behavior, Bias & Culture",60,42,1.084,1.206,-0.121,0.899,6.7
+30,Video Benchmarks and Text-to-Video Generation,1,Vision-Language Models,59,29,1.066,0.832,0.234,1.281,13.6
+68,"Social Bias, Stereotypes and Debiasing",7,"Social Behavior, Bias & Culture",58,70,1.048,2.009,-0.961,0.522,8.6
+13,Benchmark Construction and Evaluation Reliability,3,"Factuality, Evaluation & Expert Domains",58,67,1.048,1.923,-0.875,0.545,6.9
+86,Multi-Agent Collaboration and Communication,5,LLM Agents,58,27,1.048,0.775,0.273,1.352,100.0
+17,Clarifying Questions and Information-Seeking QA,3,"Factuality, Evaluation & Expert Domains",57,42,1.03,1.206,-0.176,0.854,10.5
+51,Omni-Modal Models and Modality Robustness,1,Vision-Language Models,57,70,1.03,2.009,-0.979,0.513,10.5
+77,Multimodal RAG and Visual Document Retrieval,1,Vision-Language Models,57,28,1.03,0.804,0.226,1.282,31.6
+16,KV Cache Compression and Eviction,15,Efficient LLMs & Decoding,57,18,1.03,0.517,0.513,1.994,10.5
+47,Tool Use and Function Calling Agents,5,LLM Agents,55,20,0.994,0.574,0.42,1.731,76.4
+2,Graph RAG and Multi-Hop QA,9,Retrieval & Structured Knowledge,54,35,0.976,1.005,-0.029,0.971,13.0
+5,Agent Skill Libraries and Skill Evolution,5,LLM Agents,53,0,0.958,0.0,0.958,,98.1
+76,"Webpage, SVG and Text-to-Image Generation",12,"Text Generation, Style & Detection",53,34,0.958,0.976,-0.018,0.981,47.2
+1,Self-Improving Reasoning and Self-Correction,11,Reasoning & Reinforcement Learning,53,88,0.958,2.526,-1.568,0.379,3.8
+18,Authorship Style and Creative Writing,12,"Text Generation, Style & Detection",52,48,0.94,1.378,-0.438,0.682,7.7
+7,Document Information Extraction and Enterprise QA,3,"Factuality, Evaluation & Expert Domains",52,26,0.94,0.746,0.193,1.259,19.2
+40,Vision-Language Hallucination Mitigation,1,Vision-Language Models,52,50,0.94,1.435,-0.495,0.655,7.7
+84,Personalization and Personality Alignment,7,"Social Behavior, Bias & Culture",51,27,0.922,0.775,0.147,1.189,11.8
+87,Fact-Checking and Factuality Evaluation,3,"Factuality, Evaluation & Expert Domains",50,39,0.904,1.119,-0.216,0.807,14.0
+88,Agent Safety and Tool-Use Risks,8,LLM Safety & Security,50,13,0.904,0.373,0.53,2.421,98.0
+58,Coding Agents for Software Engineering,0,"Code, Optimization & Chemistry",48,9,0.867,0.258,0.609,3.358,85.4
+72,"Entity Linking, Relation Extraction and Taxonomies",9,Retrieval & Structured Knowledge,48,60,0.867,1.722,-0.855,0.504,4.2
+59,User Simulators and Human Behavior Simulation,7,"Social Behavior, Bias & Culture",47,21,0.849,0.603,0.247,1.409,66.0
+55,Human and LLM Data Annotation,3,"Factuality, Evaluation & Expert Domains",47,48,0.849,1.378,-0.528,0.616,8.5
+0,Generative and Sequential Recommendation,9,Retrieval & Structured Knowledge,45,29,0.813,0.832,-0.019,0.977,17.8
+10,Long and Streaming Video QA,1,Vision-Language Models,45,15,0.813,0.431,0.383,1.889,31.1
+92,LoRA and Parameter-Efficient Fine-Tuning,2,Fine-Tuning & Preference Alignment,44,40,0.795,1.148,-0.353,0.693,0.0
+15,Automated Peer Review and Essay Scoring,3,"Factuality, Evaluation & Expert Domains",43,24,0.777,0.689,0.088,1.128,18.6
+95,Vision-Language-Action and Embodied Agents,1,Vision-Language Models,43,21,0.777,0.603,0.174,1.289,44.2
+63,Speculative Decoding and Inference Acceleration,15,Efficient LLMs & Decoding,42,24,0.759,0.689,0.07,1.102,9.5
+32,AI-Generated Text Detection,12,"Text Generation, Style & Detection",42,22,0.759,0.631,0.127,1.202,14.3
+28,Medical Question Answering and Medical VQA,14,Medical & Clinical NLP,42,21,0.759,0.603,0.156,1.259,14.3
+34,"Chemistry, Molecules and Drug Discovery",0,"Code, Optimization & Chemistry",40,28,0.723,0.804,-0.081,0.899,30.0
+97,Financial NLP Benchmarks and Agents,3,"Factuality, Evaluation & Expert Domains",40,26,0.723,0.746,-0.023,0.969,37.5
+39,Direct Preference Optimization and Personalized Alignment,2,Fine-Tuning & Preference Alignment,40,35,0.723,1.005,-0.282,0.72,7.5
+4,Indirect Prompt Injection Attacks,8,LLM Safety & Security,39,25,0.705,0.718,-0.013,0.982,59.0
+69,Legal Reasoning and Judgment Prediction,3,"Factuality, Evaluation & Expert Domains",39,21,0.705,0.603,0.102,1.169,23.1
+70,Text-to-SQL and Database Querying,9,Retrieval & Structured Knowledge,39,26,0.705,0.746,-0.042,0.944,23.1
+96,"Privacy Leakage, PII and Membership Inference",8,LLM Safety & Security,37,23,0.669,0.66,0.008,1.013,18.9
+65,Multi-Agent Debate and Argumentation,7,"Social Behavior, Bias & Culture",37,13,0.669,0.373,0.295,1.792,78.4
+89,Low-Bit Weight and Activation Quantization,15,Efficient LLMs & Decoding,37,18,0.669,0.517,0.152,1.294,2.7
+57,Table Reasoning and Table Question Answering,9,Retrieval & Structured Knowledge,36,26,0.651,0.746,-0.096,0.872,13.9
+85,Visual Token Pruning for Efficient VLMs,1,Vision-Language Models,35,23,0.632,0.66,-0.028,0.958,0.0
+94,Detoxification and Moderation Evasion,8,LLM Safety & Security,35,58,0.632,1.665,-1.032,0.38,17.1
+91,Audio-Language Model Understanding and Reasoning,4,Speech & Audio Models,35,12,0.632,0.344,0.288,1.836,2.9
+79,GUI Agent Benchmarks and Simulators,5,LLM Agents,35,6,0.632,0.172,0.46,3.672,97.1
+29,Optimization Modeling and Evolutionary Algorithm Discovery,0,"Code, Optimization & Chemistry",35,6,0.632,0.172,0.46,3.672,48.6
+9,Spatial Reasoning and 3D Visual Grounding,1,Vision-Language Models,34,18,0.614,0.517,0.098,1.189,17.6
+38,Chart and Visual Document Reasoning,1,Vision-Language Models,33,24,0.596,0.689,-0.093,0.866,15.2
+75,Synthetic Data Generation and Data Curation,12,"Text Generation, Style & Detection",33,38,0.596,1.091,-0.494,0.547,15.2
+20,Multimodal and Text-to-Image Safety,8,LLM Safety & Security,31,16,0.56,0.459,0.101,1.22,19.4
+11,Machine Unlearning in Language Models,15,Efficient LLMs & Decoding,31,22,0.56,0.631,-0.071,0.887,0.0
+49,Proactive Agents and Implicit User Intent,5,LLM Agents,30,13,0.542,0.373,0.169,1.453,83.3
+81,Knowledge Editing and Lifelong Model Editing,3,"Factuality, Evaluation & Expert Domains",29,26,0.524,0.746,-0.222,0.702,0.0
+78,MoE Compression and Efficient Training,15,Efficient LLMs & Decoding,29,9,0.524,0.258,0.266,2.029,0.0
+6,Emotion Recognition and Affective Analysis,7,"Social Behavior, Bias & Culture",29,28,0.524,0.804,-0.28,0.652,10.3
+82,AI Tutoring and Educational Dialogue,5,LLM Agents,27,19,0.488,0.545,-0.057,0.895,33.3
+60,Mixture-of-Experts Routing and Fine-Tuning,15,Efficient LLMs & Decoding,27,14,0.488,0.402,0.086,1.214,0.0
+36,Theory of Mind and Social Intelligence,7,"Social Behavior, Bias & Culture",26,16,0.47,0.459,0.011,1.023,26.9
+46,Machine Translation Quality Evaluation,6,"Linguistics, Multilinguality & Translation",24,34,0.434,0.976,-0.542,0.444,16.7
+93,Meme Understanding and Harmful Meme Detection,1,Vision-Language Models,24,16,0.434,0.459,-0.026,0.944,16.7
+48,Text Watermarking and Model Fingerprinting,8,LLM Safety & Security,24,19,0.434,0.545,-0.112,0.795,0.0
+52,GUI Agent Grounding and RL Training,5,LLM Agents,23,9,0.416,0.258,0.157,1.609,87.0
+66,Event Extraction and Time-Series Grounding,9,Retrieval & Structured Knowledge,22,26,0.398,0.746,-0.349,0.533,22.7
+67,Radiology Report Generation,14,Medical & Clinical NLP,22,12,0.398,0.344,0.053,1.154,4.5
+45,Compliance Checking and Auditing Agents,3,"Factuality, Evaluation & Expert Domains",21,2,0.379,0.057,0.322,6.61,66.7
+99,Tokenization and Subword Vocabularies,6,"Linguistics, Multilinguality & Translation",20,16,0.361,0.459,-0.098,0.787,0.0

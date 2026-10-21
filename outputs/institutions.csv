@@ -1,0 +1,301 @@
+organisation,papers_2026,papers_2025
+Alibaba,251,82
+Tsinghua University,227,117
+Chinese Academy of Sciences,215,111
+Zhejiang University,209,90
+Amazon,172,149
+Microsoft,167,101
+HKUST,165,83
+Tencent,164,61
+Shanghai Jiao Tong University,161,73
+Peking University,157,70
+NTU Singapore,148,70
+Google,135,87
+USTC,134,51
+NUS,133,62
+Fudan University,129,60
+Shanghai AI Laboratory,113,33
+MBZUAI,112,73
+KAIST,111,48
+ByteDance,109,54
+Harbin Institute of Technology,99,64
+Huawei,99,75
+Carnegie Mellon University,92,59
+Independent,91,20
+UIUC,91,55
+HKUST (Guangzhou),90,37
+Renmin University of China,88,49
+CUHK,87,51
+Hong Kong Polytechnic University,86,39
+Beihang University,81,31
+Meta,80,78
+Nanjing University,80,26
+University of Chinese Academy of Sciences,80,35
+Seoul National University,79,29
+Ant Group,74,30
+East China Normal University,74,23
+Northeastern University,69,44
+Stanford University,68,52
+Beijing University of Posts and Telecommunications,65,26
+City University of Hong Kong,61,16
+Meituan,58,30
+Korea University,54,28
+University of Hong Kong,53,31
+Monash University,49,23
+MIT,48,28
+NVIDIA,48,22
+Xi'an Jiaotong University,48,11
+NYU,48,49
+University of Oxford,47,29
+LMU Munich,44,30
+Baidu,44,26
+Beijing Institute of Technology,43,22
+University of Melbourne,42,13
+Huazhong University of Science and Technology,42,17
+University of Tokyo,42,20
+Wuhan University,41,28
+University of Maryland,41,37
+Sun Yat-sen University,41,33
+Georgia Tech,40,26
+Yonsei University,40,30
+TU Munich,40,21
+University of Michigan,40,28
+ETH Zurich,40,25
+Soochow University,38,17
+McGill University,38,21
+University of Cambridge,38,35
+UESTC,38,14
+University of Southern California,37,49
+UT Austin,36,27
+Adobe,36,27
+UC Berkeley,36,24
+CUHK-Shenzhen,36,18
+University of Toronto,36,17
+Arizona State University,36,23
+University of Washington,36,34
+Singapore Management University,36,14
+UC San Diego,35,32
+Apple,35,24
+University of Edinburgh,35,35
+Johns Hopkins University,34,37
+Sungkyunkwan University,34,8
+Southeast University,34,14
+University of British Columbia,33,17
+Imperial College London,33,21
+Shanghai Innovation Institute,33,1
+National University of Defense Technology,32,23
+Tianjin University,31,13
+Kuaishou,31,15
+University of Macau,31,13
+UNSW Sydney,30,14
+RIKEN,29,18
+A*STAR,28,8
+UCLA,28,17
+IBM,28,31
+University of Wisconsin-Madison,28,21
+University College London,28,23
+Hanyang University,28,9
+Chung-Ang University,27,15
+University of Notre Dame,27,13
+Samsung,27,19
+POSTECH,27,25
+TU Darmstadt,27,26
+Xiamen University,27,10
+University of Waterloo,26,22
+Shenzhen University,26,8
+Penn State University,26,21
+Xiaohongshu,26,10
+Oracle,25,15
+JD.com,25,3
+NAVER,25,4
+Cornell University,24,17
+Jilin University,24,11
+Yale University,23,27
+Harvard University,23,11
+King's College London,23,18
+Capital One,23,4
+University of Sheffield,23,20
+University of Technology Sydney,23,12
+LG,22,14
+Southern University of Science and Technology,22,10
+Westlake University,22,10
+Rutgers University,22,13
+Tokyo Institute of Technology,22,10
+OPPO,21,5
+Zhongguancun Academy,21,0
+Allen Institute for AI,21,28
+National Taiwan University,21,12
+Columbia University,21,21
+UNC Chapel Hill,21,30
+Salesforce,21,22
+University of Illinois Chicago,21,21
+Hanoi University of Science and Technology,20,5
+Shandong University,20,16
+Beijing Normal University,20,5
+University of Virginia,20,21
+South China University of Technology,20,11
+University of Liverpool,19,12
+UMass Amherst,19,16
+Tohoku University,19,8
+CyberAgent,19,5
+Ohio State University,18,4
+KAUST,18,8
+Emory University,18,15
+DFKI,18,6
+CNRS,18,16
+Saarland University,18,12
+University of Amsterdam,18,20
+Mila,18,10
+Michigan State University,18,13
+Sichuan University,18,10
+Beijing Jiaotong University,17,10
+Nankai University,17,11
+University of Zurich,17,17
+Institute of Science Tokyo,17,9
+University of Copenhagen,17,22
+Virginia Tech,17,19
+Princeton University,17,11
+UNIST,17,5
+UT Dallas,17,8
+CISPA,17,4
+Kyoto University,17,11
+UC Santa Barbara,17,18
+Texas A&M University,17,10
+Peng Cheng Laboratory,17,8
+University of Auckland,16,6
+University of Florida,16,3
+ServiceNow,16,7
+SUTD,16,15
+Macquarie University,16,15
+Purdue University,16,17
+Stony Brook University,16,14
+NAIST,16,17
+National Yang Ming Chiao Tung University,16,4
+Soongsil University,16,10
+Northwestern University,16,15
+EPFL,16,19
+AIST,16,6
+BAAI,16,6
+University of Colorado Boulder,15,6
+University of Central Florida,15,11
+University of Sydney,15,8
+University of Pennsylvania,15,13
+Fondazione Bruno Kessler,15,8
+George Mason University,15,12
+Xidian University,14,3
+UC Santa Cruz,14,9
+Qualcomm,14,5
+Duke University,14,7
+University of Manchester,14,27
+BIGAI,14,6
+IIIT Hyderabad,14,5
+Technion,14,11
+DA-IICT,14,16
+University of Pittsburgh,13,15
+"Eastern Institute of Technology, Ningbo",13,4
+University of Chicago,13,10
+University of Alberta,13,7
+Nanjing University of Aeronautics and Astronautics,13,3
+Max Planck Society,13,7
+TU Berlin,13,4
+Vector Institute,13,6
+Xi'an Jiaotong-Liverpool University,13,5
+ShanghaiTech University,13,6
+AITRICS,13,7
+RMIT University,13,4
+ETRI,12,2
+University of Houston,12,3
+National Institute of Informatics,12,8
+Stevens Institute of Technology,12,14
+Georgetown University,12,4
+Dartmouth College,12,13
+Tongji University,12,12
+Queen Mary University of London,12,14
+Utrecht University,12,5
+NYU Shanghai,12,10
+Hong Kong Baptist University,12,3
+Xiaomi,12,7
+William & Mary,12,7
+IIT Bombay,12,8
+VinUniversity,12,4
+AMD,12,4
+BUPT,12,7
+University of Innsbruck,12,7
+JPMorgan Chase,11,5
+China Telecom,11,6
+HSE University,11,7
+Shenzhen Loop Area Institute,11,0
+Tel Aviv University,11,7
+Moscow Independent Research Institute of Artificial Intelligence,11,0
+Li Auto,11,1
+Australian National University,11,12
+Sapienza University of Rome,11,8
+Boston University,11,6
+University of Adelaide,11,3
+Northwestern Polytechnical University,11,4
+Indiana University,11,9
+IIT Delhi,11,12
+Deakin University,11,12
+Dongguk University,11,1
+Zhongguancun Institute of AI,11,0
+Nanjing University of Science and Technology,11,7
+Konkuk University,11,3
+INSAIT,10,2
+Aalborg University,10,7
+Siemens,10,6
+Dalian University of Technology,10,5
+Hebrew University of Jerusalem,10,12
+York University,10,10
+Cohere,10,11
+Central South University,10,6
+Snowflake,10,3
+Iowa State University,10,3
+Cardiff University,10,12
+USC,10,2
+UT Arlington,10,3
+Hunan University,10,3
+NEC,10,5
+University of Arizona,10,14
+Ben-Gurion University of the Negev,10,5
+University of Georgia,10,2
+University of Groningen,10,9
+University of Aberdeen,10,4
+Northeastern University (China),9,10
+Cisco,9,8
+Sogang University,9,1
+Sony,9,9
+South China Normal University,9,1
+Thinking Machines Lab,9,0
+UC Davis,9,14
+CSIRO,9,9
+University of Birmingham,9,3
+University of Göttingen,9,7
+Beijing Zhongguancun Academy,9,0
+University of North Texas,9,7
+BITS Pilani,9,4
+University of Stuttgart,9,10
+University of Trento,9,6
+University of Tübingen,9,11
+University of Utah,9,5
+Fujitsu,9,7
+École Polytechnique,9,1
+Indian Institute of Science,9,3
+Lenovo,9,6
+ITMO University,9,1
+Hefei University of Technology,9,8
+Bloomberg,8,10
+Hithink RoyalFlush,8,1
+University of Bath,8,2
+Washington University in St. Louis,8,2
+SenseTime,8,2
+Scale AI,8,2
+Shanxi University,8,3
+SAP,8,1
+Rochester Institute of Technology,8,7
+Rice University,8,10
+NYU Abu Dhabi,8,5
+IIT Kharagpur,8,10
+Florida State University,8,3
+University of Technology Nuremberg,8,5
+TU Dresden,8,4
+Squirrel Ai Learning,8,4

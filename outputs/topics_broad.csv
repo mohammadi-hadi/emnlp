@@ -1,0 +1,17 @@
+id,topic,n_2026,n_2025,share_2026,share_2025,delta_pp,ratio
+3,"Factuality, Evaluation & Expert Domains",602,436,10.878,12.514,-1.636,0.869
+5,LLM Agents,594,165,10.734,4.736,5.998,2.266
+1,Vision-Language Models,592,377,10.698,10.821,-0.123,0.989
+7,"Social Behavior, Bias & Culture",550,394,9.939,11.309,-1.37,0.879
+9,Retrieval & Structured Knowledge,483,391,8.728,11.223,-2.495,0.778
+11,Reasoning & Reinforcement Learning,452,279,8.168,8.008,0.16,1.02
+15,Efficient LLMs & Decoding,422,238,7.626,6.831,0.794,1.116
+6,"Linguistics, Multilinguality & Translation",390,342,7.047,9.816,-2.769,0.718
+8,LLM Safety & Security,386,249,6.975,7.147,-0.172,0.976
+0,"Code, Optimization & Chemistry",199,87,3.596,2.497,1.099,1.44
+12,"Text Generation, Style & Detection",180,142,3.253,4.076,-0.823,0.798
+14,Medical & Clinical NLP,180,83,3.253,2.382,0.87,1.365
+4,Speech & Audio Models,176,94,3.18,2.698,0.482,1.179
+2,Fine-Tuning & Preference Alignment,152,156,2.747,4.478,-1.731,0.613
+10,Long-Term Agent Memory,96,6,1.735,0.172,1.563,10.073
+13,Sequence Model Architectures,80,45,1.446,1.292,0.154,1.119

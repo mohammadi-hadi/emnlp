@@ -1,0 +1,17 @@
+area,fit on 2026 (main) · 2025,fit on 2026 (main) · 2026,fit on 2025 · 2025,fit on 2025 · 2026,fit on both years · 2025,fit on both years · 2026,fit on 2026 (main) · change,fit on 2025 · change,fit on both years · change
+LLM Agents,4.74,10.73,5.02,10.28,4.36,10.41,5.99,5.26,6.05
+Long-Term Agent Memory,0.17,1.73,0.0,0.0,0.14,1.81,1.56,0.0,1.67
+"Code, Optimization & Chemistry",2.5,3.6,2.41,3.14,2.64,3.69,1.1,0.73,1.05
+Medical & Clinical NLP,2.38,3.25,2.32,3.18,2.3,3.23,0.87,0.86,0.93
+Efficient LLMs & Decoding,6.83,7.63,7.26,7.16,8.09,9.16,0.8,-0.1,1.07
+Speech & Audio Models,2.7,3.18,2.32,2.91,2.64,3.34,0.48,0.59,0.7
+Reasoning & Reinforcement Learning,8.01,8.17,7.12,7.97,7.15,8.94,0.16,0.85,1.79
+Sequence Model Architectures,1.29,1.45,0.86,0.8,0.92,1.36,0.16,-0.06,0.44
+Vision-Language Models,10.82,10.7,10.51,11.19,10.79,10.5,-0.12,0.68,-0.29
+LLM Safety & Security,7.15,6.98,6.11,7.26,6.08,6.31,-0.17,1.15,0.23
+"Text Generation, Style & Detection",4.08,3.25,4.28,2.75,4.88,3.72,-0.83,-1.53,-1.16
+"Social Behavior, Bias & Culture",11.31,9.94,10.25,8.58,12.03,9.83,-1.37,-1.67,-2.2
+"Factuality, Evaluation & Expert Domains",12.51,10.88,12.89,11.38,11.42,8.55,-1.63,-1.51,-2.87
+Fine-Tuning & Preference Alignment,4.48,2.75,5.63,4.39,4.68,2.75,-1.73,-1.24,-1.93
+Retrieval & Structured Knowledge,11.22,8.73,11.37,9.74,12.31,9.92,-2.49,-1.63,-2.39
+"Linguistics, Multilinguality & Translation",9.82,7.05,11.65,9.27,9.56,6.49,-2.77,-2.38,-3.07

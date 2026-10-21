@@ -1,0 +1,17 @@
+id,topic,papers,oral,poster,virtual,demo,not presenting
+6,"Linguistics, Multilinguality & Translation",389,16.2,63.5,8.23,1.03,11.05
+3,"Factuality, Evaluation & Expert Domains",602,10.8,54.15,12.96,2.82,19.27
+7,"Social Behavior, Bias & Culture",549,10.02,54.28,13.3,1.28,21.13
+0,"Code, Optimization & Chemistry",199,8.54,40.7,17.59,0.5,32.66
+11,Reasoning & Reinforcement Learning,451,8.2,42.57,16.63,0.22,32.37
+15,Efficient LLMs & Decoding,422,8.06,44.79,23.7,1.18,22.27
+4,Speech & Audio Models,175,8.0,62.29,13.71,1.71,14.29
+1,Vision-Language Models,591,7.95,48.39,18.95,0.17,24.53
+12,"Text Generation, Style & Detection",179,7.82,54.75,12.85,1.68,22.91
+2,Fine-Tuning & Preference Alignment,151,7.28,48.34,20.53,0.0,23.84
+8,LLM Safety & Security,386,7.25,53.11,19.43,1.04,19.17
+5,LLM Agents,591,7.11,46.19,21.32,2.54,22.84
+10,Long-Term Agent Memory,95,6.32,44.21,23.16,1.05,25.26
+13,Sequence Model Architectures,80,6.25,61.25,18.75,0.0,13.75
+14,Medical & Clinical NLP,179,5.59,54.75,13.97,1.68,24.02
+9,Retrieval & Structured Knowledge,483,5.38,49.9,22.36,0.83,21.53
