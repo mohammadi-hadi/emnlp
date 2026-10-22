@@ -14,7 +14,7 @@ OUT/figures/:
 
 Run 05_stats.py first. "Ratio" always means share_cur / share_prev.
 """
-import json, re
+import json, re, textwrap
 import numpy as np
 import pandas as pd
 from config import CUR, PREV, P, OUT
@@ -135,13 +135,22 @@ field = np.ma.masked_where(cnt < 0.08, wsum / np.maximum(cnt, 1e-9))
 med = dc.groupby("broad")[["x", "y"]].median()
 
 
+def soft_field(x, y, w, ext):
+    """The same colour field on a finer grid, fading out at the edges instead of stepping in square pixels."""
+    rng, bins, sig = [ext[:2], ext[2:]], 600, 7
+    cnt = gaussian_filter(np.histogram2d(x, y, bins=bins, range=rng)[0], sig)
+    wsum = gaussian_filter(np.histogram2d(x, y, bins=bins, range=rng, weights=w)[0], sig)
+    rgba = plt.cm.RdBu_r(plt.Normalize(-1.2, 1.2)(wsum / np.maximum(cnt, 1e-9)))
+    rgba[..., 3] = np.clip((cnt - 0.012) / 0.016, 0, 1)
+    return rgba.transpose(1, 0, 2)
+
 def spread_labels(pos, names, fs, ax_in):
     """Push apart area labels that would overlap, using their size in data units."""
     pos = pos.copy()
     ux = (ext[1] - ext[0]) / ax_in[0] / 72  # data units per point
     uy = (ext[3] - ext[2]) / ax_in[1] / 72
-    w = {b: 0.55 * fs * len(names[b]) * ux for b in pos.index}
-    h = 1.5 * fs * uy
+    w = {b: 0.55 * fs * max(len(x) for x in names[b].split("\n")) * ux for b in pos.index}
+    h = 1.3 * fs * uy * max(names[b].count("\n") + 1 for b in pos.index)
     for _ in range(400):
         moved = False
         idx = list(pos.index)
@@ -159,16 +168,17 @@ def spread_labels(pos, names, fs, ax_in):
 
 fig = plt.figure(figsize=(12, 12.6))
 ax = fig.add_axes([0.0, 0.03, 1.0, 0.9])
-ax.imshow(field.T, origin="lower", extent=ext, cmap="RdBu_r", vmin=-1.2, vmax=1.2, interpolation="bilinear", aspect="auto")
+ax.imshow(soft_field(dc.x, dc.y, dc.fine.map(grow), ext), origin="lower", extent=ext, interpolation="bilinear", aspect="auto")
 ax.scatter(dc.x, dc.y, s=0.8, c=INK, alpha=0.18, linewidths=0)
-lab = {b: short(broad_name[b], 26) for b in med.index}
-for b, r in spread_labels(med, lab, 10.5, (12, 12.6 * 0.9)).iterrows():
-    outline(ax.text(r.x, r.y, lab[b], ha="center", va="center", fontsize=10.5, color=INK, fontweight="bold"), 3.5)
+# whole names on two or three lines, big enough to read at the size the story shows the figure
+lab = {b: textwrap.fill(short(broad_name[b], 60), 18) for b in med.index}
+for b, r in spread_labels(med, lab, 14, (12, 12.6 * 0.9)).iterrows():
+    outline(ax.text(r.x, r.y, lab[b], ha="center", va="center", fontsize=14, color=INK, fontweight="bold", linespacing=1.0), 4)
 ax.set_xlim(ext[:2]); ax.set_ylim(ext[2:]); ax.axis("off")
-cax = fig.add_axes([0.68, 0.07, 0.28, 0.014])
+cax = fig.add_axes([0.62, 0.07, 0.34, 0.016])
 cb = fig.colorbar(plt.cm.ScalarMappable(cmap="RdBu_r", norm=plt.Normalize(-1.2, 1.2)), cax=cax, orientation="horizontal")
 cb.set_ticks([-1, 0, 1]); cb.set_ticklabels(["half the share", "same", "double the share"])
-cb.outline.set_visible(False); cax.tick_params(labelsize=9, colors=MUTED, length=0)
+cb.outline.set_visible(False); cax.tick_params(labelsize=12, colors=MUTED, length=0)
 frame(fig, f"Where EMNLP moved between {PREV} and {CUR}", "Red topics grew their share of papers. Blue ones shrank.")
 save(fig, "field_moved.png")
 
