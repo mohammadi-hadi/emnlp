@@ -39,7 +39,9 @@ sched = S["schedule"].get("schedule_available", False)
 def save(fig, name, height=600):
     fig.update_layout(font=FONT, height=height, margin=dict(l=10, r=10, t=60, b=10),
                       paper_bgcolor="white", plot_bgcolor="white")
-    fig.write_html(DOCS / "charts" / f"{name}.html", include_plotlyjs="cdn", full_html=True,
+    # working charts, not part of the site: only the topics page (treemap.html) is published
+    (OUT / "charts").mkdir(exist_ok=True)
+    fig.write_html(OUT / "charts" / f"{name}.html", include_plotlyjs="cdn", full_html=True,
                    config={"displaylogo": False, "responsive": True})
 
 
@@ -69,7 +71,7 @@ fig = treemap_figure(t, f"EMNLP {CUR}", c, p, {a: fmt_tracks(by_area.loc[a]) + (
 fig.update_layout(font=FONT, margin=dict(l=0, r=0, t=0, b=0), paper_bgcolor="white")
 LEDE = (f"All {len(dc):,} papers in {t.area.nunique()} areas and {len(t)} topics. Each box is an area, sized by its "
         f"number of papers. The colour shows how its share of the papers changed since {PREV}: red grew, blue shrank. "
-        "Click an area to see its topics, and click the bar at the top to go back. Hover over or tap a topic for its numbers.")
+        "Select an area to see its topics, and select the bar at the top to go back. Hover over or tap a topic for its numbers.")
 (DOCS / "charts" / "treemap.html").write_text(treemap_page(fig, "EMNLP", LEDE, "https://mohammadi.cv/emnlp/2026/charts/treemap.html",
                                                                   area_list(t, p, c)))
 
