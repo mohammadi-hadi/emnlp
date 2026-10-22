@@ -1,6 +1,6 @@
 """Generate APPENDIX.md (report/ for the real edition, OUT/ in a dry run): every area and topic with
 counts, shares, the Main / Findings split and, once the program is known, the orals."""
-import json
+import json, re
 import pandas as pd
 from config import CUR, PREV, P, REPORT
 from common import load_papers, anthology_pages_live
@@ -21,6 +21,11 @@ oral = dc["pres_type"].fillna("").str.lower().eq("oral") & dc["mode"].fillna("")
 sched = oral.any()
 
 
+def slug(name):
+    """Anchor for an area heading, so the list at the top can link to it."""
+    return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
 def cell(s):
     return str(s).replace("|", "/").replace("\n", " ").strip()
 
@@ -29,17 +34,17 @@ intro = (f"All {dc.broad.nunique()} areas and {dc.fine.nunique()} topics of EMNL
          f"Findings, Industry and Demo tracks). For each topic you see "
          + ("what the papers do, " if about else "")
          + f"how many papers it has, its share of all papers in {PREV} and {CUR}, and how many of its papers are in Main and "
-           f"in Findings." + (" Orals is the number of in-person orals." if sched else ""))
-lines = ["# All areas and topics", "", intro, ""]
+           f"in Findings." + (" The Orals column counts in-person orals." if sched else ""))
+order = [b for b in sorted(broad, key=lambda b: -bc.get(b, 0)) if bc.get(b, 0)]
+lines = [f"# All EMNLP {CUR} areas and topics", "", intro, "",
+         "**Areas:** " + " · ".join(f"[{cell(broad[b]['name'])}](#{slug(broad[b]['name'])})" for b in order), ""]
 if L.get("provisional"):
     lines += ["Topic names here are provisional: each is the topic's three most typical terms, not a written name.", ""]
-head = ["Topic"] + (["What the papers do"] if about else []) + [str(CUR), f"share {PREV} → {CUR}", "Main / Findings"] + \
+head = ["Topic"] + (["What the papers do"] if about else []) + ["Papers", f"Share {PREV} → {CUR}", "Main / Findings"] + \
        (["Orals"] if sched else [])
-for b in sorted(broad, key=lambda b: -bc.get(b, 0)):
-    if not bc.get(b, 0):
-        continue
+for b in order:
     sc, sp = 100 * bc.get(b, 0) / len(dc), 100 * bp.get(b, 0) / len(dp)
-    lines += [f"## {cell(broad[b]['name'])}: {bc.get(b, 0):,} papers ({sc:.1f}% of all, {PREV}: {sp:.1f}%)", ""]
+    lines += [f'<a id="{slug(broad[b]["name"])}"></a>', "", f"## {cell(broad[b]['name'])}: {bc.get(b, 0):,} papers ({sc:.1f}% of all, {PREV}: {sp:.1f}%)", ""]
     if broad[b].get("one_line"):
         lines += [broad[b]["one_line"], ""]
     lines += ["| " + " | ".join(head) + " |", "|" + "---|" * len(head)]
@@ -50,13 +55,17 @@ for b in sorted(broad, key=lambda b: -bc.get(b, 0)):
             f"{int((g.track == 'Main').sum())} / {int((g.track == 'Findings').sum())}"]
         row += [str(int(oral[g.index].sum()))] if sched else []
         lines.append("| " + " | ".join(row) + " |")
-    orals = dc[(dc.broad == b) & oral].fillna({"anthology": "", "pdf": ""}).sort_values("title_display")
+    orals = dc[(dc.broad == b) & oral].fillna({"anthology": "", "pdf": ""})
+    orals = orals.iloc[orals.title_display.str.replace(r"^[^0-9A-Za-z]+", "", regex=True).str.lower().argsort(kind="stable")]
     if len(orals):
-        lines += ["", "**Orals**", ""]
+        lines += ["", f"### Orals ({len(orals)})", ""]
         for o in orals.itertuples():
             links = " · ".join(x for x in (f"[Anthology]({o.anthology})" if o.anthology and ANTH_PAGES else "",
                                            f"[PDF]({o.pdf})" if o.pdf else "") if x)
-            lines.append(f"- {cell(o.title_display)}" + (f": {links}" if links else ""))
+            lines.append(f"- {cell(o.title_display)}" + (f' · <span class="links">{links}</span>' if links else ""))
     lines.append("")
+S = f"https://mohammadi.cv/emnlp/{CUR}/"
+lines += ["## Explore", "", f"[The map]({S}atlas.html) · [All papers with rooms and times]({S}papers.html) · "
+          f"[All topics]({S}charts/treemap.html) · [The {CUR} story]({S}index.html) · [Code and data](https://github.com/mohammadi-hadi/emnlp)", ""]
 (REPORT / "APPENDIX.md").write_text("\n".join(lines))
 print("wrote", REPORT / "APPENDIX.md")
