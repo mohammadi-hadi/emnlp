@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 from config import CUR, PREV, P, OUT, DOCS
 from common import load_papers
+from site_template import treemap_page, treemap_figure
 import plotly.graph_objects as go
 import plotly.express as px
 
@@ -56,18 +57,20 @@ t["tracks"] = t.fine.map(lambda f: " · ".join(f"{k} {int(tracks.loc[f, k])}" fo
                                               if k in tracks and tracks.loc[f, k] > 0))
 oral = dc["pres_type"].fillna("").str.lower().eq("oral") & dc["mode"].fillna("").str.lower().ne("virtual")
 t["orals"] = t.fine.map(dc[oral].groupby("fine").size()).fillna(0).astype(int)
-hover = ("<b>%{label}</b><br>%{value} papers in " + c + "<br>share " + p + " → " + c +
-         ": %{customdata[0]:.2f}% → %{customdata[1]:.2f}%<br>%{customdata[2]}")
-hover += "<br>orals: %{customdata[3]}" if sched else ""
-hover += "<br><i>%{customdata[4]}</i><extra></extra>" if t.about.str.len().any() else "<extra></extra>"
-fig = px.treemap(t, path=[px.Constant(f"EMNLP {CUR}"), "area", "topic"], values="papers", color="growth",
-                 color_continuous_scale=["#3b5bdb", "#f1f3f5", "#d9480f"], range_color=(-1.5, 1.5),
-                 custom_data=["share_prev", "share_cur", "tracks", "orals", "about"])
-fig.update_traces(hovertemplate=hover, root_color="white", textinfo="label+value")
-fig.update_layout(title=f"All {len(dc):,} papers by area and topic (colour: grew vs shrank since {PREV})",
-                  coloraxis_colorbar=dict(title=f"log₂ share<br>{c}/{p}", tickvals=[-1.5, 0, 1.5],
-                                          ticktext=["shrank", "same", "grew"]))
-save(fig, "treemap", 760)
+t["label"] = t.topic
+TRK = ["Main", "Findings", "Industry", "Demo"]
+fmt_tracks = lambda row: " · ".join(f"{k} {int(row[k])}" for k in TRK if k in row and row[k] > 0)
+t["info"] = [x + (f"<br>orals: {o}" if sched else "") + (f"<br><i>{a}</i>" if a else "")
+             for x, o, a in zip(t.tracks, t.orals, t.about)]
+by_area = pd.crosstab(dc.fine.map(dict(zip(t.fine, t.area))), dc.track)
+area_orals = t.groupby("area").orals.sum()
+fig = treemap_figure(t, f"EMNLP {CUR}", c, p, {a: fmt_tracks(by_area.loc[a]) + (f"<br>orals: {area_orals[a]}" if sched else "")
+                                                for a in t.area.unique()})
+fig.update_layout(font=FONT, margin=dict(l=0, r=0, t=0, b=0), paper_bgcolor="white")
+LEDE = (f"All {len(dc):,} papers in {t.area.nunique()} areas and {len(t)} topics. Each box is an area, sized by its "
+        f"number of papers. The colour shows how its share of the papers changed since {PREV}: red grew, blue shrank. "
+        "Click an area to see its topics, and click the bar at the top to go back. Hover over or tap a topic for its numbers.")
+(DOCS / "charts" / "treemap.html").write_text(treemap_page(fig, "EMNLP", LEDE, "https://mohammadi.cv/emnlp/2026/charts/treemap.html"))
 
 # 2. dumbbell: area share last year -> this year
 b = pd.DataFrame(S["broad"]).assign(topic=lambda x: x.topic.map(short)).sort_values(f"share_{c}")
@@ -138,5 +141,5 @@ fig.update_layout(barmode="group", title="Countries behind the papers",
                   legend=dict(orientation="h", y=1.05, x=0))
 save(fig, "countries", 650)
 
-t.sort_values("papers", ascending=False).to_csv(OUT / "topics_treemap_data.csv", index=False)
+t.drop(columns=["label", "info"]).sort_values("papers", ascending=False).to_csv(OUT / "topics_treemap_data.csv", index=False)
 print("charts written to", DOCS / "charts", "| presentation mix:", "yes" if sched else "no program data")
