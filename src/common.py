@@ -12,7 +12,7 @@ GREEK = {name: chr(cp) for name, cp in [
     ("Theta", 0x398), ("Lambda", 0x39B), ("Pi", 0x3A0), ("Sigma", 0x3A3), ("Phi", 0x3A6), ("Psi", 0x3A8), ("Omega", 0x3A9)]}
 SYMBOLS = {"ell": "ℓ", "infty": "∞", "times": "×", "le": "≤", "leq": "≤", "ge": "≥", "geq": "≥", "to": "→",
            "rightarrow": "→", "sqrt": "√", "cdot": "·", "approx": "≈", "sim": "~", "pm": "±", "star": "*",
-           "partial": "∂", "nabla": "∇", "log": "log", "mathcal": "", "mathbf": "", "mathrm": "", "boldsymbol": "",
+           "partial": "∂", "neq": "≠", "ne": "≠", "neg": "¬", "nabla": "∇", "log": "log", "mathcal": "", "mathbf": "", "mathrm": "", "boldsymbol": "",
            "text": "", "textbf": "", "textit": "", "mathbb": "", "emph": "", "operatorname": "", "texttt": ""}
 
 
@@ -48,6 +48,10 @@ def load_papers(drop_duplicates=True):
         df["broad"] = [moves.get(int(f), int(b)) for f, b in zip(df["fine"], df["broad"])]
     if drop_duplicates:
         df = df[~df["dup"].astype(bool)]
+    # titles parsed before "neq" was in SYMBOLS still read "Adopt neq Adapt"
+    df["title_display"] = df["title_display"].str.replace(r"(?<=\w) neq (?=\w)", " ≠ ", regex=True)
+    if "room" in df:
+        df["room"] = df["room"].replace({"zoom": "Zoom"})
     df["arxiv"] = df["title_display"].map(arxiv_search)
     return df
 
