@@ -1,6 +1,6 @@
 """Interactive map of all EMNLP papers of the current edition (DataMapPlot), in the same style as the
 NeurIPS atlas: recolour by area, change since last year, track, presentation and team size, filter by day."""
-import json
+import json, re
 import numpy as np
 import pandas as pd
 import datamapplot
@@ -31,8 +31,10 @@ pres = d["pres_type"].str.lower().map(PRES).fillna("Not in the program")
 pres = np.where(d["mode"].eq("virtual") & pres.isin(["Oral", "Poster"]), "Virtual", pres)
 date = pd.to_datetime(d["date"], errors="coerce")
 # one word per label ("25-Sun"): the histogram shows only the first word and turned "Mon 26" into a date
-day = np.where(date.notna(), date.dt.strftime("%d-%a"), "no-slot")
-where = np.where(d["room"].ne(""), d["room"] + ", " + date.dt.strftime("%a %-d %b").fillna("") + " " + d["start"], "")
+day = np.where(date.notna(), date.dt.strftime("%d-%a"), "Unscheduled")
+when = (date.dt.strftime("%a %-d %b").fillna("") + " " + d["start"].fillna("")).str.strip()
+where = [("Online on Zoom" if r == "Zoom" else f"In Budapest: {r}") + (f", {w}" if w else "") if r else ""
+         for r, w in zip(d["room"], when)]
 
 g = d["fine"].map(growth).clip(-1.5, 1.5).to_numpy()
 change_txt = [f"{fine_name[f]}: {100 * shp[f]:.2f}% → {100 * shc[f]:.2f}% of papers since {PREV}" for f in d["fine"]]
@@ -71,12 +73,17 @@ CSS = """
 #paper-links a{display:inline-block;margin:0 6px 6px 0;padding:6px 10px;border-radius:7px;background:#f1f3f5;color:#1f2a44;text-decoration:none;font-weight:600}
 #paper-links a.main{background:#1e3a5f;color:#fff}
 #paper-links .n{font-size:12px;color:#6b7489;margin:0 0 8px}
+#paper-links .n:empty{display:none}
 #paper-links .x{position:absolute;top:8px;right:10px;cursor:pointer;font-size:16px;color:#6b7489;border:0;background:none}
 .embedded #topic-tree,.embedded #d3histogram-container,.embedded .atlas-back{display:none!important}
 .embedded #title-container{display:none!important}
 .atlas-back{position:absolute;bottom:14px;right:14px;z-index:10;font:600 13px Inter,system-ui,sans-serif;
   background:#1e3a5f;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
 /* phones: placed last so these rules win over the ones above */
+/* the loading box is wider than a phone */
+#progress-container{max-width:calc(100vw - 24px)!important;box-sizing:border-box}
+/* short windows: the topic tree scrolls instead of running under the colour menu */
+#topic-tree{max-height:calc(100vh - 330px)!important;overflow:auto!important}
 @media (max-width:768px){
   #main-title{font-size:21px!important;margin-bottom:4px}
   #title-container{padding:10px 12px!important}
@@ -92,8 +99,25 @@ CSS = """
   #paper-links{left:12px;right:12px;width:auto;bottom:132px}
 }
 """
+
+# the map page is linked from the posts: give it the same head as the other pages (viewport for phones,
+# description, preview card, icon), and the site name in the tab title
+def finish_head(page, title, desc, url, image):
+    head = (f'<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+            f'<meta name="description" content="{desc}"><link rel="canonical" href="{url}">\n'
+            f'<meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">\n'
+            f'<meta property="og:url" content="{url}"><meta property="og:type" content="website">'
+            f'<meta property="og:site_name" content="Hadi Mohammadi">\n'
+            f'<meta property="og:image" content="{image}"><meta name="twitter:card" content="summary_large_image">\n'
+            '<link rel="icon" href="/assets/img/favicon.png"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">\n')
+    assert page.count("<head>") == 1 and "name=\"viewport\"" not in page
+    page = page.replace("<head>", "<head>\n" + head)
+    old = re.search(r"<title>(.*?)</title>", page, re.S)
+    return page.replace(old.group(0), f"<title>{title} — Hadi Mohammadi</title>") if old else page.replace("</head>", f"<title>{title} — Hadi Mohammadi</title></head>")
+
+nb = lambda a: np.char.replace(a.astype(str), "-", "\u2011")  # non-breaking hyphen, so the topic tree never wraps at one
 plot = datamapplot.create_interactive_plot(
-    coords, fine_lab, broad_lab,  # finest layer first
+    coords, nb(fine_lab), nb(broad_lab),  # finest layer first
     hover_text=hover,
     extra_point_data=extra,
     hover_text_html_template="""<div style="max-width:440px;font-family:Inter,system-ui,sans-serif">
@@ -129,7 +153,7 @@ if (window.self !== window.top) {
 function showLinks(page, pdf, arxiv, title, where) {
   const box = document.getElementById('paper-links');
   box.querySelector('.t').textContent = title;
-  box.querySelector('.n').textContent = where ? 'In Budapest: ' + where : '';
+  box.querySelector('.n').textContent = where;
   box.querySelector('.l').innerHTML =
     // PDF first: the Anthology serves the PDFs before its paper pages go live; the page link only once they are up
     '<a class="main" href="' + pdf + '" target="_blank" rel="noopener">PDF</a>' +
@@ -148,7 +172,10 @@ page = (DOCS / "atlas.html").read_text().replace("apache-arrow@latest", "apache-
 FONT_LINK = '<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet" />'
 anchor = '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />'
 assert page.count(anchor) == 1
-(DOCS / "atlas.html").write_text(page.replace(anchor, anchor + "\n" + FONT_LINK))
+page = finish_head(page.replace(anchor, anchor + "\n" + FONT_LINK), f"EMNLP {CUR}: every paper on one map",
+                   f"All {len(d):,} EMNLP {CUR} papers on one interactive map, with the room and time of each talk and poster.",
+                   f"https://mohammadi.cv/emnlp/{CUR}/atlas.html", f"https://mohammadi.cv/emnlp/{CUR}/figures/atlas_static.png")
+(DOCS / "atlas.html").write_text(page)
 print("saved", DOCS / "atlas.html", len(d), "papers")
 
 # still images: the story's hero preview (no title) and the share image (with title)
