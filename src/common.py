@@ -35,7 +35,9 @@ def title_key(t):
 
 
 def arxiv_search(title):
-    return "https://arxiv.org/search/?query=" + quote_plus(re.sub(r"[^\w\s-]", " ", title)) + "&searchtype=title"
+    # keep apostrophes: arXiv finds "Don't" but not "Don t"
+    q = re.sub(r"[^\w\s'-]", " ", re.sub(r"[’‘]", "'", title))
+    return "https://arxiv.org/search/?query=" + quote_plus(q) + "&searchtype=title"
 
 
 def load_papers(drop_duplicates=True):

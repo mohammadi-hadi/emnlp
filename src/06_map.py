@@ -163,7 +163,7 @@ function showLinks(page, pdf, arxiv, title, where) {
     // PDF first: the Anthology serves the PDFs before its paper pages go live; the page link only once they are up
     '<a class="main" href="' + pdf + '" target="_blank" rel="noopener">PDF</a>' +
     (__ANTH_PAGES__ ? '<a href="' + page + '" target="_blank" rel="noopener">ACL Anthology</a>' : '') +
-    '<a href="' + arxiv + '" target="_blank" rel="noopener">Find on arXiv</a>';
+    '<a href="' + arxiv + '" target="_blank" rel="noopener">Search arXiv</a>';
   box.style.display = 'block';
 }
 """.replace("__ANTH_PAGES__", "true" if ANTH_PAGES else "false"),
