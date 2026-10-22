@@ -101,7 +101,7 @@ LANDING = f"""{atlas_nav(f"{CUR}/")}<main id="main"><section class="hero"><div c
 </div></section>
 <section class="section"><div class="container">
 <a href="{CUR}/atlas.html"><img src="{CUR}/figures/atlas_preview.png" alt="Map of all EMNLP {CUR} papers"
- style="width:100%;border:1px solid var(--rule);border-radius:10px;background:#fff"></a>
+ class="landing-map"></a>
 <p style="text-align:center;margin-top:16px"><a class="btn" href="{CUR}/atlas.html">Open the EMNLP {CUR} map</a>
 <a class="btn btn-ghost" href="{CUR}/papers.html">Search all papers</a></p>
 <div class="prose" style="margin-top:28px">
