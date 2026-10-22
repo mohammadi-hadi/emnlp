@@ -16,7 +16,7 @@ def short_authors(a, n=180):
     names = [x.strip() for x in str(a).replace(";", ",").split(",") if x.strip()]
     out = []
     for x in names:
-        if len(", ".join(out + [x])) > n: return ", ".join(out) + f" and {len(names) - len(out)} more"
+        if len(", ".join(out + [x])) > n and len(names) - len(out) > 1: return ", ".join(out) + f" and {len(names) - len(out)} more"
         out.append(x)
     return ", ".join(out)
 
@@ -36,14 +36,15 @@ idx.to_csv(OUT / "papers_index.csv", index=False)
 
 rows = [[r.title, short_authors(r.authors), r.track, r.area, r.topic, r.pres, r.room, r.when, r.anthology.rstrip("/").rsplit("/", 1)[-1]]
         for r in idx.itertuples()]
-opts = lambda col: "".join(f"<option>{a}</option>" for a in sorted(x for x in idx[col].unique() if x))
+opts = lambda col: "".join(f"<option>{a}</option>" for a in sorted((x for x in idx[col].unique() if x), key=str.casefold))
 
 CSS = """<style>
 .controls{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
 .controls input,.controls select{font:inherit;font-size:var(--step--1);padding:8px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--ink)}
 .controls input{flex:1;min-width:220px}
 @media (max-width:560px){.controls input,.controls select{flex:1 1 100%;min-width:0}}
-.when{white-space:nowrap}
+.p .a{display:flex;flex-wrap:wrap;gap:4px 0;align-items:center}
+.p .when{display:block;flex-basis:100%}
 .p{border-bottom:1px solid var(--rule);padding:12px 0}.p .t{font-weight:600;line-height:1.4}
 .p .m,.meta{color:var(--ink-3);font-size:var(--step--1)}.p .a{font-size:var(--step--1);margin-top:4px}
 .p .a a{margin-right:14px;font-weight:500}
@@ -52,14 +53,14 @@ CSS = """<style>
 #more{margin-top:16px}
 </style>"""
 BODY = """__NAV__<main id="main"><article class="post"><header class="post-head"><div class="post-wrap wide">
-<p class="post-crumbs"><a href="../">EMNLP Atlas</a><span class="sep">/</span><a href="index.html">__Y__</a></p>
+<p class="post-crumbs"><a href="/blog/">Blog</a><span class="sep">/</span><a href="../">EMNLP Atlas</a><span class="sep">/</span><a href="index.html">__Y__</a></p>
 <h1>All __N__ EMNLP __Y__ papers</h1>
-<p>Search by title or author, or filter by track, area and how the paper is presented. Each paper links to its PDF on the ACL Anthology. Times are Budapest time.</p>
+<p>Search by title or author, or filter by track, area and how the paper is presented. Each paper links to its PDF on the ACL Anthology and to an arXiv search. Times are Budapest time.</p>
 <div class="controls"><input id="q" type="search" placeholder="Search title or author…" aria-label="search">
 <select id="track" aria-label="track"><option value="">All tracks</option>__TRACKS__</select>
 <select id="area" aria-label="area"><option value="">All areas</option>__AREAS__</select>
 <select id="pres" aria-label="presentation"><option value="">Any presentation</option>__PRES__</select></div>
-<div id="count" class="meta"></div><div id="list"></div><button id="more" class="btn">Show more</button>
+<div id="count" class="meta"></div><div id="list"></div><button id="more" class="btn" type="button">Show more</button>
 </div></header></article></main>
 <script>
 const D = __DATA__;
@@ -74,7 +75,9 @@ function filter() {
 function more() {
   const html = hits.slice(shown, shown + 100).map(r => {
     const tag = r[5] === 'Oral' ? '<span class="tag o">Oral</span>' : '';
-    const where = [r[5] !== 'Oral' ? r[5] : '', r[6], r[7]].filter(Boolean).join(' · ');
+    // orals show their room as 'Room F8'; posters already say 'Poster · Hall H'
+    const room = r[5] === 'Oral' && r[6] ? 'Room ' + r[6] : r[6];
+    const where = [r[5] !== 'Oral' ? r[5] : '', room, r[7]].filter(Boolean).join(' · ') || 'Time not published';
     const ax = 'https://arxiv.org/search/?query=' + encodeURIComponent(r[0].replace(/[^\\w\\s-]/g, ' ')).replace(/%20/g, '+') + '&searchtype=title';
     const links = `<a href="https://aclanthology.org/${r[8]}.pdf" target="_blank" rel="noopener">PDF</a>` +
       (__ANTH_PAGES__ ? `<a href="https://aclanthology.org/${r[8]}/" target="_blank" rel="noopener">ACL Anthology</a>` : '') +
@@ -84,15 +87,19 @@ function more() {
   }).join('');
   document.getElementById('list').insertAdjacentHTML('beforeend', html);
   shown += 100;
-  document.getElementById('count').textContent = `${hits.length.toLocaleString()} papers`;
-  document.getElementById('more').style.display = shown < hits.length ? 'inline-block' : 'none';
+  const n = hits.length;
+  document.getElementById('count').textContent = n === 0 ? 'No papers match. Try fewer words or clear the filters.' :
+    `${n.toLocaleString()} ${n === 1 ? 'paper' : 'papers'}` + (n > shown ? ` · showing the first ${shown.toLocaleString()}` : '');
+  const btn = document.getElementById('more');
+  btn.textContent = `Show ${Math.min(100, n - shown)} more`;
+  btn.style.display = shown < n ? 'inline-block' : 'none';
 }
 ['q', 'track', 'area', 'pres'].forEach(id => document.getElementById(id).addEventListener('input', filter));
 document.getElementById('more').addEventListener('click', more);
 const params = new URLSearchParams(location.search); if (params.get('q')) document.getElementById('q').value = params.get('q');
 filter();
 </script>"""
-body = (BODY.replace("__NAV__", atlas_nav()).replace("__ANTH_PAGES__", "true" if anthology_pages_live(CUR) else "false").replace("__N__", f"{len(rows):,}").replace("__Y__", str(CUR))
+body = (BODY.replace("__NAV__", atlas_nav("", "papers.html")).replace("__ANTH_PAGES__", "true" if anthology_pages_live(CUR) else "false").replace("__N__", f"{len(rows):,}").replace("__Y__", str(CUR))
         .replace("__TRACKS__", opts("track")).replace("__AREAS__", opts("area")).replace("__PRES__", opts("pres"))
         .replace("__DATA__", json.dumps(rows, ensure_ascii=False, separators=(",", ":"))))
 (DOCS / "papers.html").write_text(site_page(

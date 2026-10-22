@@ -13,9 +13,9 @@ Each dot is a paper. You can search, zoom in and click any paper to get its PDF 
 ## What changed
 
 - One in four papers now mentions agents. Last year it was one in eight.
-- Memory for agents: 6 papers to 96.
+- Memory for agents went from 6 papers to 96.
 - RL with verifiable rewards went from 3 papers to 89.
-- "Benchmark" is in 47% of papers, up from 37%.
+- "Benchmark" is in the title or abstract of 47% of papers, up from 37%.
 - Linguistics, multilinguality and translation fell from 9.8% to 7.0% of papers.
 - More papers have an author in China (45%) than in the US (32%). Last year the two were about level.
 
@@ -31,18 +31,18 @@ Most of these papers test agents or try to make them work on longer tasks. Bench
 
 ![Share of papers with an author from each country, 2025 and 2026](../outputs/figures/countries.png)
 
-Of the papers where I could match an affiliation, 45% have an author in China, up from 38%. The US went from 39% to 32%. Alibaba is on the most papers (251), followed by Tsinghua University (227).
+Of the papers where I could match an affiliation, 45% have an author in China, up from 38%. The US went from 39% to 32%. Alibaba has authors on the most papers (251), followed by Tsinghua University (227).
 
-If you are going to Budapest, plan for Monday 26 October. It is the busiest day, with 1,761 papers.
+If you are going to Budapest, plan for Monday 26 October. It is the busiest day, with 1,761 papers, counting the ones presented online.
 
 ## How I made it
 
-All the data is public. Titles, abstracts and authors come from the ACL Anthology, and the rooms and times from the EMNLP program. The 5,534 papers are the main track (2,704), Findings (2,478), industry (266) and demos (86), so the count is higher than the 5,252 main and Findings papers announced in August. An open model, Qwen3-Embedding-0.6B, turned each paper into numbers. Then I grouped similar papers into 100 topics. Each 2025 paper went into its closest 2026 topic, so both years are measured the same way. It is the same method as my [NeurIPS 2026 map](https://mohammadi.cv/neurips/2026/).
+All the data is public. Titles, abstracts and authors come from the ACL Anthology, and the rooms and times from the EMNLP program, both pulled on 21 October 2026. The 5,534 papers are the Main (2,704), Findings (2,478), Industry (266) and Demo (86) tracks. That is 5,182 Main and Findings papers, a little under the 5,252 EMNLP announced in August. An open model, Qwen3‑Embedding‑0.6B, turned each paper into numbers. Then I grouped similar papers into 100 topics. Each 2025 paper went into its closest 2026 topic, so both years are measured the same way. It is the same method as my [NeurIPS 2026 map](https://mohammadi.cv/neurips/2026/).
 
 Topics are a rough lens. I re-ran the grouping two other ways and the rise of agents showed up every time. The 2026 papers come from the Anthology before its official release, so a few titles, authors or affiliations may still change, and until the paper pages go live each paper links to its PDF.
 
 ## Explore
 
-[The map](https://mohammadi.cv/emnlp/2026/atlas.html) · [All papers with rooms and times](https://mohammadi.cv/emnlp/2026/papers.html) · [All topics](https://mohammadi.cv/emnlp/2026/charts/treemap.html) · [Appendix](https://mohammadi.cv/emnlp/2026/appendix.html) · [Code and data](https://github.com/mohammadi-hadi/emnlp)
+[The map](https://mohammadi.cv/emnlp/2026/atlas.html) · [All papers with rooms and times](https://mohammadi.cv/emnlp/2026/papers.html) · [All topics](https://mohammadi.cv/emnlp/2026/charts/treemap.html) · [Appendix](https://mohammadi.cv/emnlp/2026/appendix.html) · [Code&nbsp;and&nbsp;data](https://github.com/mohammadi-hadi/emnlp)
 
 Hadi Mohammadi · [mohammadi.cv](https://mohammadi.cv)

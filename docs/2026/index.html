@@ -35,13 +35,24 @@ html,body{overflow-x:hidden}
 .post-body th,.post-body td{border-bottom:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}
 .post-body .note{font-size:var(--step--1);color:var(--ink-3)}
 .wide{max-width:1080px}
-.landing-map{width:100%;height:min(70vh,680px);object-fit:contain;border:1px solid var(--rule);border-radius:10px;background:#fff;display:block}
+.atlas-nav a[aria-current]{color:var(--ink);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px}
+.post-body .btn,.atlas-hero .btn{text-decoration:none}
+.map-preview{padding-bottom:58px;box-sizing:border-box}
+@media (max-width:720px){.map-preview{padding-bottom:0}.map-cover span{display:none}}
+.landing-actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
+.post-body figcaption .tap{display:none}
+@media (max-width:640px){.post-body figcaption .tap{display:inline}}
+.post-body .links{white-space:nowrap}
+.post-body table + h3{margin-top:28px}
+.landing-map{width:100%;height:min(70vh,680px);object-fit:contain;border:1px solid var(--rule);border-radius:10px;background:#fbfaf7;display:block}
 @media (max-width:720px){.landing-map{height:auto}}
 @media (max-width:640px){.post-wrap.wide table,.post-wrap.wide tbody,.post-wrap.wide tr,.post-wrap.wide td{display:block;width:auto;min-width:0}
 .post-wrap.wide thead{display:none}.post-wrap.wide tr{padding:12px 0;border-bottom:1px solid var(--rule)}
 .post-wrap.wide td{border:0;padding:2px 0}.post-wrap.wide td:first-child{font-weight:600}
 .post-wrap.wide td[data-label]{display:inline-block;margin:4px 14px 0 0;font-family:var(--mono);font-size:.78rem;color:var(--ink-3)}
 .post-wrap.wide td[data-label]::before{content:attr(data-label) ": "}}
+/* desktop: the same column widths in every table, numbers on one line */
+@media (min-width:641px){.post-wrap.wide table{table-layout:fixed}.post-wrap.wide th:nth-child(1){width:19%}.post-wrap.wide th:nth-child(3){width:4.5em}.post-wrap.wide th:nth-child(4){width:9.5em}.post-wrap.wide th:nth-child(5){width:7.5em}.post-wrap.wide th:nth-child(6){width:3.8em}.post-wrap.wide td[data-label]{white-space:nowrap}}
 </style></head><body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="container">
@@ -55,7 +66,7 @@ html,body{overflow-x:hidden}
 <li><a href="/software/">Software</a></li><li><a href="/experience/">Experience</a></li><li><a href="/teaching/">Teaching</a></li>
 <li><a href="/blog/" aria-current="page">Blog</a></li><li><a href="/thesis/">Thesis</a></li><li><a href="/assets/docs/HadiMohammadiCV.pdf">CV</a></li></ul></nav></details>
 </div></header>
-<nav class="atlas-nav" aria-label="EMNLP Atlas"><div class="container"><a class="name" href="../">EMNLP Atlas</a><a class="map" href="atlas.html">Open the map</a><a href="index.html">2026 story</a><a href="papers.html">All papers</a><a href="charts/treemap.html">All topics</a><a href="appendix.html">Appendix</a><a href="https://github.com/mohammadi-hadi/emnlp">Code &amp; data</a><a href="/neurips/2026/">NeurIPS 2026 map</a></div></nav><main id="main"><article class="post">
+<nav class="atlas-nav" aria-label="EMNLP Atlas"><div class="container"><a class="name" href="../">EMNLP Atlas</a><a class="map" href="atlas.html">Open the map</a><a href="index.html" aria-current="page">2026 story</a><a href="papers.html">All papers</a><a href="charts/treemap.html">All topics</a><a href="appendix.html">Appendix</a><a href="https://github.com/mohammadi-hadi/emnlp">Code and data</a><a href="/neurips/2026/">NeurIPS 2026</a></div></nav><main id="main"><article class="post">
 <header class="post-head"><div class="post-wrap">
 <p class="post-crumbs"><a href="/blog/">Blog</a><span class="sep">/</span><a href="../">EMNLP Atlas</a></p><h1>What 5,534 EMNLP 2026 papers are about</h1><p class="post-dek">Every EMNLP 2026 paper on one map, and what changed since 2025.</p>
 <p class="post-byline"><span>2 min read · 22 October 2026</span></p></div></header>
@@ -65,30 +76,30 @@ html,body{overflow-x:hidden}
 
 
 <p>EMNLP 2026 in Budapest has 5,534 papers, 59% more than last year. I put all of them on one map and compared them with the 3,484 papers from 2025. The big story is agents.</p>
-</div><section class="container atlas-hero" aria-label="map of all papers"><div class="map-frame"><img class="map-preview" src="figures/atlas_preview.png" alt="Map of all EMNLP 2026 papers, coloured by research area"><button class="map-cover" type="button" onclick="openMap(this)"><span>Click to explore the map</span></button></div><div class="actions"><a class="btn" href="atlas.html">Open the map full screen</a><a class="btn btn-ghost" href="papers.html">Search all papers</a></div></section><script>function openMap(b){if(window.innerWidth<900){location.href="atlas.html";return;}b.parentNode.innerHTML='<iframe src="atlas.html" title="Map of all EMNLP 2026 papers"></iframe>';}</script><div class="post-wrap">
+</div><section class="container atlas-hero" aria-label="map of all papers"><div class="map-frame"><img class="map-preview" src="figures/atlas_preview.png" alt="Map of all EMNLP 2026 papers, coloured by research area"><button class="map-cover" type="button" onclick="openMap(this)"><span>Explore the map</span></button></div><div class="actions"><a class="btn" href="atlas.html">Open the map full screen</a><a class="btn btn-ghost" href="papers.html">Search all papers</a></div></section><script>function openMap(b){if(window.innerWidth<900){location.href="atlas.html";return;}b.parentNode.innerHTML='<iframe src="atlas.html" title="Map of all EMNLP 2026 papers"></iframe>';}</script><div class="post-wrap">
 <p>Each dot is a paper. You can search, zoom in and click any paper to get its PDF and the room and time of its talk or poster.</p>
 <h2 id="what-changed">What changed</h2>
 <ul>
 <li>One in four papers now mentions agents. Last year it was one in eight.</li>
-<li>Memory for agents: 6 papers to 96.</li>
+<li>Memory for agents went from 6 papers to 96.</li>
 <li>RL with verifiable rewards went from 3 papers to 89.</li>
-<li>"Benchmark" is in 47% of papers, up from 37%.</li>
+<li>"Benchmark" is in the title or abstract of 47% of papers, up from 37%.</li>
 <li>Linguistics, multilinguality and translation fell from 9.8% to 7.0% of papers.</li>
 <li>More papers have an author in China (45%) than in the US (32%). Last year the two were about level.</li>
 </ul>
-<figure><a href="figures/field_moved.png"><img src="figures/field_moved.png" alt="The 2026 map coloured by how each topic&#39;s share changed since 2025" loading="lazy"></a><figcaption>The 2026 map coloured by how each topic&#39;s share changed since 2025</figcaption></figure>
+<figure><a href="figures/field_moved.png"><img src="figures/field_moved.png" alt="The 2026 map coloured by how each topic&#39;s share changed since 2025" width="2440" height="2534" loading="lazy"></a><figcaption>The 2026 map coloured by how each topic&#39;s share changed since 2025<span class="tap"> · Tap to enlarge.</span></figcaption></figure>
 <p>Same map, new colours. Red parts grew their share since 2025 and blue parts shrank, and the agent corner at the bottom is the clearest red block.</p>
-<figure><a href="figures/agents_family.png"><img src="figures/agents_family.png" alt="Papers per agent topic, 2025 and 2026" loading="lazy"></a><figcaption>Papers per agent topic, 2025 and 2026</figcaption></figure>
+<figure><a href="figures/agents_family.png"><img src="figures/agents_family.png" alt="Papers per agent topic, 2025 and 2026" width="2066" height="1663" loading="lazy"></a><figcaption>Papers per agent topic, 2025 and 2026<span class="tap"> · Tap to enlarge.</span></figcaption></figure>
 <p>Most of these papers test agents or try to make them work on longer tasks. Benchmarks for agents went from 17 papers to 98, and agents that search the web and write reports went from 9 to 72.</p>
 <h2 id="who-wrote-the-papers">Who wrote the papers</h2>
-<figure><a href="figures/countries.png"><img src="figures/countries.png" alt="Share of papers with an author from each country, 2025 and 2026" loading="lazy"></a><figcaption>Share of papers with an author from each country, 2025 and 2026</figcaption></figure>
-<p>Of the papers where I could match an affiliation, 45% have an author in China, up from 38%. The US went from 39% to 32%. Alibaba is on the most papers (251), followed by Tsinghua University (227).</p>
-<p>If you are going to Budapest, plan for Monday 26 October. It is the busiest day, with 1,761 papers.</p>
+<figure><a href="figures/countries.png"><img src="figures/countries.png" alt="Share of papers with an author from each country, 2025 and 2026" width="1870" height="1426" loading="lazy"></a><figcaption>Share of papers with an author from each country, 2025 and 2026<span class="tap"> · Tap to enlarge.</span></figcaption></figure>
+<p>Of the papers where I could match an affiliation, 45% have an author in China, up from 38%. The US went from 39% to 32%. Alibaba has authors on the most papers (251), followed by Tsinghua University (227).</p>
+<p>If you are going to Budapest, plan for Monday 26 October. It is the busiest day, with 1,761 papers, counting the ones presented online.</p>
 <h2 id="how-i-made-it">How I made it</h2>
-<p>All the data is public. Titles, abstracts and authors come from the ACL Anthology, and the rooms and times from the EMNLP program. The 5,534 papers are the main track (2,704), Findings (2,478), industry (266) and demos (86), so the count is higher than the 5,252 main and Findings papers announced in August. An open model, Qwen3-Embedding-0.6B, turned each paper into numbers. Then I grouped similar papers into 100 topics. Each 2025 paper went into its closest 2026 topic, so both years are measured the same way. It is the same method as my <a href="https://mohammadi.cv/neurips/2026/">NeurIPS 2026 map</a>.</p>
+<p>All the data is public. Titles, abstracts and authors come from the ACL Anthology, and the rooms and times from the EMNLP program, both pulled on 21 October 2026. The 5,534 papers are the Main (2,704), Findings (2,478), Industry (266) and Demo (86) tracks. That is 5,182 Main and Findings papers, a little under the 5,252 EMNLP announced in August. An open model, Qwen3‑Embedding‑0.6B, turned each paper into numbers. Then I grouped similar papers into 100 topics. Each 2025 paper went into its closest 2026 topic, so both years are measured the same way. It is the same method as my <a href="https://mohammadi.cv/neurips/2026/">NeurIPS 2026 map</a>.</p>
 <p>Topics are a rough lens. I re-ran the grouping two other ways and the rise of agents showed up every time. The 2026 papers come from the Anthology before its official release, so a few titles, authors or affiliations may still change, and until the paper pages go live each paper links to its PDF.</p>
 <h2 id="explore">Explore</h2>
-<p><a href="atlas.html">The map</a> · <a href="papers.html">All papers with rooms and times</a> · <a href="charts/treemap.html">All topics</a> · <a href="appendix.html">Appendix</a> · <a href="https://github.com/mohammadi-hadi/emnlp">Code and data</a></p>
+<p><a href="atlas.html">The map</a> · <a href="papers.html">All papers with rooms and times</a> · <a href="charts/treemap.html">All topics</a> · <a href="appendix.html">Appendix</a> · <a href="https://github.com/mohammadi-hadi/emnlp">Code and data</a></p>
 <p>Hadi Mohammadi · <a href="https://mohammadi.cv">mohammadi.cv</a></p>
 </div></div></article></main>
 <footer class="site-footer"><div class="container">
