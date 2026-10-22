@@ -10,20 +10,31 @@ L = json.load(open(P / "labels.json"))
 fine_name = {int(k): v["name"] for k, v in L["fine"].items()}
 broad_name = {int(k): v["name"] for k, v in L["broad"].items()}
 
+
+def short_authors(a, n=180):
+    """Cuts a long author list at a name, not in the middle of one."""
+    names = [x.strip() for x in str(a).replace(";", ",").split(",") if x.strip()]
+    out = []
+    for x in names:
+        if len(", ".join(out + [x])) > n: return ", ".join(out) + f" and {len(names) - len(out)} more"
+        out.append(x)
+    return ", ".join(out)
+
 d = load_papers()
 d = d[d.year == CUR].copy()
 date = pd.to_datetime(d["date"], errors="coerce")
-d["when"] = [f"{x.strftime('%a %d %b')} {s}".strip() if not pd.isna(x) else "" for x, s in zip(date, d["start"])]
+d["when"] = [f"{x.strftime('%a %-d %b')} {s}".strip() if not pd.isna(x) else "" for x, s in zip(date, d["start"])]
 PRES = {"oral": "Oral", "poster": "Poster", "virtual": "Virtual", "demo": "Demo", "not presenting": "Not presented in person"}
 d["pres"] = d["pres_type"].str.lower().map(PRES).fillna("")
 d.loc[d["mode"].eq("virtual") & d["pres"].isin(["Oral", "Poster"]), "pres"] = "Virtual"
 d["area"] = d["broad"].map(broad_name)
 d["topic"] = d["fine"].map(fine_name)
 cols = ["title_display", "authors", "track", "area", "topic", "pres", "room", "when", "anthology", "pdf"]
-idx = d[cols].rename(columns={"title_display": "title"}).sort_values("title").fillna("")
+idx = d[cols].rename(columns={"title_display": "title"}).fillna("")
+idx = idx.iloc[idx["title"].str.replace(r"^[^0-9A-Za-z]+", "", regex=True).str.lower().argsort(kind="stable")]  # "(How)..." sorts under H
 idx.to_csv(OUT / "papers_index.csv", index=False)
 
-rows = [[r.title, r.authors[:180], r.track, r.area, r.topic, r.pres, r.room, r.when, r.anthology.rstrip("/").rsplit("/", 1)[-1]]
+rows = [[r.title, short_authors(r.authors), r.track, r.area, r.topic, r.pres, r.room, r.when, r.anthology.rstrip("/").rsplit("/", 1)[-1]]
         for r in idx.itertuples()]
 opts = lambda col: "".join(f"<option>{a}</option>" for a in sorted(x for x in idx[col].unique() if x))
 
@@ -31,6 +42,8 @@ CSS = """<style>
 .controls{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
 .controls input,.controls select{font:inherit;font-size:var(--step--1);padding:8px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--ink)}
 .controls input{flex:1;min-width:220px}
+@media (max-width:560px){.controls input,.controls select{flex:1 1 100%;min-width:0}}
+.when{white-space:nowrap}
 .p{border-bottom:1px solid var(--rule);padding:12px 0}.p .t{font-weight:600;line-height:1.4}
 .p .m,.meta{color:var(--ink-3);font-size:var(--step--1)}.p .a{font-size:var(--step--1);margin-top:4px}
 .p .a a{margin-right:14px;font-weight:500}
@@ -67,7 +80,7 @@ function more() {
       (__ANTH_PAGES__ ? `<a href="https://aclanthology.org/${r[8]}/" target="_blank" rel="noopener">ACL Anthology</a>` : '') +
       `<a href="${ax}" target="_blank" rel="noopener">Find on arXiv</a>`;
     return `<div class="p"><div class="t">${tag}${esc(r[0])}</div><div class="m">${esc(r[1])}</div>` +
-      `<div class="a"><span class="tag">${esc(r[2])}</span><span class="tag">${esc(r[3])}</span>${esc(where)}</div><div class="a">${links}</div></div>`;
+      `<div class="a"><span class="tag">${esc(r[2])}</span><span class="tag">${esc(r[3])}</span><span class="when">${esc(where)}</span></div><div class="a">${links}</div></div>`;
   }).join('');
   document.getElementById('list').insertAdjacentHTML('beforeend', html);
   shown += 100;
