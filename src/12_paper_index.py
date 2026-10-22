@@ -34,7 +34,9 @@ idx = d[cols].rename(columns={"title_display": "title"}).fillna("")
 idx = idx.iloc[idx["title"].str.replace(r"^[^0-9A-Za-z]+", "", regex=True).str.lower().argsort(kind="stable")]  # "(How)..." sorts under H
 idx.to_csv(OUT / "papers_index.csv", index=False)
 
-rows = [[r.title, short_authors(r.authors), r.track, r.area, r.topic, r.pres, r.room, r.when, r.anthology.rstrip("/").rsplit("/", 1)[-1]]
+full = lambda a: ", ".join(x.strip() for x in str(a).replace(";", ",").split(",") if x.strip())
+rows = [[r.title, short_authors(r.authors), r.track, r.area, r.topic, r.pres, r.room, r.when, r.anthology.rstrip("/").rsplit("/", 1)[-1],
+         full(r.authors) if short_authors(r.authors) != full(r.authors) else ""]
         for r in idx.itertuples()]
 opts = lambda col: "".join(f"<option>{a}</option>" for a in sorted((x for x in idx[col].unique() if x), key=str.casefold))
 
@@ -64,12 +66,19 @@ BODY = """__NAV__<main id="main"><article class="post"><header class="post-head"
 </div></header></article></main>
 <script>
 const D = __DATA__;
+const norm = s => s.normalize('NFD').replace(/[\\u0300-\\u036f]/g, '').replace(/[’‘`]/g, "'").toLowerCase();
+// search text: title, all authors (also the ones the card hides behind "and N more"), without accents
+const KEY = D.map(r => norm(r[0] + ' ' + r[1] + ' ' + (r[9] || '')).replace(/\\s+/g, ' '));
 const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 let shown = 0, hits = [];
 function filter() {
-  const q = document.getElementById('q').value.toLowerCase(), t = document.getElementById('track').value,
+  const q = document.getElementById('q').value, t = document.getElementById('track').value,
         a = document.getElementById('area').value, p = document.getElementById('pres').value;
-  hits = D.filter(r => (!q || (r[0] + ' ' + r[1]).toLowerCase().includes(q)) && (!t || r[2] === t) && (!a || r[3] === a) && (!p || r[5] === p));
+  // the exact phrase first (so a shared link for a name shows only that person); if nothing has it, every word in any order
+  const nq = norm(q).trim().replace(/\\s+/g, ' '), words = nq.split(' ').filter(Boolean);
+  const phrase = nq && KEY.some(k => k.includes(nq));
+  const match = i => !nq || (phrase ? KEY[i].includes(nq) : words.every(w => KEY[i].includes(w)));
+  hits = D.filter((r, i) => match(i) && (!t || r[2] === t) && (!a || r[3] === a) && (!p || r[5] === p));
   shown = 0; document.getElementById('list').innerHTML = ''; more();
 }
 function more() {
@@ -78,10 +87,10 @@ function more() {
     // orals show their room as 'Room F8'; posters already say 'Poster · Hall H'
     const room = r[5] === 'Oral' && r[6] ? 'Room ' + r[6] : r[6];
     const where = [r[5] !== 'Oral' ? r[5] : '', room, r[7]].filter(Boolean).join(' · ') || 'Time not published';
-    const ax = 'https://arxiv.org/search/?query=' + encodeURIComponent(r[0].replace(/[^\\w\\s-]/g, ' ')).replace(/%20/g, '+') + '&searchtype=title';
+    const ax = 'https://arxiv.org/search/?query=' + encodeURIComponent(r[0].replace(/[’‘]/g, "'").replace(/[^\\w\\s'-]/g, ' ')).replace(/%20/g, '+') + '&searchtype=title';
     const links = `<a href="https://aclanthology.org/${r[8]}.pdf" target="_blank" rel="noopener">PDF</a>` +
       (__ANTH_PAGES__ ? `<a href="https://aclanthology.org/${r[8]}/" target="_blank" rel="noopener">ACL Anthology</a>` : '') +
-      `<a href="${ax}" target="_blank" rel="noopener">Find on arXiv</a>`;
+      `<a href="${ax}" target="_blank" rel="noopener">Search arXiv</a>`;
     return `<div class="p"><div class="t">${tag}${esc(r[0])}</div><div class="m">${esc(r[1])}</div>` +
       `<div class="a"><span class="tag">${esc(r[2])}</span><span class="tag">${esc(r[3])}</span><span class="when">${esc(where)}</span></div><div class="a">${links}</div></div>`;
   }).join('');
