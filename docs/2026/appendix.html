@@ -35,6 +35,11 @@ html,body{overflow-x:hidden}
 .post-body th,.post-body td{border-bottom:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}
 .post-body .note{font-size:var(--step--1);color:var(--ink-3)}
 .wide{max-width:1080px}
+@media (max-width:640px){.post-wrap.wide table,.post-wrap.wide tbody,.post-wrap.wide tr,.post-wrap.wide td{display:block;width:auto;min-width:0}
+.post-wrap.wide thead{display:none}.post-wrap.wide tr{padding:12px 0;border-bottom:1px solid var(--rule)}
+.post-wrap.wide td{border:0;padding:2px 0}.post-wrap.wide td:first-child{font-weight:600}
+.post-wrap.wide td[data-label]{display:inline-block;margin:4px 14px 0 0;font-family:var(--mono);font-size:.78rem;color:var(--ink-3)}
+.post-wrap.wide td[data-label]::before{content:attr(data-label) ": "}}
 </style></head><body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="container">
@@ -71,98 +76,98 @@ html,body{overflow-x:hidden}
 <tr>
 <td>Confidence Calibration and Knowledge Boundaries</td>
 <td>These papers study whether models know what they know, covering verbal confidence calibration, belief stability, honesty, overconfidence and hallucination mechanisms.</td>
-<td>103</td>
-<td>2.32% → 1.86%</td>
-<td>57 / 46</td>
-<td>13</td>
+<td data-label="Papers">103</td>
+<td data-label="Share 2025 → 2026">2.32% → 1.86%</td>
+<td data-label="Main / Findings">57 / 46</td>
+<td data-label="Orals">13</td>
 </tr>
 <tr>
 <td>Scientific Discovery, Writing and Citations</td>
 <td>These papers use language models for research ideation, scientific discovery, paper writing and verification, and study how AI changes citation behavior and scientific prose.</td>
-<td>63</td>
-<td>0.98% → 1.14%</td>
-<td>27 / 29</td>
-<td>10</td>
+<td data-label="Papers">63</td>
+<td data-label="Share 2025 → 2026">0.98% → 1.14%</td>
+<td data-label="Main / Findings">27 / 29</td>
+<td data-label="Orals">10</td>
 </tr>
 <tr>
 <td>Benchmark Construction and Evaluation Reliability</td>
 <td>These papers build new evaluation benchmarks across domains and languages and question benchmark validity through contamination detection, compression and diagnostic analysis.</td>
-<td>58</td>
-<td>1.92% → 1.05%</td>
-<td>32 / 24</td>
-<td>7</td>
+<td data-label="Papers">58</td>
+<td data-label="Share 2025 → 2026">1.92% → 1.05%</td>
+<td data-label="Main / Findings">32 / 24</td>
+<td data-label="Orals">7</td>
 </tr>
 <tr>
 <td>Clarifying Questions and Information-Seeking QA</td>
 <td>These papers study how assistants ask clarifying questions, answer information-seeking and misconception-laden queries, and evaluate open QA, mixed with assorted conversation analytics and pragmatics work.</td>
-<td>57</td>
-<td>1.21% → 1.03%</td>
-<td>20 / 25</td>
-<td>8</td>
+<td data-label="Papers">57</td>
+<td data-label="Share 2025 → 2026">1.21% → 1.03%</td>
+<td data-label="Main / Findings">20 / 25</td>
+<td data-label="Orals">8</td>
 </tr>
 <tr>
 <td>Document Information Extraction and Enterprise QA</td>
 <td>These papers extract structured information from corporate, financial and office documents and benchmark question answering over enterprise document collections, with some legal and biomedical extraction mixed in.</td>
-<td>52</td>
-<td>0.75% → 0.94%</td>
-<td>16 / 17</td>
-<td>2</td>
+<td data-label="Papers">52</td>
+<td data-label="Share 2025 → 2026">0.75% → 0.94%</td>
+<td data-label="Main / Findings">16 / 17</td>
+<td data-label="Orals">2</td>
 </tr>
 <tr>
 <td>Fact-Checking and Factuality Evaluation</td>
 <td>These papers verify claims against retrieved evidence, score the factuality of long-form generations and detect fake news, including robustness to conflicting or adversarial evidence.</td>
-<td>50</td>
-<td>1.12% → 0.90%</td>
-<td>26 / 22</td>
-<td>6</td>
+<td data-label="Papers">50</td>
+<td data-label="Share 2025 → 2026">1.12% → 0.90%</td>
+<td data-label="Main / Findings">26 / 22</td>
+<td data-label="Orals">6</td>
 </tr>
 <tr>
 <td>Human and LLM Data Annotation</td>
 <td>These papers study how humans and LLMs annotate data, covering annotator disagreement and label variation, noisy labels, annotation guidelines and cost-aware human-AI labeling pipelines.</td>
-<td>47</td>
-<td>1.38% → 0.85%</td>
-<td>19 / 18</td>
-<td>6</td>
+<td data-label="Papers">47</td>
+<td data-label="Share 2025 → 2026">1.38% → 0.85%</td>
+<td data-label="Main / Findings">19 / 18</td>
+<td data-label="Orals">6</td>
 </tr>
 <tr>
 <td>Automated Peer Review and Essay Scoring</td>
 <td>These papers generate, verify and audit scientific peer reviews with language models, alongside work on multi-trait essay scoring and deep research report evaluation.</td>
-<td>43</td>
-<td>0.69% → 0.78%</td>
-<td>22 / 20</td>
-<td>4</td>
+<td data-label="Papers">43</td>
+<td data-label="Share 2025 → 2026">0.69% → 0.78%</td>
+<td data-label="Main / Findings">22 / 20</td>
+<td data-label="Orals">4</td>
 </tr>
 <tr>
 <td>Financial NLP Benchmarks and Agents</td>
 <td>These papers evaluate and build models and agents for finance, covering financial reasoning benchmarks, retrieval, forecasting, trading, compliance and hallucination detection.</td>
-<td>40</td>
-<td>0.75% → 0.72%</td>
-<td>9 / 20</td>
-<td>3</td>
+<td data-label="Papers">40</td>
+<td data-label="Share 2025 → 2026">0.75% → 0.72%</td>
+<td data-label="Main / Findings">9 / 20</td>
+<td data-label="Orals">3</td>
 </tr>
 <tr>
 <td>Legal Reasoning and Judgment Prediction</td>
 <td>These papers build benchmarks, retrieval systems and reasoning models for legal judgment prediction, legal case retrieval and legal question answering across jurisdictions.</td>
-<td>39</td>
-<td>0.60% → 0.70%</td>
-<td>21 / 14</td>
-<td>1</td>
+<td data-label="Papers">39</td>
+<td data-label="Share 2025 → 2026">0.60% → 0.70%</td>
+<td data-label="Main / Findings">21 / 14</td>
+<td data-label="Orals">1</td>
 </tr>
 <tr>
 <td>Knowledge Editing and Lifelong Model Editing</td>
 <td>These papers update or reverse specific facts and rules inside model parameters, covering batch, multi-hop, temporal and lifelong editing while preserving locality.</td>
-<td>29</td>
-<td>0.75% → 0.52%</td>
-<td>14 / 15</td>
-<td>2</td>
+<td data-label="Papers">29</td>
+<td data-label="Share 2025 → 2026">0.75% → 0.52%</td>
+<td data-label="Main / Findings">14 / 15</td>
+<td data-label="Orals">2</td>
 </tr>
 <tr>
 <td>Compliance Checking and Auditing Agents</td>
 <td>These papers build agentic systems and benchmarks for claim verification, regulatory and advertising compliance checking, fraud detection and evidence-grounded auditing in applied domains.</td>
-<td>21</td>
-<td>0.06% → 0.38%</td>
-<td>2 / 8</td>
-<td>3</td>
+<td data-label="Papers">21</td>
+<td data-label="Share 2025 → 2026">0.06% → 0.38%</td>
+<td data-label="Main / Findings">2 / 8</td>
+<td data-label="Orals">3</td>
 </tr>
 </tbody>
 </table>
@@ -251,90 +256,90 @@ html,body{overflow-x:hidden}
 <tr>
 <td>Agent Benchmarks and Failure Diagnosis</td>
 <td>These papers benchmark and debug LLM agents on real-world planning, enterprise workflows and MCP tool use, and diagnose failures from agent execution trajectories.</td>
-<td>98</td>
-<td>0.49% → 1.77%</td>
-<td>26 / 39</td>
-<td>4</td>
+<td data-label="Papers">98</td>
+<td data-label="Share 2025 → 2026">0.49% → 1.77%</td>
+<td data-label="Main / Findings">26 / 39</td>
+<td data-label="Orals">4</td>
 </tr>
 <tr>
 <td>Long-Horizon Agents and World Models</td>
 <td>These papers train language agents for long-horizon interactive tasks using learned world models, experience reuse, context management and self-evolving policies in environments like ALFWorld and WebShop.</td>
-<td>72</td>
-<td>0.75% → 1.30%</td>
-<td>32 / 40</td>
-<td>3</td>
+<td data-label="Papers">72</td>
+<td data-label="Share 2025 → 2026">0.75% → 1.30%</td>
+<td data-label="Main / Findings">32 / 40</td>
+<td data-label="Orals">3</td>
 </tr>
 <tr>
 <td>Deep Research and Search Agents</td>
 <td>These papers train and evaluate agents that run long-horizon web search for deep research, using reinforcement learning, synthetic search environments and trajectory synthesis.</td>
-<td>72</td>
-<td>0.26% → 1.30%</td>
-<td>30 / 39</td>
-<td>3</td>
+<td data-label="Papers">72</td>
+<td data-label="Share 2025 → 2026">0.26% → 1.30%</td>
+<td data-label="Main / Findings">30 / 39</td>
+<td data-label="Orals">3</td>
 </tr>
 <tr>
 <td>Agentic RL and Reward Design</td>
 <td>These papers improve reinforcement learning for long-horizon agents and reasoning with better credit assignment, rubric and process rewards, rollout budgeting and defenses against reward hacking.</td>
-<td>71</td>
-<td>0.55% → 1.28%</td>
-<td>43 / 23</td>
-<td>6</td>
+<td data-label="Papers">71</td>
+<td data-label="Share 2025 → 2026">0.55% → 1.28%</td>
+<td data-label="Main / Findings">43 / 23</td>
+<td data-label="Orals">6</td>
 </tr>
 <tr>
 <td>Multi-Agent Collaboration and Communication</td>
 <td>These papers design and debug multi-agent LLM systems, covering role and topology adaptation, message pruning, latent communication, failure attribution and robustness to faulty agents.</td>
-<td>58</td>
-<td>0.77% → 1.05%</td>
-<td>34 / 23</td>
-<td>9</td>
+<td data-label="Papers">58</td>
+<td data-label="Share 2025 → 2026">0.77% → 1.05%</td>
+<td data-label="Main / Findings">34 / 23</td>
+<td data-label="Orals">9</td>
 </tr>
 <tr>
 <td>Tool Use and Function Calling Agents</td>
 <td>These papers train and evaluate agents that select, retrieve and call external tools and APIs, with synthetic tool-use data, policy optimization and large tool ecosystems.</td>
-<td>55</td>
-<td>0.57% → 0.99%</td>
-<td>27 / 22</td>
-<td>4</td>
+<td data-label="Papers">55</td>
+<td data-label="Share 2025 → 2026">0.57% → 0.99%</td>
+<td data-label="Main / Findings">27 / 22</td>
+<td data-label="Orals">4</td>
 </tr>
 <tr>
 <td>Agent Skill Libraries and Skill Evolution</td>
 <td>These papers let agents distill, retrieve, revise and evolve reusable procedural skills from execution traces, a topic that is new in 2026.</td>
-<td>53</td>
-<td>0.00% → 0.96%</td>
-<td>21 / 27</td>
-<td>4</td>
+<td data-label="Papers">53</td>
+<td data-label="Share 2025 → 2026">0.00% → 0.96%</td>
+<td data-label="Main / Findings">21 / 27</td>
+<td data-label="Orals">4</td>
 </tr>
 <tr>
 <td>GUI Agent Benchmarks and Simulators</td>
 <td>These papers build benchmarks, simulators and frameworks for agents that operate mobile apps, desktops and web interfaces, testing long-horizon tasks, ambiguity handling and safety.</td>
-<td>35</td>
-<td>0.17% → 0.63%</td>
-<td>18 / 12</td>
-<td>4</td>
+<td data-label="Papers">35</td>
+<td data-label="Share 2025 → 2026">0.17% → 0.63%</td>
+<td data-label="Main / Findings">18 / 12</td>
+<td data-label="Orals">4</td>
 </tr>
 <tr>
 <td>Proactive Agents and Implicit User Intent</td>
 <td>These papers benchmark and train agents that infer implicit user intent, elicit preferences and personalize multi-turn help in shopping, travel planning and assistant settings.</td>
-<td>30</td>
-<td>0.37% → 0.54%</td>
-<td>9 / 17</td>
-<td>3</td>
+<td data-label="Papers">30</td>
+<td data-label="Share 2025 → 2026">0.37% → 0.54%</td>
+<td data-label="Main / Findings">9 / 17</td>
+<td data-label="Orals">3</td>
 </tr>
 <tr>
 <td>AI Tutoring and Educational Dialogue</td>
 <td>These papers build and evaluate adaptive tutoring agents, student simulators and teacher-student dialogue corpora, alongside a smaller group of knowledge distillation papers pulled in by teacher-student wording.</td>
-<td>27</td>
-<td>0.55% → 0.49%</td>
-<td>12 / 9</td>
-<td>2</td>
+<td data-label="Papers">27</td>
+<td data-label="Share 2025 → 2026">0.55% → 0.49%</td>
+<td data-label="Main / Findings">12 / 9</td>
+<td data-label="Orals">2</td>
 </tr>
 <tr>
 <td>GUI Agent Grounding and RL Training</td>
 <td>These papers build benchmarks, GUI grounding methods, world models and reinforcement learning recipes for agents that operate desktop, mobile and browser interfaces.</td>
-<td>23</td>
-<td>0.26% → 0.42%</td>
-<td>12 / 8</td>
-<td>0</td>
+<td data-label="Papers">23</td>
+<td data-label="Share 2025 → 2026">0.26% → 0.42%</td>
+<td data-label="Main / Findings">12 / 8</td>
+<td data-label="Orals">0</td>
 </tr>
 </tbody>
 </table>
@@ -400,98 +405,98 @@ html,body{overflow-x:hidden}
 <tr>
 <td>Vision-Language Model Failures and Robustness</td>
 <td>These papers diagnose where vision-language models fail, including language priors overriding perception, framing effects, false premises, miscalibrated confidence and unfaithful visual grounding.</td>
-<td>89</td>
-<td>1.78% → 1.61%</td>
-<td>51 / 38</td>
-<td>6</td>
+<td data-label="Papers">89</td>
+<td data-label="Share 2025 → 2026">1.78% → 1.61%</td>
+<td data-label="Main / Findings">51 / 38</td>
+<td data-label="Orals">6</td>
 </tr>
 <tr>
 <td>Visually Grounded Multimodal Reasoning with RL</td>
 <td>These papers train vision-language models to reason while keeping attention on visual evidence, using reinforcement learning with verifiable rewards, latent visual thinking and visual self-correction.</td>
-<td>64</td>
-<td>0.60% → 1.16%</td>
-<td>35 / 28</td>
-<td>5</td>
+<td data-label="Papers">64</td>
+<td data-label="Share 2025 → 2026">0.60% → 1.16%</td>
+<td data-label="Main / Findings">35 / 28</td>
+<td data-label="Orals">5</td>
 </tr>
 <tr>
 <td>Video Benchmarks and Text-to-Video Generation</td>
 <td>These papers benchmark and improve video-language models on temporal reasoning, captioning, cross-video question answering and text-to-video generation quality.</td>
-<td>59</td>
-<td>0.83% → 1.07%</td>
-<td>32 / 26</td>
-<td>6</td>
+<td data-label="Papers">59</td>
+<td data-label="Share 2025 → 2026">0.83% → 1.07%</td>
+<td data-label="Main / Findings">32 / 26</td>
+<td data-label="Orals">6</td>
 </tr>
 <tr>
 <td>Omni-Modal Models and Modality Robustness</td>
 <td>These papers examine modality bias, uncertainty and robustness in omni-modal and multimodal models, mixed with assorted work on incomplete multimodal learning, emotion recognition and multimodal data pipelines.</td>
-<td>57</td>
-<td>2.01% → 1.03%</td>
-<td>24 / 33</td>
-<td>3</td>
+<td data-label="Papers">57</td>
+<td data-label="Share 2025 → 2026">2.01% → 1.03%</td>
+<td data-label="Main / Findings">24 / 33</td>
+<td data-label="Orals">3</td>
 </tr>
 <tr>
 <td>Multimodal RAG and Visual Document Retrieval</td>
 <td>These papers retrieve images and visually rich documents with multimodal embeddings and late interaction, and use them in multimodal retrieval-augmented generation for long-document question answering.</td>
-<td>57</td>
-<td>0.80% → 1.03%</td>
-<td>34 / 21</td>
-<td>8</td>
+<td data-label="Papers">57</td>
+<td data-label="Share 2025 → 2026">0.80% → 1.03%</td>
+<td data-label="Main / Findings">34 / 21</td>
+<td data-label="Orals">8</td>
 </tr>
 <tr>
 <td>Vision-Language Hallucination Mitigation</td>
 <td>These papers detect and reduce hallucinations, mostly object hallucinations in vision-language models, using attention-head interventions, activation steering, decoding fixes and new benchmarks.</td>
-<td>52</td>
-<td>1.44% → 0.94%</td>
-<td>27 / 25</td>
-<td>6</td>
+<td data-label="Papers">52</td>
+<td data-label="Share 2025 → 2026">1.44% → 0.94%</td>
+<td data-label="Main / Findings">27 / 25</td>
+<td data-label="Orals">6</td>
 </tr>
 <tr>
 <td>Long and Streaming Video QA</td>
 <td>These papers help video language models answer questions about long and streaming videos through frame selection, evidence search and hierarchical multimodal memory.</td>
-<td>45</td>
-<td>0.43% → 0.81%</td>
-<td>24 / 18</td>
-<td>2</td>
+<td data-label="Papers">45</td>
+<td data-label="Share 2025 → 2026">0.43% → 0.81%</td>
+<td data-label="Main / Findings">24 / 18</td>
+<td data-label="Orals">2</td>
 </tr>
 <tr>
 <td>Vision-Language-Action and Embodied Agents</td>
 <td>These papers build and diagnose vision-language-action policies for robot manipulation, navigation and autonomous driving, including grounding, planning and paraphrase robustness.</td>
-<td>43</td>
-<td>0.60% → 0.78%</td>
-<td>21 / 22</td>
-<td>4</td>
+<td data-label="Papers">43</td>
+<td data-label="Share 2025 → 2026">0.60% → 0.78%</td>
+<td data-label="Main / Findings">21 / 22</td>
+<td data-label="Orals">4</td>
 </tr>
 <tr>
 <td>Visual Token Pruning for Efficient VLMs</td>
 <td>These papers cut inference cost in vision-language models by pruning, compressing or condensing visual tokens, with some papers on other efficiency and high-resolution adaptation methods for VLMs.</td>
-<td>35</td>
-<td>0.66% → 0.63%</td>
-<td>17 / 17</td>
-<td>3</td>
+<td data-label="Papers">35</td>
+<td data-label="Share 2025 → 2026">0.66% → 0.63%</td>
+<td data-label="Main / Findings">17 / 17</td>
+<td data-label="Orals">3</td>
 </tr>
 <tr>
 <td>Spatial Reasoning and 3D Visual Grounding</td>
 <td>These papers evaluate and improve the spatial reasoning of vision-language models, including perspective taking, 3D visual grounding, geolocalization and remote sensing.</td>
-<td>34</td>
-<td>0.52% → 0.61%</td>
-<td>15 / 19</td>
-<td>3</td>
+<td data-label="Papers">34</td>
+<td data-label="Share 2025 → 2026">0.52% → 0.61%</td>
+<td data-label="Main / Findings">15 / 19</td>
+<td data-label="Orals">3</td>
 </tr>
 <tr>
 <td>Chart and Visual Document Reasoning</td>
 <td>These papers benchmark and improve vision-language models on charts, diagrams, scientific figures and text-rich images, with a few studies on art, manga and specialized layouts.</td>
-<td>33</td>
-<td>0.69% → 0.60%</td>
-<td>15 / 14</td>
-<td>1</td>
+<td data-label="Papers">33</td>
+<td data-label="Share 2025 → 2026">0.69% → 0.60%</td>
+<td data-label="Main / Findings">15 / 14</td>
+<td data-label="Orals">1</td>
 </tr>
 <tr>
 <td>Meme Understanding and Harmful Meme Detection</td>
 <td>These papers build multimodal models and multilingual benchmarks to interpret memes, humor and cultural references and to detect hateful or harmful memes.</td>
-<td>24</td>
-<td>0.46% → 0.43%</td>
-<td>14 / 10</td>
-<td>0</td>
+<td data-label="Papers">24</td>
+<td data-label="Share 2025 → 2026">0.46% → 0.43%</td>
+<td data-label="Main / Findings">14 / 10</td>
+<td data-label="Orals">0</td>
 </tr>
 </tbody>
 </table>
@@ -562,82 +567,82 @@ html,body{overflow-x:hidden}
 <tr>
 <td>Cognitive Bias, Sycophancy and Moral Judgment</td>
 <td>These papers probe language models with methods from psychology and social science, measuring sycophancy, cognitive and social biases, persuasion, moral reasoning and human-model behavioral gaps.</td>
-<td>100</td>
-<td>2.10% → 1.81%</td>
-<td>53 / 46</td>
-<td>16</td>
+<td data-label="Papers">100</td>
+<td data-label="Share 2025 → 2026">2.10% → 1.81%</td>
+<td data-label="Main / Findings">53 / 46</td>
+<td data-label="Orals">16</td>
 </tr>
 <tr>
 <td>LLM-as-a-Judge Bias and Reliability</td>
 <td>These papers test how reliable LLM judges are, exposing position, self-preference and rubric biases and proposing debiasing, calibration and measurement-theory fixes, alongside a few fairness auditing studies.</td>
-<td>78</td>
-<td>1.03% → 1.41%</td>
-<td>39 / 33</td>
-<td>8</td>
+<td data-label="Papers">78</td>
+<td data-label="Share 2025 → 2026">1.03% → 1.41%</td>
+<td data-label="Main / Findings">39 / 33</td>
+<td data-label="Orals">8</td>
 </tr>
 <tr>
 <td>Role-Playing Agents and Emotional Support Dialogue</td>
 <td>These papers train and evaluate role-playing characters, counseling and emotional support agents, and user simulators for multi-turn dialogue, with some general conversational assistant work.</td>
-<td>64</td>
-<td>1.95% → 1.16%</td>
-<td>26 / 34</td>
-<td>5</td>
+<td data-label="Papers">64</td>
+<td data-label="Share 2025 → 2026">1.95% → 1.16%</td>
+<td data-label="Main / Findings">26 / 34</td>
+<td data-label="Orals">5</td>
 </tr>
 <tr>
 <td>Cultural Knowledge and Cultural Alignment</td>
 <td>These papers benchmark and steer how language models understand and adapt to cultural norms, values and region-specific knowledge across many languages and societies.</td>
-<td>60</td>
-<td>1.21% → 1.08%</td>
-<td>25 / 33</td>
-<td>5</td>
+<td data-label="Papers">60</td>
+<td data-label="Share 2025 → 2026">1.21% → 1.08%</td>
+<td data-label="Main / Findings">25 / 33</td>
+<td data-label="Orals">5</td>
 </tr>
 <tr>
 <td>Social Bias, Stereotypes and Debiasing</td>
 <td>These papers measure and trace gender, racial and occupational stereotypes inside language models and debias them, with a share of work on steering vectors and refusal directions more generally.</td>
-<td>58</td>
-<td>2.01% → 1.05%</td>
-<td>37 / 21</td>
-<td>5</td>
+<td data-label="Papers">58</td>
+<td data-label="Share 2025 → 2026">2.01% → 1.05%</td>
+<td data-label="Main / Findings">37 / 21</td>
+<td data-label="Orals">5</td>
 </tr>
 <tr>
 <td>Personalization and Personality Alignment</td>
 <td>These papers adapt model responses to individual users through user profiles, memory selection, preference tracing, persona steering and personality or value alignment.</td>
-<td>51</td>
-<td>0.77% → 0.92%</td>
-<td>20 / 31</td>
-<td>4</td>
+<td data-label="Papers">51</td>
+<td data-label="Share 2025 → 2026">0.77% → 0.92%</td>
+<td data-label="Main / Findings">20 / 31</td>
+<td data-label="Orals">4</td>
 </tr>
 <tr>
 <td>User Simulators and Human Behavior Simulation</td>
 <td>These papers use language models to simulate users, personas and social behavior for evaluating agents and studying surveys and online discourse, and test how faithful these simulations are.</td>
-<td>47</td>
-<td>0.60% → 0.85%</td>
-<td>18 / 18</td>
-<td>2</td>
+<td data-label="Papers">47</td>
+<td data-label="Share 2025 → 2026">0.60% → 0.85%</td>
+<td data-label="Main / Findings">18 / 18</td>
+<td data-label="Orals">2</td>
 </tr>
 <tr>
 <td>Multi-Agent Debate and Argumentation</td>
 <td>These papers improve multi-agent debate for reasoning through better moderation, memory and aggregation, and study persuasion, counterargument generation and competitive debating.</td>
-<td>37</td>
-<td>0.37% → 0.67%</td>
-<td>21 / 14</td>
-<td>3</td>
+<td data-label="Papers">37</td>
+<td data-label="Share 2025 → 2026">0.37% → 0.67%</td>
+<td data-label="Main / Findings">21 / 14</td>
+<td data-label="Orals">3</td>
 </tr>
 <tr>
 <td>Emotion Recognition and Affective Analysis</td>
 <td>These papers recognize, explain and control emotion, sentiment and stance in text and conversation, and probe how models represent affect internally.</td>
-<td>29</td>
-<td>0.80% → 0.52%</td>
-<td>22 / 7</td>
-<td>4</td>
+<td data-label="Papers">29</td>
+<td data-label="Share 2025 → 2026">0.80% → 0.52%</td>
+<td data-label="Main / Findings">22 / 7</td>
+<td data-label="Orals">4</td>
 </tr>
 <tr>
 <td>Theory of Mind and Social Intelligence</td>
 <td>These papers benchmark theory-of-mind and social reasoning in text and multimodal models, from multi-party meetings and body language to deception and social deduction games.</td>
-<td>26</td>
-<td>0.46% → 0.47%</td>
-<td>13 / 13</td>
-<td>3</td>
+<td data-label="Papers">26</td>
+<td data-label="Share 2025 → 2026">0.46% → 0.47%</td>
+<td data-label="Main / Findings">13 / 13</td>
+<td data-label="Orals">3</td>
 </tr>
 </tbody>
 </table>
@@ -716,74 +721,74 @@ html,body{overflow-x:hidden}
 <tr>
 <td>Retrieval-Augmented Generation and Evidence Grounding</td>
 <td>These papers improve how RAG systems select, trust and cite retrieved evidence, covering knowledge conflicts, poisoning robustness, attribution and RAG evaluation.</td>
-<td>102</td>
-<td>2.41% → 1.84%</td>
-<td>44 / 45</td>
-<td>3</td>
+<td data-label="Papers">102</td>
+<td data-label="Share 2025 → 2026">2.41% → 1.84%</td>
+<td data-label="Main / Findings">44 / 45</td>
+<td data-label="Orals">3</td>
 </tr>
 <tr>
 <td>Dense Retrieval and LLM Reranking</td>
 <td>These papers train dense and generative retrievers and LLM rerankers, with a focus on reasoning-intensive and efficient text retrieval.</td>
-<td>77</td>
-<td>1.41% → 1.39%</td>
-<td>36 / 27</td>
-<td>6</td>
+<td data-label="Papers">77</td>
+<td data-label="Share 2025 → 2026">1.41% → 1.39%</td>
+<td data-label="Main / Findings">36 / 27</td>
+<td data-label="Orals">6</td>
 </tr>
 <tr>
 <td>Knowledge Graph Reasoning and Link Prediction</td>
 <td>These papers reason over knowledge graphs and text-attributed graphs, covering KGQA, temporal knowledge graph forecasting, link prediction and graph serialization for language models.</td>
-<td>60</td>
-<td>1.61% → 1.08%</td>
-<td>32 / 26</td>
-<td>1</td>
+<td data-label="Papers">60</td>
+<td data-label="Share 2025 → 2026">1.61% → 1.08%</td>
+<td data-label="Main / Findings">32 / 26</td>
+<td data-label="Orals">1</td>
 </tr>
 <tr>
 <td>Graph RAG and Multi-Hop QA</td>
 <td>These papers answer multi-hop questions by retrieving evidence over knowledge graphs, hypergraphs and document graphs, often with agentic or iterative retrieval.</td>
-<td>54</td>
-<td>1.00% → 0.98%</td>
-<td>22 / 29</td>
-<td>1</td>
+<td data-label="Papers">54</td>
+<td data-label="Share 2025 → 2026">1.00% → 0.98%</td>
+<td data-label="Main / Findings">22 / 29</td>
+<td data-label="Orals">1</td>
 </tr>
 <tr>
 <td>Entity Linking, Relation Extraction and Taxonomies</td>
 <td>These papers link entities to knowledge bases, extract relations and named entities, and induce taxonomies, mixed with assorted work on topic modeling, embedding geometry and intent discovery.</td>
-<td>48</td>
-<td>1.72% → 0.87%</td>
-<td>22 / 23</td>
-<td>9</td>
+<td data-label="Papers">48</td>
+<td data-label="Share 2025 → 2026">1.72% → 0.87%</td>
+<td data-label="Main / Findings">22 / 23</td>
+<td data-label="Orals">9</td>
 </tr>
 <tr>
 <td>Generative and Sequential Recommendation</td>
 <td>These papers build LLM-based recommender systems that generate semantic item IDs, model user histories and preferences, and suggest queries in e-commerce search.</td>
-<td>45</td>
-<td>0.83% → 0.81%</td>
-<td>21 / 13</td>
-<td>2</td>
+<td data-label="Papers">45</td>
+<td data-label="Share 2025 → 2026">0.83% → 0.81%</td>
+<td data-label="Main / Findings">21 / 13</td>
+<td data-label="Orals">2</td>
 </tr>
 <tr>
 <td>Text-to-SQL and Database Querying</td>
 <td>These papers translate natural language into SQL with schema linking, chain-of-thought training, reinforcement learning and candidate selection, and build more realistic text-to-SQL benchmarks.</td>
-<td>39</td>
-<td>0.75% → 0.70%</td>
-<td>16 / 17</td>
-<td>1</td>
+<td data-label="Papers">39</td>
+<td data-label="Share 2025 → 2026">0.75% → 0.70%</td>
+<td data-label="Main / Findings">16 / 17</td>
+<td data-label="Orals">1</td>
 </tr>
 <tr>
 <td>Table Reasoning and Table Question Answering</td>
 <td>These papers answer questions and reason over tables, including multi-table retrieval, SQL-guided decomposition, table graphs and multimodal table images.</td>
-<td>36</td>
-<td>0.75% → 0.65%</td>
-<td>24 / 10</td>
-<td>3</td>
+<td data-label="Papers">36</td>
+<td data-label="Share 2025 → 2026">0.75% → 0.65%</td>
+<td data-label="Main / Findings">24 / 10</td>
+<td data-label="Orals">3</td>
 </tr>
 <tr>
 <td>Event Extraction and Time-Series Grounding</td>
 <td>These papers extract events, arguments and timelines from documents and connect language with time-series data for event detection, forecasting and temporal explanation.</td>
-<td>22</td>
-<td>0.75% → 0.40%</td>
-<td>7 / 14</td>
-<td>0</td>
+<td data-label="Papers">22</td>
+<td data-label="Share 2025 → 2026">0.75% → 0.40%</td>
+<td data-label="Main / Findings">7 / 14</td>
+<td data-label="Orals">0</td>
 </tr>
 </tbody>
 </table>
@@ -833,42 +838,42 @@ html,body{overflow-x:hidden}
 <tr>
 <td>Efficient and Latent Chain-of-Thought Reasoning</td>
 <td>These papers cut overthinking in reasoning models through chain-of-thought compression, adaptive token budgets, early stopping, parallel thinking and latent or implicit reasoning.</td>
-<td>139</td>
-<td>2.47% → 2.51%</td>
-<td>62 / 75</td>
-<td>9</td>
+<td data-label="Papers">139</td>
+<td data-label="Share 2025 → 2026">2.47% → 2.51%</td>
+<td data-label="Main / Findings">62 / 75</td>
+<td data-label="Orals">9</td>
 </tr>
 <tr>
 <td>Chain-of-Thought Faithfulness and Reasoning Diagnostics</td>
 <td>These papers analyze why chain-of-thought reasoning fails, whether reasoning traces are faithful, and how to benchmark logical and causal reasoning, alongside work on overthinking and test-time compute.</td>
-<td>103</td>
-<td>1.06% → 1.86%</td>
-<td>48 / 52</td>
-<td>9</td>
+<td data-label="Papers">103</td>
+<td data-label="Share 2025 → 2026">1.06% → 1.86%</td>
+<td data-label="Main / Findings">48 / 52</td>
+<td data-label="Orals">9</td>
 </tr>
 <tr>
 <td>RLVR and On-Policy Distillation</td>
 <td>These papers refine reinforcement learning with verifiable rewards and on-policy distillation for reasoning, tackling credit assignment, entropy collapse, advantage estimation and label-free rewards.</td>
-<td>89</td>
-<td>0.09% → 1.61%</td>
-<td>39 / 50</td>
-<td>8</td>
+<td data-label="Papers">89</td>
+<td data-label="Share 2025 → 2026">0.09% → 1.61%</td>
+<td data-label="Main / Findings">39 / 50</td>
+<td data-label="Orals">8</td>
 </tr>
 <tr>
 <td>Mathematical Reasoning and Formal Theorem Proving</td>
 <td>These papers improve and evaluate mathematical problem solving through verifiers, process reward models, distractor robustness, autoformalization and formal proof benchmarks.</td>
-<td>68</td>
-<td>1.87% → 1.23%</td>
-<td>27 / 40</td>
-<td>4</td>
+<td data-label="Papers">68</td>
+<td data-label="Share 2025 → 2026">1.87% → 1.23%</td>
+<td data-label="Main / Findings">27 / 40</td>
+<td data-label="Orals">4</td>
 </tr>
 <tr>
 <td>Self-Improving Reasoning and Self-Correction</td>
 <td>These papers improve model reasoning through self-evolution, reinforcement learning with guided exploration, latent reasoning and activation steering, alongside some work on calibration and abstention.</td>
-<td>53</td>
-<td>2.53% → 0.96%</td>
-<td>33 / 20</td>
-<td>7</td>
+<td data-label="Papers">53</td>
+<td data-label="Share 2025 → 2026">2.53% → 0.96%</td>
+<td data-label="Main / Findings">33 / 20</td>
+<td data-label="Orals">7</td>
 </tr>
 </tbody>
 </table>
@@ -929,66 +934,66 @@ html,body{overflow-x:hidden}
 <tr>
 <td>Model Pruning and Sparsity</td>
 <td>These papers compress language models through structured pruning, quantization and distillation and measure real inference speedups, while the cluster also mixes in assorted training, data selection and representation studies.</td>
-<td>127</td>
-<td>3.47% → 2.29%</td>
-<td>66 / 48</td>
-<td>11</td>
+<td data-label="Papers">127</td>
+<td data-label="Share 2025 → 2026">3.47% → 2.29%</td>
+<td data-label="Main / Findings">66 / 48</td>
+<td data-label="Orals">11</td>
 </tr>
 <tr>
 <td>Diffusion Language Models and Parallel Decoding</td>
 <td>These papers build, scale and speed up masked and continuous diffusion language models, with new remasking, parallel decoding, length control and distillation strategies.</td>
-<td>72</td>
-<td>0.34% → 1.30%</td>
-<td>38 / 33</td>
-<td>6</td>
+<td data-label="Papers">72</td>
+<td data-label="Share 2025 → 2026">0.34% → 1.30%</td>
+<td data-label="Main / Findings">38 / 33</td>
+<td data-label="Orals">6</td>
 </tr>
 <tr>
 <td>KV Cache Compression and Eviction</td>
 <td>These papers shrink the key-value cache for long-context inference through token eviction, quantization, low-rank approximation and adaptive per-layer budgets.</td>
-<td>57</td>
-<td>0.52% → 1.03%</td>
-<td>41 / 14</td>
-<td>6</td>
+<td data-label="Papers">57</td>
+<td data-label="Share 2025 → 2026">0.52% → 1.03%</td>
+<td data-label="Main / Findings">41 / 14</td>
+<td data-label="Orals">6</td>
 </tr>
 <tr>
 <td>Speculative Decoding and Inference Acceleration</td>
 <td>These papers speed up language model inference with draft models, draft trees, retrieval-based drafting and smarter verification, plus related work on efficient sampling.</td>
-<td>42</td>
-<td>0.69% → 0.76%</td>
-<td>25 / 17</td>
-<td>5</td>
+<td data-label="Papers">42</td>
+<td data-label="Share 2025 → 2026">0.69% → 0.76%</td>
+<td data-label="Main / Findings">25 / 17</td>
+<td data-label="Orals">5</td>
 </tr>
 <tr>
 <td>Low-Bit Weight and Activation Quantization</td>
 <td>These papers compress model weights, activations and KV caches with post-training, mixed-precision, ternary and quantization-aware methods that handle outliers.</td>
-<td>37</td>
-<td>0.52% → 0.67%</td>
-<td>21 / 13</td>
-<td>1</td>
+<td data-label="Papers">37</td>
+<td data-label="Share 2025 → 2026">0.52% → 0.67%</td>
+<td data-label="Main / Findings">21 / 13</td>
+<td data-label="Orals">1</td>
 </tr>
 <tr>
 <td>Machine Unlearning in Language Models</td>
 <td>These papers remove targeted knowledge from text and multimodal models while preserving utility, and test how robust the forgetting is to relearning and recovery attacks.</td>
-<td>31</td>
-<td>0.63% → 0.56%</td>
-<td>12 / 18</td>
-<td>1</td>
+<td data-label="Papers">31</td>
+<td data-label="Share 2025 → 2026">0.63% → 0.56%</td>
+<td data-label="Main / Findings">12 / 18</td>
+<td data-label="Orals">1</td>
 </tr>
 <tr>
 <td>MoE Compression and Efficient Training</td>
 <td>These papers compress, merge and quantize mixture-of-experts models and make MoE training and fine-tuning more efficient, alongside some work on the Muon optimizer and parallelism.</td>
-<td>29</td>
-<td>0.26% → 0.52%</td>
-<td>17 / 11</td>
-<td>3</td>
+<td data-label="Papers">29</td>
+<td data-label="Share 2025 → 2026">0.26% → 0.52%</td>
+<td data-label="Main / Findings">17 / 11</td>
+<td data-label="Orals">3</td>
 </tr>
 <tr>
 <td>Mixture-of-Experts Routing and Fine-Tuning</td>
 <td>These papers improve how MoE models route tokens to experts, prune or reduce experts at test time, and fine-tune MoE models without breaking their routing structure.</td>
-<td>27</td>
-<td>0.40% → 0.49%</td>
-<td>14 / 13</td>
-<td>1</td>
+<td data-label="Papers">27</td>
+<td data-label="Share 2025 → 2026">0.40% → 0.49%</td>
+<td data-label="Main / Findings">14 / 13</td>
+<td data-label="Orals">1</td>
 </tr>
 </tbody>
 </table>
@@ -1046,50 +1051,50 @@ html,body{overflow-x:hidden}
 <tr>
 <td>Psycholinguistics and Linguistic Knowledge Probing</td>
 <td>These papers compare language models with human sentence processing and test their syntactic, lexical and typological knowledge, with a mix of morphology, parsing and corpus work.</td>
-<td>120</td>
-<td>2.24% → 2.17%</td>
-<td>70 / 48</td>
-<td>25</td>
+<td data-label="Papers">120</td>
+<td data-label="Share 2025 → 2026">2.24% → 2.17%</td>
+<td data-label="Main / Findings">70 / 48</td>
+<td data-label="Orals">25</td>
 </tr>
 <tr>
 <td>Cross-Lingual Transfer and Multilingual Representations</td>
 <td>These papers measure and close the gap between English and other languages through cross-lingual alignment, representation analysis, multilingual judges and multilingual training data.</td>
-<td>101</td>
-<td>2.99% → 1.83%</td>
-<td>54 / 45</td>
-<td>12</td>
+<td data-label="Papers">101</td>
+<td data-label="Share 2025 → 2026">2.99% → 1.83%</td>
+<td data-label="Main / Findings">54 / 45</td>
+<td data-label="Orals">12</td>
 </tr>
 <tr>
 <td>Dialects, Scripts and Underrepresented Languages</td>
 <td>These papers study dialects, writing systems and romanized or cross-script text in Arabic, Indic, African and other low-resource languages, alongside a mix of other language-specific resources and benchmarks.</td>
-<td>64</td>
-<td>1.92% → 1.16%</td>
-<td>34 / 27</td>
-<td>11</td>
+<td data-label="Papers">64</td>
+<td data-label="Share 2025 → 2026">1.92% → 1.16%</td>
+<td data-label="Main / Findings">34 / 27</td>
+<td data-label="Orals">11</td>
 </tr>
 <tr>
 <td>Document-Level and Low-Resource Translation</td>
 <td>These papers study how language models translate, build translation benchmarks and metrics, and improve document-level and low-resource machine translation with reasoning and reinforcement learning.</td>
-<td>61</td>
-<td>1.23% → 1.10%</td>
-<td>32 / 29</td>
-<td>8</td>
+<td data-label="Papers">61</td>
+<td data-label="Share 2025 → 2026">1.23% → 1.10%</td>
+<td data-label="Main / Findings">32 / 29</td>
+<td data-label="Orals">8</td>
 </tr>
 <tr>
 <td>Machine Translation Quality Evaluation</td>
 <td>These papers evaluate machine translation with LLM judges, error span detection, document context and human studies, including literary and culturally loaded translation.</td>
-<td>24</td>
-<td>0.98% → 0.43%</td>
-<td>8 / 14</td>
-<td>2</td>
+<td data-label="Papers">24</td>
+<td data-label="Share 2025 → 2026">0.98% → 0.43%</td>
+<td data-label="Main / Findings">8 / 14</td>
+<td data-label="Orals">2</td>
 </tr>
 <tr>
 <td>Tokenization and Subword Vocabularies</td>
 <td>These papers analyze and redesign tokenizers, including byte-level, grapheme and morphology-aware subwords, and study their effect on multilingual and low-resource modeling.</td>
-<td>20</td>
-<td>0.46% → 0.36%</td>
-<td>9 / 11</td>
-<td>5</td>
+<td data-label="Papers">20</td>
+<td data-label="Share 2025 → 2026">0.46% → 0.36%</td>
+<td data-label="Main / Findings">9 / 11</td>
+<td data-label="Orals">5</td>
 </tr>
 </tbody>
 </table>
@@ -1176,66 +1181,66 @@ html,body{overflow-x:hidden}
 <tr>
 <td>Safety Alignment and Over-Refusal</td>
 <td>These papers study how safety alignment and refusal work inside models, defend against jailbreaks and over-refusal, preserve safety during fine-tuning and benchmark content moderation.</td>
-<td>93</td>
-<td>1.15% → 1.68%</td>
-<td>57 / 32</td>
-<td>12</td>
+<td data-label="Papers">93</td>
+<td data-label="Share 2025 → 2026">1.15% → 1.68%</td>
+<td data-label="Main / Findings">57 / 32</td>
+<td data-label="Orals">12</td>
 </tr>
 <tr>
 <td>Jailbreak and Backdoor Attacks</td>
 <td>These papers design jailbreak and backdoor attacks on language and vision-language models and defend against them with detection probes, guardrails and alignment interventions.</td>
-<td>77</td>
-<td>1.58% → 1.39%</td>
-<td>35 / 42</td>
-<td>4</td>
+<td data-label="Papers">77</td>
+<td data-label="Share 2025 → 2026">1.58% → 1.39%</td>
+<td data-label="Main / Findings">35 / 42</td>
+<td data-label="Orals">4</td>
 </tr>
 <tr>
 <td>Agent Safety and Tool-Use Risks</td>
 <td>These papers benchmark and guard tool-using agents against unsafe actions, prompt injection, malicious skills, privacy leaks and backdoors during multi-step execution.</td>
-<td>50</td>
-<td>0.37% → 0.90%</td>
-<td>24 / 20</td>
-<td>0</td>
+<td data-label="Papers">50</td>
+<td data-label="Share 2025 → 2026">0.37% → 0.90%</td>
+<td data-label="Main / Findings">24 / 20</td>
+<td data-label="Orals">0</td>
 </tr>
 <tr>
 <td>Indirect Prompt Injection Attacks</td>
 <td>These papers attack and defend tool-using agents against indirect prompt injection and build red-teaming methods and benchmarks for agent security.</td>
-<td>39</td>
-<td>0.72% → 0.70%</td>
-<td>13 / 24</td>
-<td>2</td>
+<td data-label="Papers">39</td>
+<td data-label="Share 2025 → 2026">0.72% → 0.70%</td>
+<td data-label="Main / Findings">13 / 24</td>
+<td data-label="Orals">2</td>
 </tr>
 <tr>
 <td>Privacy Leakage, PII and Membership Inference</td>
 <td>These papers measure and mitigate privacy risks through PII detection, text sanitization, re-identification audits, membership inference and contextual integrity in agents.</td>
-<td>37</td>
-<td>0.66% → 0.67%</td>
-<td>17 / 14</td>
-<td>5</td>
+<td data-label="Papers">37</td>
+<td data-label="Share 2025 → 2026">0.66% → 0.67%</td>
+<td data-label="Main / Findings">17 / 14</td>
+<td data-label="Orals">5</td>
 </tr>
 <tr>
 <td>Detoxification and Moderation Evasion</td>
 <td>These papers reduce toxic generations, generate counterspeech and study how harmful content, fake news and poisoned corpora evade detectors, with a few loosely related robustness papers mixed in.</td>
-<td>35</td>
-<td>1.66% → 0.63%</td>
-<td>22 / 13</td>
-<td>4</td>
+<td data-label="Papers">35</td>
+<td data-label="Share 2025 → 2026">1.66% → 0.63%</td>
+<td data-label="Main / Findings">22 / 13</td>
+<td data-label="Orals">4</td>
 </tr>
 <tr>
 <td>Multimodal and Text-to-Image Safety</td>
 <td>These papers benchmark and defend multimodal and text-to-image models against unsafe generation, jailbreaks and culturally specific risks, using safety unlearning, detoxification and guard models.</td>
-<td>31</td>
-<td>0.46% → 0.56%</td>
-<td>13 / 15</td>
-<td>0</td>
+<td data-label="Papers">31</td>
+<td data-label="Share 2025 → 2026">0.46% → 0.56%</td>
+<td data-label="Main / Findings">13 / 15</td>
+<td data-label="Orals">0</td>
 </tr>
 <tr>
 <td>Text Watermarking and Model Fingerprinting</td>
 <td>These papers embed and detect watermarks in generated text and fingerprint models for copyright protection, balancing detectability, robustness to edits and text quality.</td>
-<td>24</td>
-<td>0.55% → 0.43%</td>
-<td>12 / 12</td>
-<td>1</td>
+<td data-label="Papers">24</td>
+<td data-label="Share 2025 → 2026">0.55% → 0.43%</td>
+<td data-label="Main / Findings">12 / 12</td>
+<td data-label="Orals">1</td>
 </tr>
 </tbody>
 </table>
@@ -1287,34 +1292,34 @@ html,body{overflow-x:hidden}
 <tr>
 <td>Code Generation, Testing and Repair</td>
 <td>These papers train and evaluate code models with unit-test generation, execution feedback, reward models and debugging to make generated code functionally correct.</td>
-<td>76</td>
-<td>1.26% → 1.37%</td>
-<td>29 / 44</td>
-<td>5</td>
+<td data-label="Papers">76</td>
+<td data-label="Share 2025 → 2026">1.26% → 1.37%</td>
+<td data-label="Main / Findings">29 / 44</td>
+<td data-label="Orals">5</td>
 </tr>
 <tr>
 <td>Coding Agents for Software Engineering</td>
 <td>These papers benchmark and train coding agents on repository-level tasks such as issue localization, program repair, code retrieval and refactoring.</td>
-<td>48</td>
-<td>0.26% → 0.87%</td>
-<td>24 / 20</td>
-<td>7</td>
+<td data-label="Papers">48</td>
+<td data-label="Share 2025 → 2026">0.26% → 0.87%</td>
+<td data-label="Main / Findings">24 / 20</td>
+<td data-label="Orals">7</td>
 </tr>
 <tr>
 <td>Chemistry, Molecules and Drug Discovery</td>
 <td>These papers apply language models and agents to molecular property prediction, molecular optimization, retrosynthesis, structure elucidation, protein design and drug discovery.</td>
-<td>40</td>
-<td>0.80% → 0.72%</td>
-<td>13 / 25</td>
-<td>2</td>
+<td data-label="Papers">40</td>
+<td data-label="Share 2025 → 2026">0.80% → 0.72%</td>
+<td data-label="Main / Findings">13 / 25</td>
+<td data-label="Orals">2</td>
 </tr>
 <tr>
 <td>Optimization Modeling and Evolutionary Algorithm Discovery</td>
 <td>These papers use language models to formulate operations research and optimization problems and to evolve algorithms, code and designs through search-based self-improvement loops.</td>
-<td>35</td>
-<td>0.17% → 0.63%</td>
-<td>17 / 18</td>
-<td>3</td>
+<td data-label="Papers">35</td>
+<td data-label="Share 2025 → 2026">0.17% → 0.63%</td>
+<td data-label="Main / Findings">17 / 18</td>
+<td data-label="Orals">3</td>
 </tr>
 </tbody>
 </table>
@@ -1355,34 +1360,34 @@ html,body{overflow-x:hidden}
 <tr>
 <td>Webpage, SVG and Text-to-Image Generation</td>
 <td>These papers generate and evaluate visual artifacts such as webpages, SVG graphics, diagrams, slides and charts from code, and benchmark text-to-image generation and editing.</td>
-<td>53</td>
-<td>0.98% → 0.96%</td>
-<td>35 / 16</td>
-<td>2</td>
+<td data-label="Papers">53</td>
+<td data-label="Share 2025 → 2026">0.98% → 0.96%</td>
+<td data-label="Main / Findings">35 / 16</td>
+<td data-label="Orals">2</td>
 </tr>
 <tr>
 <td>Authorship Style and Creative Writing</td>
 <td>These papers analyze and transfer writing style for authorship attribution and personalized generation, and measure diversity and creativity in machine-written stories and poetry.</td>
-<td>52</td>
-<td>1.38% → 0.94%</td>
-<td>30 / 20</td>
-<td>7</td>
+<td data-label="Papers">52</td>
+<td data-label="Share 2025 → 2026">1.38% → 0.94%</td>
+<td data-label="Main / Findings">30 / 20</td>
+<td data-label="Orals">7</td>
 </tr>
 <tr>
 <td>AI-Generated Text Detection</td>
 <td>These papers detect and attribute machine-generated text with zero-shot statistics, probes and trained detectors, and audit detector shortcuts, robustness and cross-lingual performance.</td>
-<td>42</td>
-<td>0.63% → 0.76%</td>
-<td>16 / 23</td>
-<td>4</td>
+<td data-label="Papers">42</td>
+<td data-label="Share 2025 → 2026">0.63% → 0.76%</td>
+<td data-label="Main / Findings">16 / 23</td>
+<td data-label="Orals">4</td>
 </tr>
 <tr>
 <td>Synthetic Data Generation and Data Curation</td>
 <td>These papers generate, select and audit synthetic training data for instruction tuning, pretraining and low-resource tasks, and design data mixtures and recipes for model adaptation.</td>
-<td>33</td>
-<td>1.09% → 0.60%</td>
-<td>15 / 16</td>
-<td>1</td>
+<td data-label="Papers">33</td>
+<td data-label="Share 2025 → 2026">1.09% → 0.60%</td>
+<td data-label="Main / Findings">15 / 16</td>
+<td data-label="Orals">1</td>
 </tr>
 </tbody>
 </table>
@@ -1420,26 +1425,26 @@ html,body{overflow-x:hidden}
 <tr>
 <td>Clinical Reasoning and EHR Benchmarks</td>
 <td>These papers evaluate and train models for clinical decision making over electronic health records, multi-turn medical consultations and diagnosis, with a focus on evidence use and rubric-based assessment.</td>
-<td>116</td>
-<td>1.44% → 2.10%</td>
-<td>48 / 57</td>
-<td>6</td>
+<td data-label="Papers">116</td>
+<td data-label="Share 2025 → 2026">1.44% → 2.10%</td>
+<td data-label="Main / Findings">48 / 57</td>
+<td data-label="Orals">6</td>
 </tr>
 <tr>
 <td>Medical Question Answering and Medical VQA</td>
 <td>These papers build and evaluate medical reasoning models for question answering and medical visual question answering, using reinforcement learning, multilingual medical data and evidence-grounded training.</td>
-<td>42</td>
-<td>0.60% → 0.76%</td>
-<td>21 / 21</td>
-<td>3</td>
+<td data-label="Papers">42</td>
+<td data-label="Share 2025 → 2026">0.60% → 0.76%</td>
+<td data-label="Main / Findings">21 / 21</td>
+<td data-label="Orals">3</td>
 </tr>
 <tr>
 <td>Radiology Report Generation</td>
 <td>These papers generate and evaluate radiology reports from chest X-rays and CT scans with medical vision-language models that stay grounded in images and clinical findings.</td>
-<td>22</td>
-<td>0.34% → 0.40%</td>
-<td>9 / 13</td>
-<td>1</td>
+<td data-label="Papers">22</td>
+<td data-label="Share 2025 → 2026">0.34% → 0.40%</td>
+<td data-label="Main / Findings">9 / 13</td>
+<td data-label="Orals">1</td>
 </tr>
 </tbody>
 </table>
@@ -1473,26 +1478,26 @@ html,body{overflow-x:hidden}
 <tr>
 <td>Speech Language Models and Voice Agents</td>
 <td>These papers evaluate and build speech language models, spoken dialogue systems and voice agents, covering speech recognition, speech translation, TTS evaluation and multilingual speech benchmarks.</td>
-<td>73</td>
-<td>1.26% → 1.32%</td>
-<td>38 / 24</td>
-<td>4</td>
+<td data-label="Papers">73</td>
+<td data-label="Share 2025 → 2026">1.26% → 1.32%</td>
+<td data-label="Main / Findings">38 / 24</td>
+<td data-label="Orals">4</td>
 </tr>
 <tr>
 <td>Speech Synthesis, Recognition and Audio Tokenizers</td>
 <td>These papers build and adapt speech and audio models for text-to-speech, speech recognition, streaming speech translation and audio tokenization.</td>
-<td>68</td>
-<td>1.09% → 1.23%</td>
-<td>35 / 31</td>
-<td>8</td>
+<td data-label="Papers">68</td>
+<td data-label="Share 2025 → 2026">1.09% → 1.23%</td>
+<td data-label="Main / Findings">35 / 31</td>
+<td data-label="Orals">8</td>
 </tr>
 <tr>
 <td>Audio-Language Model Understanding and Reasoning</td>
 <td>These papers benchmark and improve large audio-language models on acoustic perception, audio reasoning, bias, over-refusal and audio deepfake detection.</td>
-<td>35</td>
-<td>0.34% → 0.63%</td>
-<td>18 / 17</td>
-<td>2</td>
+<td data-label="Papers">35</td>
+<td data-label="Share 2025 → 2026">0.34% → 0.63%</td>
+<td data-label="Main / Findings">18 / 17</td>
+<td data-label="Orals">2</td>
 </tr>
 </tbody>
 </table>
@@ -1530,26 +1535,26 @@ html,body{overflow-x:hidden}
 <tr>
 <td>Domain Adaptation and Continual Pre-Training</td>
 <td>These papers adapt pretrained models to new domains through supervised fine-tuning, continual pre-training and parameter-efficient methods while limiting catastrophic forgetting of general skills.</td>
-<td>68</td>
-<td>2.32% → 1.23%</td>
-<td>35 / 31</td>
-<td>5</td>
+<td data-label="Papers">68</td>
+<td data-label="Share 2025 → 2026">2.32% → 1.23%</td>
+<td data-label="Main / Findings">35 / 31</td>
+<td data-label="Orals">5</td>
 </tr>
 <tr>
 <td>LoRA and Parameter-Efficient Fine-Tuning</td>
 <td>These papers improve low-rank adaptation through rank allocation, initialization and multi-task packing, and use adapters to limit forgetting in continual and federated fine-tuning.</td>
-<td>44</td>
-<td>1.15% → 0.80%</td>
-<td>22 / 19</td>
-<td>2</td>
+<td data-label="Papers">44</td>
+<td data-label="Share 2025 → 2026">1.15% → 0.80%</td>
+<td data-label="Main / Findings">22 / 19</td>
+<td data-label="Orals">2</td>
 </tr>
 <tr>
 <td>Direct Preference Optimization and Personalized Alignment</td>
 <td>These papers refine preference alignment with token-weighted and noise-robust DPO variants, preference data selection, multi-objective steering and personalized or pluralistic alignment.</td>
-<td>40</td>
-<td>1.00% → 0.72%</td>
-<td>23 / 17</td>
-<td>4</td>
+<td data-label="Papers">40</td>
+<td data-label="Share 2025 → 2026">1.00% → 0.72%</td>
+<td data-label="Main / Findings">23 / 17</td>
+<td data-label="Orals">4</td>
 </tr>
 </tbody>
 </table>
@@ -1584,10 +1589,10 @@ html,body{overflow-x:hidden}
 <tr>
 <td>Long-Term Memory for Agents</td>
 <td>These papers design and benchmark long-term memory systems for conversational and personalized agents, covering memory extraction, consolidation, hierarchical organization and retrieval.</td>
-<td>96</td>
-<td>0.17% → 1.73%</td>
-<td>49 / 42</td>
-<td>6</td>
+<td data-label="Papers">96</td>
+<td data-label="Share 2025 → 2026">0.17% → 1.73%</td>
+<td data-label="Main / Findings">49 / 42</td>
+<td data-label="Orals">6</td>
 </tr>
 </tbody>
 </table>
@@ -1617,10 +1622,10 @@ html,body{overflow-x:hidden}
 <tr>
 <td>Attention, State-Space and Hybrid Architectures</td>
 <td>These papers analyze and redesign sequence model architectures such as Transformers, linear attention, Mamba-style state-space models and hybrids, covering positional encoding, attention sinks and layer representations.</td>
-<td>80</td>
-<td>1.29% → 1.45%</td>
-<td>48 / 32</td>
-<td>5</td>
+<td data-label="Papers">80</td>
+<td data-label="Share 2025 → 2026">1.29% → 1.45%</td>
+<td data-label="Main / Findings">48 / 32</td>
+<td data-label="Orals">5</td>
 </tr>
 </tbody>
 </table>
