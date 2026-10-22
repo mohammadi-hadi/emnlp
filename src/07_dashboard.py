@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 from config import CUR, PREV, P, OUT, DOCS
 from common import load_papers
-from site_template import treemap_page, treemap_figure
+from site_template import treemap_page, treemap_figure, area_list
 import plotly.graph_objects as go
 import plotly.express as px
 
@@ -70,7 +70,8 @@ fig.update_layout(font=FONT, margin=dict(l=0, r=0, t=0, b=0), paper_bgcolor="whi
 LEDE = (f"All {len(dc):,} papers in {t.area.nunique()} areas and {len(t)} topics. Each box is an area, sized by its "
         f"number of papers. The colour shows how its share of the papers changed since {PREV}: red grew, blue shrank. "
         "Click an area to see its topics, and click the bar at the top to go back. Hover over or tap a topic for its numbers.")
-(DOCS / "charts" / "treemap.html").write_text(treemap_page(fig, "EMNLP", LEDE, "https://mohammadi.cv/emnlp/2026/charts/treemap.html"))
+(DOCS / "charts" / "treemap.html").write_text(treemap_page(fig, "EMNLP", LEDE, "https://mohammadi.cv/emnlp/2026/charts/treemap.html",
+                                                                  area_list(t, p, c)))
 
 # 2. dumbbell: area share last year -> this year
 b = pd.DataFrame(S["broad"]).assign(topic=lambda x: x.topic.map(short)).sort_values(f"share_{c}")
