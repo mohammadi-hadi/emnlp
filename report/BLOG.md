@@ -39,7 +39,7 @@ If you are going to Budapest, plan for Monday 26 October. It is the busiest day,
 
 All the data is public. Titles, abstracts and authors come from the ACL Anthology, and the rooms and times from the EMNLP program, both pulled on 21 October 2026. The 5,534 papers are the Main (2,704), Findings (2,478), Industry (266) and Demo (86) tracks. That is 5,182 Main and Findings papers, a little under the 5,252 EMNLP announced in August. An open model, Qwen3‑Embedding‑0.6B, turned each paper into numbers. Then I grouped similar papers into 100 topics. Each 2025 paper went into its closest 2026 topic, so both years are measured the same way. It is the same method as my [NeurIPS 2026 map](https://mohammadi.cv/neurips/2026/).
 
-Topics are a rough lens. I re-ran the grouping two other ways and the rise of agents showed up every time. The 2026 papers come from the Anthology before its official release, so a few titles, authors or affiliations may still change, and until the paper pages go live each paper links to its PDF.
+Topics are a rough lens. I re-ran the grouping two other ways and the rise of agents showed up every time. The 2026 papers were pulled from the Anthology on 21 October, before its official release, so a few titles, authors or affiliations may differ from the final versions.
 
 ## Explore
 
