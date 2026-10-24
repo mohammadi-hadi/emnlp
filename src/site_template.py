@@ -85,7 +85,7 @@ def atlas_nav(prefix="", current=""):
             f'<a href="{prefix}index.html">2026 story</a><a href="{prefix}papers.html">All papers</a>'
             f'<a href="{prefix}charts/treemap.html">All topics</a><a href="{prefix}appendix.html">Appendix</a>'
             f'<a href="https://github.com/mohammadi-hadi/emnlp">Code and data</a>'
-            f'<a href="/neurips/2026/">NeurIPS 2026</a></div></nav>')
+            f'<a href="/neurips/2026/">NeurIPS 2026</a><a href="/ai-conferences/2026/">NeurIPS vs EMNLP</a></div></nav>')
     # the page you are on is marked, like the Blog item in the site menu
     return nav.replace(f'href="{prefix}{current}">', f'href="{prefix}{current}" aria-current="page">', 1) if current else nav
 
