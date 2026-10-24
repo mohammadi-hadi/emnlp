@@ -57,7 +57,7 @@ CSS = """<style>
 BODY = """__NAV__<main id="main"><article class="post"><header class="post-head"><div class="post-wrap wide">
 <p class="post-crumbs"><a href="/blog/">Blog</a><span class="sep">/</span><a href="../">EMNLP Atlas</a><span class="sep">/</span><a href="index.html">__Y__</a></p>
 <h1>All __N__ EMNLP __Y__ papers</h1>
-<p>Search by title or author, or filter by track, area and how the paper is presented. Each paper links to its PDF on the ACL Anthology and to an arXiv search. Times are Budapest time.</p>
+<p>Search by title or author, or filter by track, area and how the paper is presented. Each paper links to its ACL Anthology page, its PDF and an arXiv search. Times are Budapest time.</p>
 <div class="controls"><input id="q" type="search" placeholder="Search title or author…" aria-label="search">
 <select id="track" aria-label="track"><option value="">All tracks</option>__TRACKS__</select>
 <select id="area" aria-label="area"><option value="">All areas</option>__AREAS__</select>
